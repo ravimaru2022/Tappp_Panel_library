@@ -32,7 +32,7 @@ public class WebkitClass: NSObject {
 
         //let bundle = Bundle(for: WebkitClass.self)
     
-        if let url = Bundle(for: WebkitClass.self).url(forResource: "indexA", withExtension: ".html") {
+        if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
              webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         }
     }

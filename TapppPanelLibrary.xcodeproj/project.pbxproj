@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		263C4CCD29517E79005FE16A /* TapppPanelLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		263C4CD429517F9B005FE16A /* TapppPanelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */; };
+		263C4CF6295184B8005FE16A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 263C4CF5295184B8005FE16A /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		263C4CC929517E79005FE16A /* TapppPanelLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TapppPanelLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapppPanelLibrary.h; sourceTree = "<group>"; };
 		263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapppPanelLibrary.swift; sourceTree = "<group>"; };
+		263C4CF5295184B8005FE16A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		263C4CCB29517E79005FE16A /* TapppPanelLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				263C4CF5295184B8005FE16A /* index.html */,
 				263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */,
 				263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */,
 			);
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263C4CF6295184B8005FE16A /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
