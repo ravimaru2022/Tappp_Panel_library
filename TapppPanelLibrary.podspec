@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TapppPanelLibrary"
-  spec.version      = "1.0.13"
+  spec.version      = "1.0.14"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = "This will be test description for inmplememting pod file."
@@ -19,6 +19,8 @@ Pod::Spec.new do |spec|
   spec.resource_bundles = {
    'web-build' => ['TapppPanelLibrary/web-build/*.png',
                    'TapppPanelLibrary/web-build/*.json',
+                   'TapppPanelLibrary/web-build/*.ico',
+                   'TapppPanelLibrary/web-build/*.html',
                    'TapppPanelLibrary/web-build/fonts/*.ttf']
   }
   #spec.resources     = "TapppPanelLibrary/**/*.{html}"
