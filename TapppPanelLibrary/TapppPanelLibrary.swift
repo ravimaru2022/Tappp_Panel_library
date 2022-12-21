@@ -30,18 +30,15 @@ public class WebkitClass: NSObject {
         webView.backgroundColor = UIColor.clear
         webView.isOpaque = false
 
-        //let bundle = Bundle(for: WebkitClass.self)
-    
+        let customBundle = Bundle(for: WebkitClass.self)
+        guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("web-build.bundle") else { return }
+        guard let resourceBundle = Bundle(url: resourceURL) else { return }
+        guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
+        webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
+
         /*let url = URL(string: "http://tappp-web-build.s3-website.us-east-2.amazonaws.com/")
         let requestObj = URLRequest(url: url! as URL)
         webView.load(requestObj)*/
-
-        /*if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
-             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
-        }*/
-        if let url = Bundle.main.url(forResource: "index", withExtension: "html"){
-            webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
-        }
     }
 }
 
