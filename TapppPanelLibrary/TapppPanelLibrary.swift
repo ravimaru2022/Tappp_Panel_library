@@ -32,13 +32,16 @@ public class WebkitClass: NSObject {
 
         //let bundle = Bundle(for: WebkitClass.self)
     
-        let url = URL(string: "http://tappp-web-build.s3-website.us-east-2.amazonaws.com/")
+        /*let url = URL(string: "http://tappp-web-build.s3-website.us-east-2.amazonaws.com/")
         let requestObj = URLRequest(url: url! as URL)
-        webView.load(requestObj)
+        webView.load(requestObj)*/
 
         /*if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
              webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         }*/
+        if let url = Bundle.main.url(forResource: "index", withExtension: "html"){
+            webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        }
     }
 }
 

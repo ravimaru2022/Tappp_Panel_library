@@ -9,14 +9,93 @@
 /* Begin PBXBuildFile section */
 		263C4CCD29517E79005FE16A /* TapppPanelLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		263C4CD429517F9B005FE16A /* TapppPanelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */; };
-		263C4CF6295184B8005FE16A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 263C4CF5295184B8005FE16A /* index.html */; };
+		263C4FFD29530805005FE16A /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCB29530805005FE16A /* favicon.ico */; };
+		263C4FFE29530805005FE16A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCC29530805005FE16A /* index.html */; };
+		263C4FFF29530805005FE16A /* serve.json in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCD29530805005FE16A /* serve.json */; };
+		263C500029530805005FE16A /* favicon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCE29530805005FE16A /* favicon-16.png */; };
+		263C500129530805005FE16A /* asset-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCF29530805005FE16A /* asset-manifest.json */; };
+		263C500229530805005FE16A /* app.598736d7.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD429530805005FE16A /* app.598736d7.chunk.js */; };
+		263C500329530805005FE16A /* runtime~app.c09eef9e.js in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD529530805005FE16A /* runtime~app.c09eef9e.js */; };
+		263C500429530805005FE16A /* 2.dc09d5da.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD729530805005FE16A /* 2.dc09d5da.chunk.js */; };
+		263C500529530805005FE16A /* pic.9b2d52f3.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD929530805005FE16A /* pic.9b2d52f3.png */; };
+		263C500629530805005FE16A /* nflBall.38e9cc40.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FDA29530805005FE16A /* nflBall.38e9cc40.png */; };
+		263C500729530805005FE16A /* bg.41c28199.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FDB29530805005FE16A /* bg.41c28199.png */; };
+		263C500829530805005FE16A /* apple-touch-icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FDE29530805005FE16A /* apple-touch-icon-180.png */; };
+		263C500929530805005FE16A /* chrome-icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE029530805005FE16A /* chrome-icon-512.png */; };
+		263C500A29530805005FE16A /* chrome-icon-192.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE129530805005FE16A /* chrome-icon-192.png */; };
+		263C500B29530805005FE16A /* chrome-icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE229530805005FE16A /* chrome-icon-144.png */; };
+		263C500C29530805005FE16A /* apple-touch-startup-image-1125x2436.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE429530805005FE16A /* apple-touch-startup-image-1125x2436.png */; };
+		263C500D29530805005FE16A /* apple-touch-startup-image-1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE529530805005FE16A /* apple-touch-startup-image-1242x2688.png */; };
+		263C500E29530805005FE16A /* apple-touch-startup-image-640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE629530805005FE16A /* apple-touch-startup-image-640x1136.png */; };
+		263C500F29530805005FE16A /* apple-touch-startup-image-1668x2388.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE729530805005FE16A /* apple-touch-startup-image-1668x2388.png */; };
+		263C501029530805005FE16A /* apple-touch-startup-image-828x1792.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE829530805005FE16A /* apple-touch-startup-image-828x1792.png */; };
+		263C501129530805005FE16A /* apple-touch-startup-image-1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE929530805005FE16A /* apple-touch-startup-image-1242x2208.png */; };
+		263C501229530805005FE16A /* apple-touch-startup-image-750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FEA29530805005FE16A /* apple-touch-startup-image-750x1334.png */; };
+		263C501329530805005FE16A /* apple-touch-startup-image-1668x2224.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FEB29530805005FE16A /* apple-touch-startup-image-1668x2224.png */; };
+		263C501429530805005FE16A /* apple-touch-startup-image-1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FEC29530805005FE16A /* apple-touch-startup-image-1536x2048.png */; };
+		263C501529530805005FE16A /* apple-touch-startup-image-2048x2732.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FED29530805005FE16A /* apple-touch-startup-image-2048x2732.png */; };
+		263C501629530805005FE16A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FEE29530805005FE16A /* manifest.json */; };
+		263C501729530805005FE16A /* favicon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FEF29530805005FE16A /* favicon-32.png */; };
+		263C501829530805005FE16A /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF129530805005FE16A /* Fontisto.ttf */; };
+		263C501929530805005FE16A /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF229530805005FE16A /* Feather.ttf */; };
+		263C501A29530805005FE16A /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF329530805005FE16A /* Entypo.ttf */; };
+		263C501B29530805005FE16A /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF429530805005FE16A /* FontAwesome5_Brands.ttf */; };
+		263C501C29530805005FE16A /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF529530805005FE16A /* MaterialCommunityIcons.ttf */; };
+		263C501D29530805005FE16A /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF629530805005FE16A /* AntDesign.ttf */; };
+		263C501E29530805005FE16A /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF729530805005FE16A /* Foundation.ttf */; };
+		263C501F29530805005FE16A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF829530805005FE16A /* Ionicons.ttf */; };
+		263C502029530805005FE16A /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FF929530805005FE16A /* FontAwesome5_Solid.ttf */; };
+		263C502129530805005FE16A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFA29530805005FE16A /* FontAwesome.ttf */; };
+		263C502229530805005FE16A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */; };
+		263C502329530805005FE16A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFC29530805005FE16A /* MaterialIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		263C4CC929517E79005FE16A /* TapppPanelLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TapppPanelLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapppPanelLibrary.h; sourceTree = "<group>"; };
 		263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapppPanelLibrary.swift; sourceTree = "<group>"; };
-		263C4CF5295184B8005FE16A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		263C4FCB29530805005FE16A /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		263C4FCC29530805005FE16A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		263C4FCD29530805005FE16A /* serve.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = serve.json; sourceTree = "<group>"; };
+		263C4FCE29530805005FE16A /* favicon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-16.png"; sourceTree = "<group>"; };
+		263C4FCF29530805005FE16A /* asset-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "asset-manifest.json"; sourceTree = "<group>"; };
+		263C4FD229530805005FE16A /* 2.dc09d5da.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = 2.dc09d5da.chunk.js.map; sourceTree = "<group>"; };
+		263C4FD329530805005FE16A /* runtime~app.c09eef9e.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "runtime~app.c09eef9e.js.map"; sourceTree = "<group>"; };
+		263C4FD429530805005FE16A /* app.598736d7.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.598736d7.chunk.js; sourceTree = "<group>"; };
+		263C4FD529530805005FE16A /* runtime~app.c09eef9e.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "runtime~app.c09eef9e.js"; sourceTree = "<group>"; };
+		263C4FD629530805005FE16A /* app.598736d7.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = app.598736d7.chunk.js.map; sourceTree = "<group>"; };
+		263C4FD729530805005FE16A /* 2.dc09d5da.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 2.dc09d5da.chunk.js; sourceTree = "<group>"; };
+		263C4FD929530805005FE16A /* pic.9b2d52f3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.9b2d52f3.png; sourceTree = "<group>"; };
+		263C4FDA29530805005FE16A /* nflBall.38e9cc40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nflBall.38e9cc40.png; sourceTree = "<group>"; };
+		263C4FDB29530805005FE16A /* bg.41c28199.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.41c28199.png; sourceTree = "<group>"; };
+		263C4FDE29530805005FE16A /* apple-touch-icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-180.png"; sourceTree = "<group>"; };
+		263C4FE029530805005FE16A /* chrome-icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-512.png"; sourceTree = "<group>"; };
+		263C4FE129530805005FE16A /* chrome-icon-192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-192.png"; sourceTree = "<group>"; };
+		263C4FE229530805005FE16A /* chrome-icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-144.png"; sourceTree = "<group>"; };
+		263C4FE429530805005FE16A /* apple-touch-startup-image-1125x2436.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1125x2436.png"; sourceTree = "<group>"; };
+		263C4FE529530805005FE16A /* apple-touch-startup-image-1242x2688.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1242x2688.png"; sourceTree = "<group>"; };
+		263C4FE629530805005FE16A /* apple-touch-startup-image-640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-640x1136.png"; sourceTree = "<group>"; };
+		263C4FE729530805005FE16A /* apple-touch-startup-image-1668x2388.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1668x2388.png"; sourceTree = "<group>"; };
+		263C4FE829530805005FE16A /* apple-touch-startup-image-828x1792.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-828x1792.png"; sourceTree = "<group>"; };
+		263C4FE929530805005FE16A /* apple-touch-startup-image-1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1242x2208.png"; sourceTree = "<group>"; };
+		263C4FEA29530805005FE16A /* apple-touch-startup-image-750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-750x1334.png"; sourceTree = "<group>"; };
+		263C4FEB29530805005FE16A /* apple-touch-startup-image-1668x2224.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1668x2224.png"; sourceTree = "<group>"; };
+		263C4FEC29530805005FE16A /* apple-touch-startup-image-1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1536x2048.png"; sourceTree = "<group>"; };
+		263C4FED29530805005FE16A /* apple-touch-startup-image-2048x2732.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-2048x2732.png"; sourceTree = "<group>"; };
+		263C4FEE29530805005FE16A /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		263C4FEF29530805005FE16A /* favicon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-32.png"; sourceTree = "<group>"; };
+		263C4FF129530805005FE16A /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		263C4FF229530805005FE16A /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		263C4FF329530805005FE16A /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		263C4FF429530805005FE16A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		263C4FF529530805005FE16A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		263C4FF629530805005FE16A /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		263C4FF729530805005FE16A /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		263C4FF829530805005FE16A /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		263C4FF929530805005FE16A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		263C4FFA29530805005FE16A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		263C4FFC29530805005FE16A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,11 +128,124 @@
 		263C4CCB29517E79005FE16A /* TapppPanelLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				263C4CF5295184B8005FE16A /* index.html */,
+				263C4FCA29530805005FE16A /* web-build */,
 				263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */,
 				263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */,
 			);
 			path = TapppPanelLibrary;
+			sourceTree = "<group>";
+		};
+		263C4FCA29530805005FE16A /* web-build */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FCB29530805005FE16A /* favicon.ico */,
+				263C4FCC29530805005FE16A /* index.html */,
+				263C4FCD29530805005FE16A /* serve.json */,
+				263C4FCE29530805005FE16A /* favicon-16.png */,
+				263C4FCF29530805005FE16A /* asset-manifest.json */,
+				263C4FD029530805005FE16A /* static */,
+				263C4FDC29530805005FE16A /* pwa */,
+				263C4FEE29530805005FE16A /* manifest.json */,
+				263C4FEF29530805005FE16A /* favicon-32.png */,
+				263C4FF029530805005FE16A /* fonts */,
+			);
+			path = "web-build";
+			sourceTree = "<group>";
+		};
+		263C4FD029530805005FE16A /* static */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FD129530805005FE16A /* js */,
+				263C4FD829530805005FE16A /* media */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		263C4FD129530805005FE16A /* js */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FD229530805005FE16A /* 2.dc09d5da.chunk.js.map */,
+				263C4FD329530805005FE16A /* runtime~app.c09eef9e.js.map */,
+				263C4FD429530805005FE16A /* app.598736d7.chunk.js */,
+				263C4FD529530805005FE16A /* runtime~app.c09eef9e.js */,
+				263C4FD629530805005FE16A /* app.598736d7.chunk.js.map */,
+				263C4FD729530805005FE16A /* 2.dc09d5da.chunk.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		263C4FD829530805005FE16A /* media */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FD929530805005FE16A /* pic.9b2d52f3.png */,
+				263C4FDA29530805005FE16A /* nflBall.38e9cc40.png */,
+				263C4FDB29530805005FE16A /* bg.41c28199.png */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		263C4FDC29530805005FE16A /* pwa */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FDD29530805005FE16A /* apple-touch-icon */,
+				263C4FDF29530805005FE16A /* chrome-icon */,
+				263C4FE329530805005FE16A /* apple-touch-startup-image */,
+			);
+			path = pwa;
+			sourceTree = "<group>";
+		};
+		263C4FDD29530805005FE16A /* apple-touch-icon */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FDE29530805005FE16A /* apple-touch-icon-180.png */,
+			);
+			path = "apple-touch-icon";
+			sourceTree = "<group>";
+		};
+		263C4FDF29530805005FE16A /* chrome-icon */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FE029530805005FE16A /* chrome-icon-512.png */,
+				263C4FE129530805005FE16A /* chrome-icon-192.png */,
+				263C4FE229530805005FE16A /* chrome-icon-144.png */,
+			);
+			path = "chrome-icon";
+			sourceTree = "<group>";
+		};
+		263C4FE329530805005FE16A /* apple-touch-startup-image */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FE429530805005FE16A /* apple-touch-startup-image-1125x2436.png */,
+				263C4FE529530805005FE16A /* apple-touch-startup-image-1242x2688.png */,
+				263C4FE629530805005FE16A /* apple-touch-startup-image-640x1136.png */,
+				263C4FE729530805005FE16A /* apple-touch-startup-image-1668x2388.png */,
+				263C4FE829530805005FE16A /* apple-touch-startup-image-828x1792.png */,
+				263C4FE929530805005FE16A /* apple-touch-startup-image-1242x2208.png */,
+				263C4FEA29530805005FE16A /* apple-touch-startup-image-750x1334.png */,
+				263C4FEB29530805005FE16A /* apple-touch-startup-image-1668x2224.png */,
+				263C4FEC29530805005FE16A /* apple-touch-startup-image-1536x2048.png */,
+				263C4FED29530805005FE16A /* apple-touch-startup-image-2048x2732.png */,
+			);
+			path = "apple-touch-startup-image";
+			sourceTree = "<group>";
+		};
+		263C4FF029530805005FE16A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				263C4FF129530805005FE16A /* Fontisto.ttf */,
+				263C4FF229530805005FE16A /* Feather.ttf */,
+				263C4FF329530805005FE16A /* Entypo.ttf */,
+				263C4FF429530805005FE16A /* FontAwesome5_Brands.ttf */,
+				263C4FF529530805005FE16A /* MaterialCommunityIcons.ttf */,
+				263C4FF629530805005FE16A /* AntDesign.ttf */,
+				263C4FF729530805005FE16A /* Foundation.ttf */,
+				263C4FF829530805005FE16A /* Ionicons.ttf */,
+				263C4FF929530805005FE16A /* FontAwesome5_Solid.ttf */,
+				263C4FFA29530805005FE16A /* FontAwesome.ttf */,
+				263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */,
+				263C4FFC29530805005FE16A /* MaterialIcons.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +318,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				263C4CF6295184B8005FE16A /* index.html in Resources */,
+				263C500729530805005FE16A /* bg.41c28199.png in Resources */,
+				263C500929530805005FE16A /* chrome-icon-512.png in Resources */,
+				263C500129530805005FE16A /* asset-manifest.json in Resources */,
+				263C4FFD29530805005FE16A /* favicon.ico in Resources */,
+				263C4FFE29530805005FE16A /* index.html in Resources */,
+				263C500629530805005FE16A /* nflBall.38e9cc40.png in Resources */,
+				263C501C29530805005FE16A /* MaterialCommunityIcons.ttf in Resources */,
+				263C501829530805005FE16A /* Fontisto.ttf in Resources */,
+				263C500429530805005FE16A /* 2.dc09d5da.chunk.js in Resources */,
+				263C501D29530805005FE16A /* AntDesign.ttf in Resources */,
+				263C501F29530805005FE16A /* Ionicons.ttf in Resources */,
+				263C502229530805005FE16A /* SimpleLineIcons.ttf in Resources */,
+				263C501B29530805005FE16A /* FontAwesome5_Brands.ttf in Resources */,
+				263C500A29530805005FE16A /* chrome-icon-192.png in Resources */,
+				263C500D29530805005FE16A /* apple-touch-startup-image-1242x2688.png in Resources */,
+				263C501129530805005FE16A /* apple-touch-startup-image-1242x2208.png in Resources */,
+				263C500E29530805005FE16A /* apple-touch-startup-image-640x1136.png in Resources */,
+				263C502329530805005FE16A /* MaterialIcons.ttf in Resources */,
+				263C501929530805005FE16A /* Feather.ttf in Resources */,
+				263C501A29530805005FE16A /* Entypo.ttf in Resources */,
+				263C501729530805005FE16A /* favicon-32.png in Resources */,
+				263C500529530805005FE16A /* pic.9b2d52f3.png in Resources */,
+				263C500C29530805005FE16A /* apple-touch-startup-image-1125x2436.png in Resources */,
+				263C500329530805005FE16A /* runtime~app.c09eef9e.js in Resources */,
+				263C501429530805005FE16A /* apple-touch-startup-image-1536x2048.png in Resources */,
+				263C4FFF29530805005FE16A /* serve.json in Resources */,
+				263C501629530805005FE16A /* manifest.json in Resources */,
+				263C501529530805005FE16A /* apple-touch-startup-image-2048x2732.png in Resources */,
+				263C500F29530805005FE16A /* apple-touch-startup-image-1668x2388.png in Resources */,
+				263C501329530805005FE16A /* apple-touch-startup-image-1668x2224.png in Resources */,
+				263C500B29530805005FE16A /* chrome-icon-144.png in Resources */,
+				263C502129530805005FE16A /* FontAwesome.ttf in Resources */,
+				263C501229530805005FE16A /* apple-touch-startup-image-750x1334.png in Resources */,
+				263C500829530805005FE16A /* apple-touch-icon-180.png in Resources */,
+				263C501029530805005FE16A /* apple-touch-startup-image-828x1792.png in Resources */,
+				263C501E29530805005FE16A /* Foundation.ttf in Resources */,
+				263C502029530805005FE16A /* FontAwesome5_Solid.ttf in Resources */,
+				263C500029530805005FE16A /* favicon-16.png in Resources */,
+				263C500229530805005FE16A /* app.598736d7.chunk.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
