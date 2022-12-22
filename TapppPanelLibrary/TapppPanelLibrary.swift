@@ -22,7 +22,7 @@ public class WebkitClass: NSObject {
         sportsbook = panelData["sportsbook"] as? String ?? ""
     }
 
-    public func configureWebview (view: UIView){
+    public func startPanel(view: UIView){
         view.addSubview(webView)
         NSLayoutConstraint.activate([
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -40,10 +40,10 @@ public class WebkitClass: NSObject {
         guard let resourceBundle = Bundle(url: resourceURL) else { return }
         guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
         webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
-
-        /*let url = URL(string: "http://tappp-web-build.s3-website.us-east-2.amazonaws.com/")
-        let requestObj = URLRequest(url: url! as URL)
-        webView.load(requestObj)*/
+    }
+    
+    public func stopPanel(){
+        webView.removeFromSuperview()
     }
 }
 
