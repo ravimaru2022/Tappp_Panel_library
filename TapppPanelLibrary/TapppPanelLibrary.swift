@@ -10,12 +10,17 @@ import WebKit
 
 public class WebkitClass: NSObject {
 
+    public lazy var webView = WKWebView()
+    private var sportsbook = ""
+
+    
     override public init() {}
-    public lazy var webView: WKWebView = {
-        let webView = WKWebView()
+    
+    public func initPanel(panelData: [String: Any], panelSetting: [String: Any]) {
+        webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
-        return webView
-    }()
+        sportsbook = panelData["sportsbook"] as? String ?? ""
+    }
 
     public func configureWebview (view: UIView){
         view.addSubview(webView)
