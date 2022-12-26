@@ -48,6 +48,7 @@
 		263C502129530805005FE16A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFA29530805005FE16A /* FontAwesome.ttf */; };
 		263C502229530805005FE16A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */; };
 		263C502329530805005FE16A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFC29530805005FE16A /* MaterialIcons.ttf */; };
+		26FB2CBE2959EE880037437E /* sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 26FB2CBD2959EE880037437E /* sample.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		263C4FFA29530805005FE16A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		263C4FFC29530805005FE16A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		26FB2CBD2959EE880037437E /* sample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sample.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		263C4CCB29517E79005FE16A /* TapppPanelLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				26FB2CBD2959EE880037437E /* sample.html */,
 				263C4FCA29530805005FE16A /* web-build */,
 				263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */,
 				263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */,
@@ -326,6 +329,7 @@
 				263C500629530805005FE16A /* nflBall.38e9cc40.png in Resources */,
 				263C501C29530805005FE16A /* MaterialCommunityIcons.ttf in Resources */,
 				263C501829530805005FE16A /* Fontisto.ttf in Resources */,
+				26FB2CBE2959EE880037437E /* sample.html in Resources */,
 				263C500429530805005FE16A /* 2.dc09d5da.chunk.js in Resources */,
 				263C501D29530805005FE16A /* AntDesign.ttf in Resources */,
 				263C501F29530805005FE16A /* Ionicons.ttf in Resources */,

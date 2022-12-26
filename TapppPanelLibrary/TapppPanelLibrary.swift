@@ -8,21 +8,30 @@
 import Foundation
 import WebKit
 
+public protocol alertDelegate: class {
+    func myVCDidFinish( text: String)
+}
+
 public class WebkitClass: NSObject {
 
     public lazy var webView = WKWebView()
+    public var delegate: alertDelegate?
     private var sportsbook = ""
-
+    var view = UIView()
     
     override public init() {}
     
-    public func initPanel(panelData: [String: Any], panelSetting: [String: Any]) {
+    public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
         sportsbook = panelData["sportsbook"] as? String ?? ""
+        let contentController = self.webView.configuration.userContentController
+        contentController.add(self, name: "toggleMessageHandler")
+
+        view = currView
     }
 
-    public func startPanel(view: UIView){
+    public func start(){
         view.addSubview(webView)
         NSLayoutConstraint.activate([
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -30,20 +39,35 @@ public class WebkitClass: NSObject {
             webView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
             webView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor)
         ])
-        let contentController = self.webView.configuration.userContentController
-        contentController.add(self, name: "toggleMessageHandler")
+        
         webView.backgroundColor = UIColor.clear
         webView.isOpaque = false
+        
+        if let url = Bundle(for: WebkitClass.self).url(forResource: "sample", withExtension: ".html") {
+            webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        }
 
-        let customBundle = Bundle(for: WebkitClass.self)
+        /*let customBundle = Bundle(for: WebkitClass.self)
         guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("web-build.bundle") else { return }
         guard let resourceBundle = Bundle(url: resourceURL) else { return }
         guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
-        webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
+        webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())*/
     }
     
-    public func stopPanel(){
+    public func stop(){
+        if #available(iOS 14.0, *) {
+            webView.configuration.userContentController.removeAllScriptMessageHandlers()
+        } else {
+            // Fallback on earlier versions
+        }
         webView.removeFromSuperview()
+    }
+    // conditional code based on API.
+    public func showPanel(){
+        self.start()
+    }
+    public func hidePanel(){
+        self.stop()
     }
 }
 
@@ -54,7 +78,11 @@ extension WebkitClass: WKScriptMessageHandler {
             return
         }
 
-        print(dict)
+        print("received detail:", dict["message"])
+        if message.name == "toggleMessageHandler", let dict = message.body as? NSDictionary {
+            let userName = dict["message"] as! String
+            delegate?.myVCDidFinish(text: userName)
+        }
     }
 }
 

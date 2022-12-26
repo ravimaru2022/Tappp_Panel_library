@@ -1,0 +1,48 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Sample Web Page</title>
+    <style type="text/css">
+        div {
+            background-color:#FFCC99
+        }
+        h1, h3 {
+            color:red;
+            text-align: center;
+        }
+        .item {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<br><br>
+<h1>iOS WebView</h1>
+<h3 id="welcome"></h3>
+<input  class="item" type="text" placeholder="Enter Name" id="nameField"/>
+<br><br>
+<button  class="item" onClick="showiOSToast()">Show iOS Toast</button>
+<br><br>
+<button  class="item" onClick="setMessageFromHtml('Hello, From HTML')">Set Message From Html</button>
+<br><br>
+<button class="item" onClick="getMessageFromiOS()">Get Message From iOS</button>
+
+<script>
+    function showiOSToast() {
+        let nameField = document.getElementById('nameField').value;
+        webkit.messageHandlers.toggleMessageHandler.postMessage({
+            "message": nameField
+        });
+    }
+
+    function setMessageFromHtml(param) {
+       document.getElementById('welcome').innerHTML = param;
+    }
+
+    function getMessageFromiOS() {
+       document.getElementById('welcome').innerHTML = Android.getMessage();
+    }
+</script>
+</body>
