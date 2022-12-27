@@ -17,6 +17,7 @@ public class WebkitClass: NSObject {
     public lazy var webView = WKWebView()
     public var delegate: alertDelegate?
     private var sportsbook = ""
+    private var subscriberArr = [String]()
     var view = UIView()
     
     override public init() {}
@@ -54,6 +55,22 @@ public class WebkitClass: NSObject {
         webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())*/
     }
     
+    public func subscribe(event: String, completion: (String)->()){
+        subscriberArr.append(event)
+        print(subscriberArr)
+        completion("subscriber configured")
+    }
+    public func unSubscribe(event: String, completion: (String)->()){
+
+        if let index = subscriberArr.firstIndex(of: event)
+        {
+            subscriberArr.remove(at: index)
+        }
+        print(subscriberArr)
+        completion("unSubscriber configured")
+    }
+
+
     public func stop(){
         if #available(iOS 14.0, *) {
             webView.configuration.userContentController.removeAllScriptMessageHandlers()
@@ -81,7 +98,11 @@ extension WebkitClass: WKScriptMessageHandler {
         print("received detail:", dict["message"])
         if message.name == "toggleMessageHandler", let dict = message.body as? NSDictionary {
             let userName = dict["message"] as! String
-            delegate?.myVCDidFinish(text: userName)
+            if subscriberArr.contains(where: {$0 == "toastDisplay"}){
+                delegate?.myVCDidFinish(text: userName)
+            }
+        } else if message.name == "showPanelData"{
+
         }
     }
 }
