@@ -19,7 +19,8 @@ public class WebkitClass: NSObject {
     private var sportsbook = ""
     private var subscriberArr = [String]()
     var view = UIView()
-    
+    var jsonString = String()
+
     override public init() {}
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
@@ -28,7 +29,7 @@ public class WebkitClass: NSObject {
         sportsbook = panelData["sportsbook"] as? String ?? ""
         let contentController = self.webView.configuration.userContentController
         contentController.add(self, name: "toggleMessageHandler")
-
+        contentController.add(self, name: "showPanelData")
         view = currView
     }
 
@@ -41,18 +42,26 @@ public class WebkitClass: NSObject {
             webView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor)
         ])
         
+        webView.navigationDelegate = self
+        
         webView.backgroundColor = UIColor.clear
         webView.isOpaque = false
         
         if let url = Bundle(for: WebkitClass.self).url(forResource: "sample", withExtension: ".html") {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         }
+    }
 
-        /*let customBundle = Bundle(for: WebkitClass.self)
-        guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("web-build.bundle") else { return }
-        guard let resourceBundle = Bundle(url: resourceURL) else { return }
-        guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
-        webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())*/
+    func loadDataJS (str : String){
+        //let payload = "ravi test final"
+        self.webView.evaluateJavaScript("handleMessage('\(str)');", completionHandler: { result, error in
+            if let val = result as? String {
+                print(val)
+            }
+            else {
+                print("result is NIL")
+            }
+        });
     }
     
     public func subscribe(event: String, completion: (String)->()){
@@ -86,6 +95,10 @@ public class WebkitClass: NSObject {
     public func hidePanel(){
         self.stop()
     }
+    
+    public func displayMsg(str : String){
+        self.loadDataJS(str: str)
+    }
 }
 
 extension WebkitClass: WKScriptMessageHandler {
@@ -107,3 +120,17 @@ extension WebkitClass: WKScriptMessageHandler {
     }
 }
 
+extension WebkitClass: WKNavigationDelegate{
+    
+    public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        
+    }
+    
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+    }
+    
+    public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        print(error.localizedDescription)
+    }
+}

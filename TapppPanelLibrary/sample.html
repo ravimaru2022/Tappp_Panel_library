@@ -25,10 +25,7 @@
 <br><br>
 <button  class="item" onClick="showiOSToast()">Show iOS Toast</button>
 <br><br>
-<button  class="item" onClick="setMessageFromHtml('Hello, From HTML')">Set Message From Html</button>
-<br><br>
-<button class="item" onClick="getMessageFromiOS()">Get Message From iOS</button>
-
+<button class="item" type="email" onClick="fillDetailNew()">Get Message From iOS</button>
 <script>
     function showiOSToast() {
         let nameField = document.getElementById('nameField').value;
@@ -41,8 +38,13 @@
        document.getElementById('welcome').innerHTML = param;
     }
 
-    function getMessageFromiOS() {
-       document.getElementById('welcome').innerHTML = Android.getMessage();
+    function fillDetailNew(){
+        document.getElementById('welcome').innerHTML = "HTML static data";
     }
+
+    function handleMessage(data) {
+        document.getElementById('nameField').value = data
+    }
+
 </script>
 </body>
