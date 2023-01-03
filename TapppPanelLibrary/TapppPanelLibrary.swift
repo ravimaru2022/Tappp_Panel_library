@@ -47,7 +47,7 @@ public class WebkitClass: NSObject {
         webView.backgroundColor = UIColor.clear
         webView.isOpaque = false
         
-        if let url = Bundle(for: WebkitClass.self).url(forResource: "sample", withExtension: ".html") {
+        if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         }
     }
