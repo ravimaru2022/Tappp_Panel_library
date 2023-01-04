@@ -46,12 +46,14 @@ public class WebkitClass: NSObject {
         
         webView.backgroundColor = UIColor.clear
         webView.isOpaque = false
-        
-        if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
-            webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
-        }
-        webView.configuration.preferences.javaScriptEnabled = true
 
+        let customBundle = Bundle(for: WebkitClass.self)
+        guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("web-build.bundle") else { return }
+        guard let resourceBundle = Bundle(url: resourceURL) else { return }
+        guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
+        webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
+
+        webView.configuration.preferences.javaScriptEnabled = true
     }
 
     func loadDataJS (str : String){
