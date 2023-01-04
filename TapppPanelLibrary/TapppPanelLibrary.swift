@@ -50,6 +50,8 @@ public class WebkitClass: NSObject {
         if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         }
+        webView.configuration.preferences.javaScriptEnabled = true
+
     }
 
     func loadDataJS (str : String){
