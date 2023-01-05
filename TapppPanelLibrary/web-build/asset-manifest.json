@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.598736d7.chunk.js",
-    "app.js.map": "/static/js/app.598736d7.chunk.js.map",
+    "app.js": "/static/js/app.3bf69ae9.chunk.js",
+    "app.js.map": "/static/js/app.3bf69ae9.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.c09eef9e.js",
     "runtime~app.js.map": "/static/js/runtime~app.c09eef9e.js.map",
-    "static/js/2.dc09d5da.chunk.js": "/static/js/2.dc09d5da.chunk.js",
-    "static/js/2.dc09d5da.chunk.js.map": "/static/js/2.dc09d5da.chunk.js.map",
+    "static/js/2.b7366c9a.chunk.js": "/static/js/2.b7366c9a.chunk.js",
+    "static/js/2.b7366c9a.chunk.js.map": "/static/js/2.b7366c9a.chunk.js.map",
     "fonts/AntDesign.ttf": "/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/./fonts/Feather.ttf",
@@ -24,13 +24,12 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/media/bg.png": "/static/media/bg.41c28199.png",
     "static/media/nflBall.png": "/static/media/nflBall.38e9cc40.png",
     "static/media/pic.png": "/static/media/pic.9b2d52f3.png"
   },
   "entrypoints": [
     "static/js/runtime~app.c09eef9e.js",
-    "static/js/2.dc09d5da.chunk.js",
-    "static/js/app.598736d7.chunk.js"
+    "static/js/2.b7366c9a.chunk.js",
+    "static/js/app.3bf69ae9.chunk.js"
   ]
 }

@@ -14,12 +14,9 @@
 		263C4FFF29530805005FE16A /* serve.json in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCD29530805005FE16A /* serve.json */; };
 		263C500029530805005FE16A /* favicon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCE29530805005FE16A /* favicon-16.png */; };
 		263C500129530805005FE16A /* asset-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FCF29530805005FE16A /* asset-manifest.json */; };
-		263C500229530805005FE16A /* app.598736d7.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD429530805005FE16A /* app.598736d7.chunk.js */; };
 		263C500329530805005FE16A /* runtime~app.c09eef9e.js in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD529530805005FE16A /* runtime~app.c09eef9e.js */; };
-		263C500429530805005FE16A /* 2.dc09d5da.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD729530805005FE16A /* 2.dc09d5da.chunk.js */; };
 		263C500529530805005FE16A /* pic.9b2d52f3.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FD929530805005FE16A /* pic.9b2d52f3.png */; };
 		263C500629530805005FE16A /* nflBall.38e9cc40.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FDA29530805005FE16A /* nflBall.38e9cc40.png */; };
-		263C500729530805005FE16A /* bg.41c28199.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FDB29530805005FE16A /* bg.41c28199.png */; };
 		263C500829530805005FE16A /* apple-touch-icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FDE29530805005FE16A /* apple-touch-icon-180.png */; };
 		263C500929530805005FE16A /* chrome-icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE029530805005FE16A /* chrome-icon-512.png */; };
 		263C500A29530805005FE16A /* chrome-icon-192.png in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FE129530805005FE16A /* chrome-icon-192.png */; };
@@ -48,6 +45,8 @@
 		263C502129530805005FE16A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFA29530805005FE16A /* FontAwesome.ttf */; };
 		263C502229530805005FE16A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */; };
 		263C502329530805005FE16A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFC29530805005FE16A /* MaterialIcons.ttf */; };
+		26B180D12966FBC300374942 /* app.3bf69ae9.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 26B180CF2966FBC300374942 /* app.3bf69ae9.chunk.js */; };
+		26B180D22966FBC300374942 /* 2.b7366c9a.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 26B180D02966FBC300374942 /* 2.b7366c9a.chunk.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,15 +58,10 @@
 		263C4FCD29530805005FE16A /* serve.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = serve.json; sourceTree = "<group>"; };
 		263C4FCE29530805005FE16A /* favicon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-16.png"; sourceTree = "<group>"; };
 		263C4FCF29530805005FE16A /* asset-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "asset-manifest.json"; sourceTree = "<group>"; };
-		263C4FD229530805005FE16A /* 2.dc09d5da.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = 2.dc09d5da.chunk.js.map; sourceTree = "<group>"; };
 		263C4FD329530805005FE16A /* runtime~app.c09eef9e.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "runtime~app.c09eef9e.js.map"; sourceTree = "<group>"; };
-		263C4FD429530805005FE16A /* app.598736d7.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.598736d7.chunk.js; sourceTree = "<group>"; };
 		263C4FD529530805005FE16A /* runtime~app.c09eef9e.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "runtime~app.c09eef9e.js"; sourceTree = "<group>"; };
-		263C4FD629530805005FE16A /* app.598736d7.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = app.598736d7.chunk.js.map; sourceTree = "<group>"; };
-		263C4FD729530805005FE16A /* 2.dc09d5da.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 2.dc09d5da.chunk.js; sourceTree = "<group>"; };
 		263C4FD929530805005FE16A /* pic.9b2d52f3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.9b2d52f3.png; sourceTree = "<group>"; };
 		263C4FDA29530805005FE16A /* nflBall.38e9cc40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nflBall.38e9cc40.png; sourceTree = "<group>"; };
-		263C4FDB29530805005FE16A /* bg.41c28199.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.41c28199.png; sourceTree = "<group>"; };
 		263C4FDE29530805005FE16A /* apple-touch-icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-180.png"; sourceTree = "<group>"; };
 		263C4FE029530805005FE16A /* chrome-icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-512.png"; sourceTree = "<group>"; };
 		263C4FE129530805005FE16A /* chrome-icon-192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-192.png"; sourceTree = "<group>"; };
@@ -96,6 +90,10 @@
 		263C4FFA29530805005FE16A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		263C4FFC29530805005FE16A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		26B180CD2966FBC300374942 /* app.3bf69ae9.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = app.3bf69ae9.chunk.js.map; sourceTree = "<group>"; };
+		26B180CE2966FBC300374942 /* 2.b7366c9a.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = 2.b7366c9a.chunk.js.map; sourceTree = "<group>"; };
+		26B180CF2966FBC300374942 /* app.3bf69ae9.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.3bf69ae9.chunk.js; sourceTree = "<group>"; };
+		26B180D02966FBC300374942 /* 2.b7366c9a.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 2.b7366c9a.chunk.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,12 +162,12 @@
 		263C4FD129530805005FE16A /* js */ = {
 			isa = PBXGroup;
 			children = (
-				263C4FD229530805005FE16A /* 2.dc09d5da.chunk.js.map */,
+				26B180D02966FBC300374942 /* 2.b7366c9a.chunk.js */,
+				26B180CE2966FBC300374942 /* 2.b7366c9a.chunk.js.map */,
+				26B180CF2966FBC300374942 /* app.3bf69ae9.chunk.js */,
+				26B180CD2966FBC300374942 /* app.3bf69ae9.chunk.js.map */,
 				263C4FD329530805005FE16A /* runtime~app.c09eef9e.js.map */,
-				263C4FD429530805005FE16A /* app.598736d7.chunk.js */,
 				263C4FD529530805005FE16A /* runtime~app.c09eef9e.js */,
-				263C4FD629530805005FE16A /* app.598736d7.chunk.js.map */,
-				263C4FD729530805005FE16A /* 2.dc09d5da.chunk.js */,
 			);
 			path = js;
 			sourceTree = "<group>";
@@ -179,7 +177,6 @@
 			children = (
 				263C4FD929530805005FE16A /* pic.9b2d52f3.png */,
 				263C4FDA29530805005FE16A /* nflBall.38e9cc40.png */,
-				263C4FDB29530805005FE16A /* bg.41c28199.png */,
 			);
 			path = media;
 			sourceTree = "<group>";
@@ -318,7 +315,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				263C500729530805005FE16A /* bg.41c28199.png in Resources */,
 				263C500929530805005FE16A /* chrome-icon-512.png in Resources */,
 				263C500129530805005FE16A /* asset-manifest.json in Resources */,
 				263C4FFD29530805005FE16A /* favicon.ico in Resources */,
@@ -326,7 +322,6 @@
 				263C500629530805005FE16A /* nflBall.38e9cc40.png in Resources */,
 				263C501C29530805005FE16A /* MaterialCommunityIcons.ttf in Resources */,
 				263C501829530805005FE16A /* Fontisto.ttf in Resources */,
-				263C500429530805005FE16A /* 2.dc09d5da.chunk.js in Resources */,
 				263C501D29530805005FE16A /* AntDesign.ttf in Resources */,
 				263C501F29530805005FE16A /* Ionicons.ttf in Resources */,
 				263C502229530805005FE16A /* SimpleLineIcons.ttf in Resources */,
@@ -335,6 +330,7 @@
 				263C500D29530805005FE16A /* apple-touch-startup-image-1242x2688.png in Resources */,
 				263C501129530805005FE16A /* apple-touch-startup-image-1242x2208.png in Resources */,
 				263C500E29530805005FE16A /* apple-touch-startup-image-640x1136.png in Resources */,
+				26B180D22966FBC300374942 /* 2.b7366c9a.chunk.js in Resources */,
 				263C502329530805005FE16A /* MaterialIcons.ttf in Resources */,
 				263C501929530805005FE16A /* Feather.ttf in Resources */,
 				263C501A29530805005FE16A /* Entypo.ttf in Resources */,
@@ -350,13 +346,13 @@
 				263C501329530805005FE16A /* apple-touch-startup-image-1668x2224.png in Resources */,
 				263C500B29530805005FE16A /* chrome-icon-144.png in Resources */,
 				263C502129530805005FE16A /* FontAwesome.ttf in Resources */,
+				26B180D12966FBC300374942 /* app.3bf69ae9.chunk.js in Resources */,
 				263C501229530805005FE16A /* apple-touch-startup-image-750x1334.png in Resources */,
 				263C500829530805005FE16A /* apple-touch-icon-180.png in Resources */,
 				263C501029530805005FE16A /* apple-touch-startup-image-828x1792.png in Resources */,
 				263C501E29530805005FE16A /* Foundation.ttf in Resources */,
 				263C502029530805005FE16A /* FontAwesome5_Solid.ttf in Resources */,
 				263C500029530805005FE16A /* favicon-16.png in Resources */,
-				263C500229530805005FE16A /* app.598736d7.chunk.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
