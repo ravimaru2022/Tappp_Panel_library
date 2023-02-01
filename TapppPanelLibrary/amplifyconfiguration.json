@@ -1,0 +1,17 @@
+{
+  "userAgent": "aws-amplify-cli/2.0",
+  "version": "1.0",
+  "api": {
+    "plugins": {
+      "awsAPIPlugin": {
+        "getGameInfo": {
+          "endpointType": "GraphQL",
+          "endpoint": "https://rknsxkhysjbwlkzat5i2lwvwii.appsync-api.us-east-2.amazonaws.com/graphql",
+          "region": "us-east-2",
+          "authorizationType": "API_KEY",
+          "apiKey": "da2-6s3gthiuubcvhayhiuvezo4gxq"
+        }
+      }
+    }
+  }
+}

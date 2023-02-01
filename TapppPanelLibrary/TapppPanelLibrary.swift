@@ -7,8 +7,9 @@
 
 import Foundation
 import WebKit
-//import Amplify
-//import AWSAPIPlugin
+import Amplify
+import AWSPluginsCore
+import AmplifyPlugins
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
@@ -26,7 +27,7 @@ public class WebkitClass: NSObject {
     override public init() {}
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
-        //configureAmplify()
+        configureAmplify()
 
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
@@ -37,7 +38,7 @@ public class WebkitClass: NSObject {
         view = currView
     }
     
-   /* func configureAmplify() {
+    func configureAmplify() {
         do {
             try Amplify.add(plugin: AWSAPIPlugin())
             try Amplify.configure()
@@ -45,7 +46,7 @@ public class WebkitClass: NSObject {
         } catch {
             print("Failed to configure Amplify", error)
         }
-    }*/
+    }
 
     public func start(){
         view.addSubview(webView)
@@ -152,7 +153,7 @@ extension WebkitClass: WKNavigationDelegate{
         print(error.localizedDescription)
     }
 }
-/*
+
 extension WebkitClass {
     
     public func getGameInfoAPI () {
@@ -165,7 +166,7 @@ extension WebkitClass {
             print("Fetching images failed with error \(error)")
         }
     }
-    
+    /*
     public func callcommandSubscriptionAPI () {
         do {
             Task {//gameId : 067d2ebf-5dbe-4281-bca7-7a2820784fc9
@@ -210,7 +211,7 @@ extension WebkitClass {
         } catch {
             print("Fetching images failed with error \(error)")
         }
-    }
+    }*/
 
 }
 extension GraphQLRequest {
@@ -289,4 +290,4 @@ extension GraphQLRequest {
         )
     }
 }
-*/
+
