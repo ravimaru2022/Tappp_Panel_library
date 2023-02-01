@@ -7,8 +7,8 @@
 
 import Foundation
 import WebKit
-import Amplify
-import AWSAPIPlugin
+//import Amplify
+//import AWSAPIPlugin
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
@@ -26,7 +26,7 @@ public class WebkitClass: NSObject {
     override public init() {}
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
-        configureAmplify()
+        //configureAmplify()
 
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
@@ -37,7 +37,7 @@ public class WebkitClass: NSObject {
         view = currView
     }
     
-    func configureAmplify() {
+   /* func configureAmplify() {
         do {
             try Amplify.add(plugin: AWSAPIPlugin())
             try Amplify.configure()
@@ -45,7 +45,7 @@ public class WebkitClass: NSObject {
         } catch {
             print("Failed to configure Amplify", error)
         }
-    }
+    }*/
 
     public func start(){
         view.addSubview(webView)
@@ -152,7 +152,7 @@ extension WebkitClass: WKNavigationDelegate{
         print(error.localizedDescription)
     }
 }
-
+/*
 extension WebkitClass {
     
     public func getGameInfoAPI () {
@@ -289,3 +289,4 @@ extension GraphQLRequest {
         )
     }
 }
+*/
