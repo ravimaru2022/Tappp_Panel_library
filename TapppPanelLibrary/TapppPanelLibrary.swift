@@ -7,6 +7,8 @@
 
 import Foundation
 import WebKit
+import Amplify
+import AWSAPIPlugin
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
@@ -24,6 +26,8 @@ public class WebkitClass: NSObject {
     override public init() {}
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
+        configureAmplify()
+
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
         sportsbook = panelData["sportsbook"] as? String ?? ""
@@ -31,6 +35,16 @@ public class WebkitClass: NSObject {
         contentController.add(self, name: "toggleMessageHandler")
         contentController.add(self, name: "showPanelData")
         view = currView
+    }
+    
+    func configureAmplify() {
+        do {
+            try Amplify.add(plugin: AWSAPIPlugin())
+            try Amplify.configure()
+            print("Amplify configured 🥳")
+        } catch {
+            print("Failed to configure Amplify", error)
+        }
     }
 
     public func start(){
@@ -136,5 +150,142 @@ extension WebkitClass: WKNavigationDelegate{
     
     public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print(error.localizedDescription)
+    }
+}
+
+extension WebkitClass {
+    
+    public func getGameInfoAPI () {
+        do {
+            Task {
+                let data = try await Amplify.API.query(request: .getGameInfo(bookId: "1000009", broadcastName: "NFL", gameId: "067d2ebf-5dbe-4281-bca7-7a2820784fc9"))
+                print("getGameInfoAPI \(data) .")
+            }
+        } catch {
+            print("Fetching images failed with error \(error)")
+        }
+    }
+    
+    public func callcommandSubscriptionAPI () {
+        do {
+            Task {//gameId : 067d2ebf-5dbe-4281-bca7-7a2820784fc9
+                  /*commandSubscribe: {bookId: "1000009", command: "OPEN", gameId: "1444309", type: "panelCommand"}*/
+                let data = try await Amplify.API.subscribe(request: .commandSubscribe(bookId: "1000009", gameId: "1444309"))
+                print("callcommandSubscriptionAPI \(data) .")
+                Task {
+                    do {
+                        for try await obj in data{
+                            switch obj {
+                            case .connection(let subscriptionConnectionState):
+                                print("Subscription connect state is \(subscriptionConnectionState)")
+                            case .data(let result):
+                                switch result {
+                                case .success(let createdTodo):
+                                    print("Successfully got todo from subscription: \(createdTodo)")
+                                case .failure(let error):
+                                    print("Got failed result with \(error.errorDescription)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } catch {
+            print("Fetching images failed with error \(error)")
+        }
+    }
+    
+    public func callMutationSendPanelCommandAPI (){
+        do {
+            Task {
+                let data = try await Amplify.API.mutate(request: .mutationSendPanelCommand(bookId: "100009", gameId: "213123"))
+                switch data {
+                case .success(let todo):
+                    print("Successfully created todo: \(todo)")
+                case .failure(let error):
+                    print("Got failed result with \(error.errorDescription)")
+                }
+                print("callMutationPlaceBetAPI \(data) .")
+            }
+        } catch {
+            print("Fetching images failed with error \(error)")
+        }
+    }
+
+}
+extension GraphQLRequest {
+    
+    static func getGameInfo(bookId: String, broadcastName: String, gameId: String) -> GraphQLRequest<String> {
+        
+        let operationName = "getGameInfo"
+        let query =
+            """
+            {
+                getGameInfo(bookId: "\(bookId)", broadcasterName: "\(broadcastName)", gameId: "\(gameId)", lang: "english"){
+                            code
+                            message
+                            requestURI
+                            status
+                            data {
+                              broadcasterGameId
+                              isGameLive
+                              providerGameId
+                              startDate
+                            }
+                }
+            }
+            """
+        return GraphQLRequest<String>(
+            document: query,
+            variables: ["bookId": bookId],
+            responseType: String.self,
+            decodePath: operationName
+        )
+    }
+    
+    static func commandSubscribe(bookId: String, gameId: String) -> GraphQLRequest<String> {
+        
+        let operationName = "commandSubscribe"
+        
+        /*commandSubscribe: {bookId: "1000009", command: "OPEN", gameId: "1444309", type: "panelCommand"}*/
+        
+        let query =
+            """
+            subscription commandSubscription {
+                commandSubscribe(bookId: "\(bookId)", gameId: "\(gameId)") {
+                    bookId
+                    command
+                    gameId
+                    type
+                }
+            }
+            """
+        return GraphQLRequest<String>(
+            document: query,
+            variables: [:],
+            responseType: String.self,
+            decodePath: operationName
+        )
+    }
+    
+    static func mutationSendPanelCommand(bookId: String, gameId: String)-> GraphQLRequest<String> {
+        let operationName = "sendPanelCommand"
+        let query =
+            """
+            mutation sendPanelCommand {
+                sendPanelCommand(bookId: "\(bookId)", gameId: "\(gameId)", input: {command: "CLOSE_PANEL", type: "panelCommand"}) {
+                    bookId
+                    command
+                    gameId
+                    type
+                }
+            }
+            """
+        return GraphQLRequest<String>(
+            document: query,
+            variables: [:],
+            responseType: String.self,
+            decodePath: operationName
+        )
     }
 }
