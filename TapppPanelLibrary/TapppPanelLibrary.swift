@@ -158,9 +158,13 @@ extension WebkitClass {
     
     public func getGameInfoAPI () {
         do {
-            Task {
-                let data = try await Amplify.API.query(request: .getGameInfo(bookId: "1000009", broadcastName: "NFL", gameId: "067d2ebf-5dbe-4281-bca7-7a2820784fc9"))
-                print("getGameInfoAPI \(data) .")
+            if #available(iOS 13.0, *) {
+                Task {
+                    let data = try await Amplify.API.query(request: .getGameInfo(bookId: "1000009", broadcastName: "NFL", gameId: "067d2ebf-5dbe-4281-bca7-7a2820784fc9"))
+                    print("getGameInfoAPI \(data) .")
+                }
+            } else {
+                // Fallback on earlier versions
             }
         } catch {
             print("Fetching images failed with error \(error)")
