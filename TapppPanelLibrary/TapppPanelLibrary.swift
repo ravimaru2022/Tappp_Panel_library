@@ -27,6 +27,7 @@ public class WebkitClass: NSObject {
     override public init() {}
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
+        print(Const.CURRENT_DEVICE)
         configureAmplify()
 
         webView = WKWebView()

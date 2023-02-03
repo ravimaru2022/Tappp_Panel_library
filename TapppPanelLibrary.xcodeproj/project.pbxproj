@@ -46,6 +46,8 @@
 		263C502229530805005FE16A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */; };
 		263C502329530805005FE16A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263C4FFC29530805005FE16A /* MaterialIcons.ttf */; };
 		26667E03298AA8AB0082C5A7 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */; };
+		26667E94298CF0AB0082C5A7 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Const.swift */; };
+		26667E95298CF0BF0082C5A7 /* Const.swift in Headers */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Const.swift */; };
 		26B180D12966FBC300374942 /* app.3bf69ae9.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 26B180CF2966FBC300374942 /* app.3bf69ae9.chunk.js */; };
 		26B180D22966FBC300374942 /* 2.b7366c9a.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 26B180D02966FBC300374942 /* 2.b7366c9a.chunk.js */; };
 		A5C7245917235A371285847E /* Pods_TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7A2D6B2D4D7E84F4D89997 /* Pods_TapppPanelLibrary.framework */; };
@@ -93,6 +95,7 @@
 		263C4FFB29530805005FE16A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		263C4FFC29530805005FE16A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		26667E93298CF0AB0082C5A7 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		26B180CD2966FBC300374942 /* app.3bf69ae9.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = app.3bf69ae9.chunk.js.map; sourceTree = "<group>"; };
 		26B180CE2966FBC300374942 /* 2.b7366c9a.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = 2.b7366c9a.chunk.js.map; sourceTree = "<group>"; };
 		26B180CF2966FBC300374942 /* app.3bf69ae9.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.3bf69ae9.chunk.js; sourceTree = "<group>"; };
@@ -139,6 +142,7 @@
 				263C4FCA29530805005FE16A /* web-build */,
 				263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */,
 				263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */,
+				26667E93298CF0AB0082C5A7 /* Const.swift */,
 			);
 			path = TapppPanelLibrary;
 			sourceTree = "<group>";
@@ -280,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				263C4CCD29517E79005FE16A /* TapppPanelLibrary.h in Headers */,
+				26667E95298CF0BF0082C5A7 /* Const.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				263C4CD429517F9B005FE16A /* TapppPanelLibrary.swift in Sources */,
+				26667E94298CF0AB0082C5A7 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
