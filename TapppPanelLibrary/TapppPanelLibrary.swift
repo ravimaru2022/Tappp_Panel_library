@@ -10,6 +10,7 @@ import WebKit
 import Amplify
 import AWSPluginsCore
 import AmplifyPlugins
+import Sentry
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
@@ -29,6 +30,7 @@ public class WebkitClass: NSObject {
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
         print(Const.CURRENT_DEVICE)
         configureAmplify()
+        configureSentry()
 
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,6 +48,23 @@ public class WebkitClass: NSObject {
             print("Amplify configured 🥳")
         } catch {
             print("Failed to configure Amplify", error)
+        }
+    }
+    func configureSentry(){
+        SentrySDK.start { options in
+            options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
+            options.debug = true // Enabled debug when first installing is always helpful
+
+            // Enable all experimental features
+            options.enablePreWarmedAppStartTracing = true
+            options.attachScreenshot = true
+            options.attachViewHierarchy = true
+            if #available(iOS 15.0, *) {
+                options.enableMetricKit = true
+            } else {
+                // Fallback on earlier versions
+            }
+            //options.enableMetricKit = true //'enableMetricKit' is only available in iOS 15.0 or newer
         }
     }
 

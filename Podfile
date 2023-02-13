@@ -16,6 +16,7 @@ pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
 pod 'AmplifyPlugins/AWSAPIPlugin'
 pod 'AmplifyPlugins/AWSDataStorePlugin'
 
+pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '8.1.0'
 
 # Pods for TapppPanelLibrary
 
