@@ -11,10 +11,10 @@ target 'TapppPanelLibrary' do
 #pod 'AmplifyPlugins/AWSAPIPlugin'
 #pod ''
 
-pod 'Amplify'
-pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
-pod 'AmplifyPlugins/AWSAPIPlugin'
-pod 'AmplifyPlugins/AWSDataStorePlugin'
+#pod 'Amplify'
+#pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+#pod 'AmplifyPlugins/AWSAPIPlugin'
+#pod 'AmplifyPlugins/AWSDataStorePlugin'
 
 pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '8.1.0'
 

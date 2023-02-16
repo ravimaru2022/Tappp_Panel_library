@@ -10,7 +10,7 @@ import WebKit
 //import Amplify
 //import AWSPluginsCore
 //import AmplifyPlugins
-//import Sentry
+import Sentry
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
@@ -36,7 +36,7 @@ public class WebkitClass: NSObject {
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
         //        configureAmplify()
-        //        configureSentry()
+                configureSentry()
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
         //webView.contentMode = .scaleToFill
@@ -59,12 +59,12 @@ public class WebkitClass: NSObject {
             case .invalid(let err):
                 self.exceptionHandleHTML(errMsg: err)
                 
-                //let error = NSError(domain: "MethodName: init : \(err) \(panelData.description)" , code: 0, userInfo: nil)
-                //SentrySDK.capture(error: error)
+                let error = NSError(domain: "MethodName: init : \(err) \(panelData.description)" , code: 0, userInfo: nil)
+                SentrySDK.capture(error: error)
             }
         } else {
-            //let error = NSError(domain: "Nil Input parameter in init." , code: 0, userInfo: nil)
-            //SentrySDK.capture(error: error)
+            let error = NSError(domain: "Nil Input parameter in init." , code: 0, userInfo: nil)
+            SentrySDK.capture(error: error)
         }
     }
     
@@ -76,7 +76,7 @@ public class WebkitClass: NSObject {
         } catch {
             print("Failed to configure Amplify", error)
         }
-    }
+    }*/
     func configureSentry(){
         SentrySDK.start { options in
             options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
@@ -93,7 +93,7 @@ public class WebkitClass: NSObject {
             }
             //options.enableMetricKit = true //'enableMetricKit' is only available in iOS 15.0 or newer
         }
-    }*/
+    }
     
     public func checkNilInputParam(panelData: [String: Any]?, panelSetting: [String: Any]?, currView: UIView?) -> Bool {
         if currView == nil {
