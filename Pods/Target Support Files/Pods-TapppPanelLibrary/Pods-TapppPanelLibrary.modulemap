@@ -1,6 +1,0 @@
-framework module Pods_TapppPanelLibrary {
-  umbrella header "Pods-TapppPanelLibrary-umbrella.h"
-
-  export *
-  module * { export * }
-}

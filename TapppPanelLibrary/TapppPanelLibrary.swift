@@ -7,41 +7,68 @@
 
 import Foundation
 import WebKit
-import Amplify
-import AWSPluginsCore
-import AmplifyPlugins
-import Sentry
+//import Amplify
+//import AWSPluginsCore
+//import AmplifyPlugins
+//import Sentry
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
 }
 
-public class WebkitClass: NSObject {
+enum ValidationState {
+    case valid
+    case invalid(String)
+}
 
+public class WebkitClass: NSObject {
+    
     public lazy var webView = WKWebView()
     public var delegate: alertDelegate?
     private var sportsbook = ""
     private var subscriberArr = [String]()
     var view = UIView()
     var jsonString = String()
-
+    var objectPanelData = [String: Any]()
+    
+    
     override public init() {}
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
-        print(Const.CURRENT_DEVICE)
-        configureAmplify()
-        configureSentry()
-
+        //        configureAmplify()
+        //        configureSentry()
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
-        sportsbook = panelData["sportsbook"] as? String ?? ""
-        let contentController = self.webView.configuration.userContentController
-        contentController.add(self, name: "toggleMessageHandler")
-        contentController.add(self, name: "showPanelData")
-        view = currView
+        //webView.contentMode = .scaleToFill
+        print(panelData)
+        // var internalPaneldata = [String : Any]()
+        
+        if checkNilInputParam(panelData: panelData, panelSetting: panelSetting, currView: currView) {
+            switch checkPanelDataParam(panelData: panelData, currView: currView){
+            case .valid:
+                print("valid input")
+                print("~~~~objectPanelData=", objectPanelData)
+                
+                print("frame:", currView.frame.width)
+                
+                let contentController = self.webView.configuration.userContentController
+                contentController.add(self, name: "toggleMessageHandler")
+                contentController.add(self, name: "showPanelData")
+                view = currView
+                //proceed further
+            case .invalid(let err):
+                self.exceptionHandleHTML(errMsg: err)
+                
+                //let error = NSError(domain: "MethodName: init : \(err) \(panelData.description)" , code: 0, userInfo: nil)
+                //SentrySDK.capture(error: error)
+            }
+        } else {
+            //let error = NSError(domain: "Nil Input parameter in init." , code: 0, userInfo: nil)
+            //SentrySDK.capture(error: error)
+        }
     }
     
-    func configureAmplify() {
+    /*func configureAmplify() {
         do {
             try Amplify.add(plugin: AWSAPIPlugin())
             try Amplify.configure()
@@ -66,34 +93,123 @@ public class WebkitClass: NSObject {
             }
             //options.enableMetricKit = true //'enableMetricKit' is only available in iOS 15.0 or newer
         }
+    }*/
+    
+    public func checkNilInputParam(panelData: [String: Any]?, panelSetting: [String: Any]?, currView: UIView?) -> Bool {
+        if currView == nil {
+            return false
+        }
+        if panelData == nil {
+            return false
+        }
+        if panelSetting == nil {
+            return false
+        }
+        return true
     }
-
+    
+    func checkPanelDataParam(panelData: [String: Any]?, currView: UIView?)-> ValidationState {
+        var internalPaneldata = [String : Any]()
+        
+        if let pData = panelData?[Constants.request.GAME_INFO] as? [String: Any] {
+            internalPaneldata = pData
+        } else {
+            return .invalid(Constants.errorMessage.GAMEINFO_OBJECT_NOT_FOUND)
+        }
+        
+        if let gId = internalPaneldata[Constants.request.GAME_ID] as? String{
+            if gId.count > 0 {
+            } else {
+                return .invalid(Constants.errorMessage.GAMEID_NULL_EMPTY)
+            }
+        } else {
+            return .invalid(Constants.errorMessage.GAMEID_NOT_FOUND)
+        }
+        
+        if let bId = internalPaneldata[Constants.request.BOOK_ID] as? String{
+            if bId.count > 0 {
+                if let widthInfo = panelData?[Constants.request.WIDTH] as? [String: Any]{
+                    if let val = widthInfo[Constants.request.VALUE] as? Double, val > 0 {
+                        print("From reference app val", val)
+                    } else {
+                        var widthInfoUD = [String : Any]()
+                        widthInfoUD[Constants.request.UNIT] = "px"
+                        widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
+                        internalPaneldata[Constants.request.WIDTH] = widthInfoUD
+                    }
+                } else {
+                    var widthInfoUD = [String : Any]()
+                    widthInfoUD[Constants.request.UNIT] = "px"
+                    widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
+                    internalPaneldata[Constants.request.WIDTH] = widthInfoUD
+                }
+            } else {
+                self.exceptionHandleHTML(errMsg: Constants.errorMessage.BOOKID_NULL_EMPTY)
+            }
+        } else {
+            self.exceptionHandleHTML(errMsg: Constants.errorMessage.BOOKID_NOT_FOUND)
+        }
+        
+        objectPanelData[Constants.request.GAME_INFO] = internalPaneldata
+        return .valid
+    }
+    
+    public func exceptionHandleHTML(errMsg: String){
+        //FIXME: need to setup for duplicate width key.
+    }
+    
     public func start(){
+        
         view.addSubview(webView)
         NSLayoutConstraint.activate([
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            webView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
-            webView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor)
+            webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            webView.topAnchor.constraint(equalTo: view.topAnchor)
         ])
         
         webView.navigationDelegate = self
         
         webView.backgroundColor = UIColor.clear
         webView.isOpaque = false
-
+        
         let customBundle = Bundle(for: WebkitClass.self)
         guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("web-build.bundle") else { return }
         guard let resourceBundle = Bundle(url: resourceURL) else { return }
-        guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
+        guard let jsFileURL = resourceBundle.url(forResource: "index_ios", withExtension: "html" ) else { return }
+        
         webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
-
+        
+        // if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
+        //         webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+        //     }
+        
         webView.configuration.preferences.javaScriptEnabled = true
     }
-
-    func loadDataJS (str : String){
-        //let payload = "ravi test final"
-        self.webView.evaluateJavaScript("handleMessage('\(str)');", completionHandler: { result, error in
+    
+    public func loadDataJS (objPanelData : [String: Any]){
+        // print("...~~~~objectPanelData at loadDataJS=", objPanelData)
+        guard let dict = objPanelData[Constants.request.GAME_INFO] as? [String:Any] else {
+            return
+        }
+        
+        guard let widthDict = dict[Constants.request.WIDTH] as? [String:Any] else {
+            return
+        }
+        let widthVal = widthDict[Constants.request.VALUE] as! String
+        print("^^^^widthVal=", widthVal)
+        let gameId = dict[Constants.request.GAME_ID] as! String
+        let bookId = dict[Constants.request.BOOK_ID] as! String
+        let width = "200"
+        let broadcasterName = "NFL"
+        let userId = "USR1234"
+        print("...^^^^gameId=", gameId)
+        print("...^^^^bookId=", bookId)
+        print("...^^^^widthVal=", widthVal)
+        print("...^^^^broadcasterName=", broadcasterName)
+        print("...^^^^width=", width)
+        
+        self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)','\(userId)');", completionHandler: { result, error in
             if let val = result as? String {
                 print(val)
             }
@@ -109,7 +225,7 @@ public class WebkitClass: NSObject {
         completion("subscriber configured")
     }
     public func unSubscribe(event: String, completion: (String)->()){
-
+        
         if let index = subscriberArr.firstIndex(of: event)
         {
             subscriberArr.remove(at: index)
@@ -117,8 +233,8 @@ public class WebkitClass: NSObject {
         print(subscriberArr)
         completion("unSubscriber configured")
     }
-
-
+    
+    
     public func stop(){
         if #available(iOS 14.0, *) {
             webView.configuration.userContentController.removeAllScriptMessageHandlers()
@@ -135,11 +251,45 @@ public class WebkitClass: NSObject {
         self.stop()
     }
     
-    public func displayMsg(str : String){
-        self.loadDataJS(str: str)
+    /*public func displayMsg(str : String){
+     //        self.loadDataJS(str: str)
+     }*/
+}
+extension WebkitClass: WKScriptMessageHandler {
+    
+    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        guard let dict = message.body as? [String : AnyObject] else {
+            return
+        }
+        
+        print("received detail:", dict["message"])
+        if message.name == "toggleMessageHandler", let dict = message.body as? NSDictionary {
+            let userName = dict["message"] as! String
+            if subscriberArr.contains(where: {$0 == "toastDisplay"}){
+                delegate?.myVCDidFinish(text: userName)
+            }
+        } else if message.name == "showPanelData"{
+            
+        }
     }
 }
 
+extension WebkitClass: WKNavigationDelegate{
+    
+    public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        
+    }
+    
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.loadDataJS(objPanelData: self.objectPanelData)
+    }
+    
+    public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        print(error.localizedDescription)
+    }
+}
+
+/*
 extension WebkitClass: WKScriptMessageHandler {
     
     public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
@@ -315,3 +465,4 @@ extension GraphQLRequest {
     }
 }
 
+*/
