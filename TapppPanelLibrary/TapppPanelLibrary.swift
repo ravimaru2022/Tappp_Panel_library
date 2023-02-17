@@ -174,9 +174,9 @@ public class WebkitClass: NSObject {
         webView.isOpaque = false
         
         let customBundle = Bundle(for: WebkitClass.self)
-        guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("web-build.bundle") else { return }
+        guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("dist.bundle") else { return }
         guard let resourceBundle = Bundle(url: resourceURL) else { return }
-        guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
+        guard let jsFileURL = resourceBundle.url(forResource: "index_ios", withExtension: "html" ) else { return }
         
         webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
         
