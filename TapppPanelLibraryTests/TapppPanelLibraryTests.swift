@@ -172,9 +172,9 @@ final class TapppPanelLibraryTests: XCTestCase{
         Constants.init()
     }
     
-//    func testSentry(){
-//        objPanel.configureSentry()
-//    }
+    func testSentry(){
+        objPanel.configureSentry()
+    }
     func gameIdNotFound() {
        // This is an example of a performance test case.
        self.measure {

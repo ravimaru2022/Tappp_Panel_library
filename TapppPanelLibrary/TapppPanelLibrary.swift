@@ -77,7 +77,7 @@ public class WebkitClass: NSObject {
             print("Failed to configure Amplify", error)
         }
     }*/
-    func configureSentry(){
+    public func configureSentry(){
         SentrySDK.start { options in
             options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
             options.debug = true // Enabled debug when first installing is always helpful
