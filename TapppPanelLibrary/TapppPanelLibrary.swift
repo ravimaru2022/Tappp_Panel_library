@@ -176,7 +176,7 @@ public class WebkitClass: NSObject {
         let customBundle = Bundle(for: WebkitClass.self)
         guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("web-build.bundle") else { return }
         guard let resourceBundle = Bundle(url: resourceURL) else { return }
-        guard let jsFileURL = resourceBundle.url(forResource: "index_ios", withExtension: "html" ) else { return }
+        guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
         
         webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
         
@@ -203,13 +203,14 @@ public class WebkitClass: NSObject {
         let width = "200"
         let broadcasterName = "NFL"
         let userId = "USR1234"
+        let widthUnit = "px"
         print("...^^^^gameId=", gameId)
         print("...^^^^bookId=", bookId)
         print("...^^^^widthVal=", widthVal)
         print("...^^^^broadcasterName=", broadcasterName)
         print("...^^^^width=", width)
         
-        self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)','\(userId)');", completionHandler: { result, error in
+        self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)','\(userId)', '\(widthUnit)');", completionHandler: { result, error in
             if let val = result as? String {
                 print(val)
             }

@@ -99,6 +99,7 @@
 		2DE7F6E6321C9A07758B2120BCCC8B5F /* SentryOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA80CDD5088EE19B2467ACF0BB28608 /* SentryOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E067F296E05B6001D6520E0D224C1C3 /* SentrySysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B4C97994BC59C142BA3260B13BDC1F /* SentrySysctl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E35922607925A7E5E059FA5B4F5F2F7 /* NSData+Sentry.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E70143DA06BF6F40990A960938BB4C /* NSData+Sentry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E8FD2B2BD614E7616DABCA7A30F5F8D /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A91A443F2397D8420E38BDB0912C5C /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-dummy.m */; };
 		2EB87382FBF86B02AB4B1DE3C7422907 /* PrivatesHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 810E14914B7568D16B34C7EC39F3323E /* PrivatesHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2FA49227D100551D69040A5FE58B5358 /* SentryThreadMetadataCache.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F44CD25747F1907698E3FD5498B6B78B /* SentryThreadMetadataCache.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		2FBD65056F2A961D8A5115013BCF1E1E /* SentryEnvelopeItemHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 940897B13D92744027477C6FF69DDF04 /* SentryEnvelopeItemHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -394,7 +395,7 @@
 		C08B919502DCC4441DB22A07DE065345 /* SentryBacktrace.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4C29ADF7344F66606928D8890B0A7B4E /* SentryBacktrace.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		C0C47CE3F2D9B694B8D9E46D9FFA0074 /* SentrySpan.h in Headers */ = {isa = PBXBuildFile; fileRef = A1430E8078282A7514776E8A24A89DF9 /* SentrySpan.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C0CDFAFA8C455143C65089C2CAB641F4 /* SentryMechanism.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F89E362032BC1A22F32C3B680A816AD /* SentryMechanism.m */; };
-		C0E28D3580571E6982BCEA589E23AB3A /* Pods-TapppPanelLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D1954FCEA592518BB261FFB71BF09F /* Pods-TapppPanelLibrary-dummy.m */; };
+		C0E28D3580571E6982BCEA589E23AB3A /* Pods-TapppPanelLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C0BBFF4667249EFA91984EB10DA9E7 /* Pods-TapppPanelLibrary-dummy.m */; };
 		C14FECDC9E6CA968D5387E5475D489A8 /* SentryStackBounds.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B07B180E31946233CB1C4C547CB9B105 /* SentryStackBounds.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		C1D2016676304318CC762848EF0ECBC7 /* SentryDispatchQueueWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 125BF808317334CEDB913AADDA29DEF1 /* SentryDispatchQueueWrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C2196EF626C0F05A731B28A826E45C8E /* SentryCrashReportVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 88CE5E0393876D674E80D1E0CB75F05D /* SentryCrashReportVersion.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -417,6 +418,7 @@
 		C96003405D09407C7FB9A9380BAAC69F /* SentryNSURLRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C990AFE8E231B10D30B0A5450AE34E /* SentryNSURLRequestBuilder.m */; };
 		C9CED6C40DD21A11C25B532C7D4D1D12 /* SentryCrashMonitor_MachException.c in Sources */ = {isa = PBXBuildFile; fileRef = 01DE5CD41951D4D36DA3618C67600E6B /* SentryCrashMonitor_MachException.c */; };
 		CA1CEA30130F94911E1F3643BB9969AC /* SentryNSURLSessionTaskSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CE18C0C950B9C104165312D67ADEC5A5 /* SentryNSURLSessionTaskSearch.m */; };
+		CAC181580D8C2EFFBAC1E82A8B262000 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F6343580B86E603313F5646E97B40C /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB05A62535E77BBF748629B19D2F0499 /* SentryDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 650239DD036EE6FA358556F764561DB5 /* SentryDateUtil.m */; };
 		CB72B6CC327AB4A47B647DBB16BBC06A /* SentryAsynchronousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2185704A2D29D5D1ED9133C261B7C230 /* SentryAsynchronousOperation.m */; };
 		CC5FBD0DDEEE5D91CFF0C155B300AEDE /* SentryMeta.h in Headers */ = {isa = PBXBuildFile; fileRef = A01BBA785F58310DD9EC60371EAE19DC /* SentryMeta.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -446,7 +448,7 @@
 		D9B52EE767AABF2CEEF12F519F55ACAD /* SentryNSNotificationCenterWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4DDD7B3A661593152115EA6B1B03C8 /* SentryNSNotificationCenterWrapper.m */; };
 		D9C7E6F9729C7835A1C16531F426CDDB /* Container+SentryDeepSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 9869C950DA0EA0E4F1B337FDB885968E /* Container+SentryDeepSearch.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DA2BC72D4D31C4B0C1163AE04822358A /* Sentry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89429216C4E7C23313E5DE41880E52 /* Sentry-dummy.m */; };
-		DA523585326DECA13AB6B5DC6801A3C0 /* Pods-TapppPanelLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DBC5C5F7EE6DE469B64B581E7EA349 /* Pods-TapppPanelLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA523585326DECA13AB6B5DC6801A3C0 /* Pods-TapppPanelLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB5559EA7423F777C9E9A58CB20D7CC /* Pods-TapppPanelLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA55768D6E92481A06E0D9B725398D1F /* SentryFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D287CCAB73C3503C3BDDC4826620FE1 /* SentryFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA582A162E6E2443F2A755DC0B159D4F /* SentrySamplingContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CADF07DF86632F7446B4395CA97284 /* SentrySamplingContext.m */; };
 		DA5D92685AB5746E50139BD2018E92F2 /* SentryDependencyContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0757DD3DA74D8863E14ED6D9B276D1 /* SentryDependencyContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -466,6 +468,7 @@
 		E08F712B5249E1F11450C34093EB12FD /* SentryCrashStackCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9D05C1A3AE0AFFD04FEAF96CBD4969 /* SentryCrashStackCursor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E126987C1C4BD6D4BDA6D0ADEDCFCAA3 /* SentryMigrateSessionInit.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F89E9202D025314CAE8F0D6AB6E7B8 /* SentryMigrateSessionInit.m */; };
 		E1298D46867033F6F219CF8ED7A3C6AD /* SentryWatchdogTerminationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F19F8AFD2C009A9AF0777C7661269B3 /* SentryWatchdogTerminationTracker.m */; };
+		E1475199222697BD52EFE336F9C0883A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E379872492FB71C1CEBF2EC247C4899F /* SentryLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D2F247B05452750809155D6E52A13E /* SentryLog.m */; };
 		E46A5ECB8EBB23E2D7CCA89AA9FF3A8E /* SentrySession.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A954302715AE6E903E5D31662E6583 /* SentrySession.m */; };
 		E474FBEF7B9F7A21DC28026BA8518390 /* SentrySystemWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 924C1A46C121AFC0D73BFCC23112D271 /* SentrySystemWrapper.mm */; };
@@ -531,6 +534,13 @@
 			remoteGlobalIDString = 6CC5482777061A697DD907B622A6CE15;
 			remoteInfo = SentryPrivate;
 		};
+		218158D00B27FCB499F5D39E4003B629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CC5482777061A697DD907B622A6CE15;
+			remoteInfo = SentryPrivate;
+		};
 		72152B5487441FD889694D5BD706C006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -539,6 +549,13 @@
 			remoteInfo = SentryPrivate;
 		};
 		AFCE9AE898F16EF0BCC714DF9C56AC6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94BDCD90B52278D1FB244A66E8B95A4A;
+			remoteInfo = Sentry;
+		};
+		F197CF29C12FB7A601BF138F0D4C5302 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -556,13 +573,16 @@
 		025A8DD529D646D0AF14EE3CD9B770D8 /* SentryFramesTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryFramesTracker.h; path = Sources/Sentry/include/SentryFramesTracker.h; sourceTree = "<group>"; };
 		03314E319DB463E7D451B891429B32C5 /* SentryHexAddressFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryHexAddressFormatter.h; path = Sources/Sentry/include/SentryHexAddressFormatter.h; sourceTree = "<group>"; };
 		0375B264404DAAF62D2FFAF99E8BD3B4 /* SentryCrashCPU_Apple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashCPU_Apple.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashCPU_Apple.h; sourceTree = "<group>"; };
+		03C0BBFF4667249EFA91984EB10DA9E7 /* Pods-TapppPanelLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TapppPanelLibrary-dummy.m"; sourceTree = "<group>"; };
 		0405E9322C19FE11F8EF6622F655865B /* SentryCrashIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashIntegration.h; path = Sources/Sentry/include/SentryCrashIntegration.h; sourceTree = "<group>"; };
 		04762E7440DEA769769106E88F18D59D /* SentryCrashString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashString.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashString.h; sourceTree = "<group>"; };
+		0592E3915D7581EB1BA49A81A5832D39 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.modulemap"; sourceTree = "<group>"; };
 		0683AC9982AD121811BB9AF360E6A107 /* Sentry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sentry.swift; path = Sources/Swift/Sentry.swift; sourceTree = "<group>"; };
 		0702EA4C0632063139602A91D0561769 /* SentrySwizzleWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentrySwizzleWrapper.m; path = Sources/Sentry/SentrySwizzleWrapper.m; sourceTree = "<group>"; };
 		0792D7821FAF88A2DEF07486151F29CD /* SentryRateLimitParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryRateLimitParser.m; path = Sources/Sentry/SentryRateLimitParser.m; sourceTree = "<group>"; };
 		0822C4D1D7F0BA7B385254B1ABD344FB /* SentryUIApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryUIApplication.h; path = Sources/Sentry/include/SentryUIApplication.h; sourceTree = "<group>"; };
 		084700282DD1EFEA521461D6B4793C53 /* SentryThreadWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryThreadWrapper.h; path = Sources/Sentry/include/SentryThreadWrapper.h; sourceTree = "<group>"; };
+		08560A87699C700D22BF7BC5D0F2E083 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0A1311DF3344CCF7B6A406C1C0CF551A /* SentryPerformanceTrackingIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryPerformanceTrackingIntegration.h; path = Sources/Sentry/include/SentryPerformanceTrackingIntegration.h; sourceTree = "<group>"; };
 		0A9AF01DA97D773EFF986D86E7860122 /* SentrySDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentrySDK.m; path = Sources/Sentry/SentrySDK.m; sourceTree = "<group>"; };
 		0BC35D575D6F01A6E5E2B54DABD89553 /* SentrySamplingProfiler.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = SentrySamplingProfiler.hpp; path = Sources/Sentry/include/SentrySamplingProfiler.hpp; sourceTree = "<group>"; };
@@ -596,7 +616,6 @@
 		1915A610C2E2E6CB6114B366BDD907DA /* NSData+SentryCompression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SentryCompression.m"; path = "Sources/Sentry/NSData+SentryCompression.m"; sourceTree = "<group>"; };
 		196BD1422C1246D8DAE8F176F2A8CB71 /* Sentry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sentry.h; path = Sources/Sentry/Public/Sentry.h; sourceTree = "<group>"; };
 		19D71514E06C610AC86E4CEB32AEF03B /* SentryUIApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryUIApplication.m; path = Sources/Sentry/SentryUIApplication.m; sourceTree = "<group>"; };
-		1A76A2D815B8845F066F32E3A53E38A0 /* Pods-TapppPanelLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapppPanelLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		1B606D2B2099E92219BA77464E456B0B /* SentryThreadState.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = SentryThreadState.hpp; path = Sources/Sentry/include/SentryThreadState.hpp; sourceTree = "<group>"; };
 		1B84DB87F59CBC63C049B16914D8645B /* SentryFileIOTrackingIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryFileIOTrackingIntegration.m; path = Sources/Sentry/SentryFileIOTrackingIntegration.m; sourceTree = "<group>"; };
 		1C99D0948363ECDB8D6E0EB3E2018FA5 /* SentryCrashCachedData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashCachedData.h; path = Sources/SentryCrash/Recording/SentryCrashCachedData.h; sourceTree = "<group>"; };
@@ -637,17 +656,18 @@
 		2E039EB6067BA9B9FEAC7E16C3224270 /* SentryEnvelopeAttachmentHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryEnvelopeAttachmentHeader.h; path = Sources/Sentry/include/SentryEnvelopeAttachmentHeader.h; sourceTree = "<group>"; };
 		2E76E426D42B5419B62271EC91F6A80B /* SentryEvent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SentryEvent+Private.h"; path = "Sources/Sentry/include/SentryEvent+Private.h"; sourceTree = "<group>"; };
 		2E8DAFA0C6146B87EEE35B3177AE239D /* SentryCrashExceptionApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashExceptionApplication.h; path = Sources/Sentry/Public/SentryCrashExceptionApplication.h; sourceTree = "<group>"; };
+		2EB4CB5FDBC76EFB54EB11A0E95C9ED2 /* Pods-TapppPanelLibrary-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TapppPanelLibrary-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2F850FD0921F59BF40379882DC89C33B /* SentryViewHierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryViewHierarchy.h; path = Sources/Sentry/include/SentryViewHierarchy.h; sourceTree = "<group>"; };
 		2FF4CBE44D893C33EB00C561A5765912 /* SentryDataCategoryMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryDataCategoryMapper.h; path = Sources/Sentry/include/SentryDataCategoryMapper.h; sourceTree = "<group>"; };
 		300BF6CEB04B8B6E0E58A93FC271D08A /* SentryCrashSignalInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashSignalInfo.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashSignalInfo.h; sourceTree = "<group>"; };
 		300DC1D661E99F37F86D1124E8FEEE86 /* SentryCrashStackCursor_MachineContext.c */ = {isa = PBXFileReference; includeInIndex = 1; name = SentryCrashStackCursor_MachineContext.c; path = Sources/SentryCrash/Recording/Tools/SentryCrashStackCursor_MachineContext.c; sourceTree = "<group>"; };
 		3046926FE3A164296BE76E724A93F37C /* SentryCrashCString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashCString.h; path = Sources/SentryCrash/Reporting/Tools/SentryCrashCString.h; sourceTree = "<group>"; };
 		30560C35C9FFA7605EFFB4EC743C19EC /* SentryCrashReportFixer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashReportFixer.h; path = Sources/SentryCrash/Recording/SentryCrashReportFixer.h; sourceTree = "<group>"; };
-		30ADF3939868F5BA32DF4FA21A458C4D /* Pods-TapppPanelLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapppPanelLibrary-Info.plist"; sourceTree = "<group>"; };
 		31017BA946039CE3FF39F3F8016C4DB5 /* SentryTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryTime.h; path = Sources/Sentry/include/SentryTime.h; sourceTree = "<group>"; };
 		316CA8172635E5DE12F810E92D69E546 /* SentrySerializable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySerializable.h; path = Sources/Sentry/Public/SentrySerializable.h; sourceTree = "<group>"; };
 		34294D3CAF043C1CE288C0964C81B15B /* SentryNetworkTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryNetworkTracker.m; path = Sources/Sentry/SentryNetworkTracker.m; sourceTree = "<group>"; };
 		344FE7A874DE053E5AFD58FBF345B627 /* SentryMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryMessage.m; path = Sources/Sentry/SentryMessage.m; sourceTree = "<group>"; };
+		3464505F0FA4EB218F27BB48A24F6393 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		34B5D8663F5F98D658A628C556CAD806 /* SentryNSDataTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryNSDataTracker.h; path = Sources/Sentry/include/SentryNSDataTracker.h; sourceTree = "<group>"; };
 		35138EEA8DA8B4D5834683F8BF5F3743 /* SentrySdkInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentrySdkInfo.m; path = Sources/Sentry/SentrySdkInfo.m; sourceTree = "<group>"; };
 		35397B0DB9A940E3A3A408F048584103 /* SentryAutoBreadcrumbTrackingIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryAutoBreadcrumbTrackingIntegration.m; path = Sources/Sentry/SentryAutoBreadcrumbTrackingIntegration.m; sourceTree = "<group>"; };
@@ -669,11 +689,13 @@
 		3A8E9299CED72E58A6580C61624BE12C /* SentryDebugMeta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryDebugMeta.h; path = Sources/Sentry/Public/SentryDebugMeta.h; sourceTree = "<group>"; };
 		3AA9DDFC6B9C9E1574C0642307D05598 /* SentryCrashJSONCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashJSONCodec.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashJSONCodec.h; sourceTree = "<group>"; };
 		3C1E5DAC6093B5F48BE1217B97CAF6D1 /* SentrySpanContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySpanContext.h; path = Sources/Sentry/Public/SentrySpanContext.h; sourceTree = "<group>"; };
+		3CBE5858380B6FD3D95D2816FB826ABA /* Pods-TapppPanelLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapppPanelLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		3D32F511A0ED5BD6764BD3E609D0BD40 /* SentryAutoSessionTrackingIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryAutoSessionTrackingIntegration.h; path = Sources/Sentry/include/SentryAutoSessionTrackingIntegration.h; sourceTree = "<group>"; };
 		3D817A58D3CE1C07CEDA25110AC359E5 /* PrivateSentrySDKOnly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrivateSentrySDKOnly.h; path = Sources/Sentry/include/HybridPublic/PrivateSentrySDKOnly.h; sourceTree = "<group>"; };
 		3D9E4259CF9236E8BC4CEDBB3F91159C /* SentryInternalNotificationNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryInternalNotificationNames.h; path = Sources/Sentry/include/SentryInternalNotificationNames.h; sourceTree = "<group>"; };
 		3E4B0AAE99B419067C2C37340FED3D2B /* SentrySubClassFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentrySubClassFinder.m; path = Sources/Sentry/SentrySubClassFinder.m; sourceTree = "<group>"; };
 		3E6097EB471B2B5107092317EFF1EE35 /* SentryEnvelopeRateLimit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryEnvelopeRateLimit.h; path = Sources/Sentry/include/SentryEnvelopeRateLimit.h; sourceTree = "<group>"; };
+		3EB5559EA7423F777C9E9A58CB20D7CC /* Pods-TapppPanelLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TapppPanelLibrary-umbrella.h"; sourceTree = "<group>"; };
 		3EC338C67F5A4441B09EE64B32E72E5F /* SentrySampleDecision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySampleDecision.h; path = Sources/Sentry/Public/SentrySampleDecision.h; sourceTree = "<group>"; };
 		3EFCA82F67F19C2ECB318F09824838FB /* SentrySystemEventBreadcrumbs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentrySystemEventBreadcrumbs.m; path = Sources/Sentry/SentrySystemEventBreadcrumbs.m; sourceTree = "<group>"; };
 		3F69F9022B38E0BC3D2D9D0239107888 /* SentryCrashLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashLogger.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashLogger.h; sourceTree = "<group>"; };
@@ -693,7 +715,6 @@
 		4579362E0C04D91B419AC3EA1586F00C /* SentryOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryOptions.m; path = Sources/Sentry/SentryOptions.m; sourceTree = "<group>"; };
 		4582E854E0E659DE0F19A9C5E5B1ECD6 /* SentryNSProcessInfoWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryNSProcessInfoWrapper.h; path = Sources/Sentry/include/SentryNSProcessInfoWrapper.h; sourceTree = "<group>"; };
 		46BDC8D4E2E56B034E482D947F2D36D1 /* SentryDispatchQueueWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryDispatchQueueWrapper.m; path = Sources/Sentry/SentryDispatchQueueWrapper.m; sourceTree = "<group>"; };
-		46D1954FCEA592518BB261FFB71BF09F /* Pods-TapppPanelLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TapppPanelLibrary-dummy.m"; sourceTree = "<group>"; };
 		474E958EDFED6BFDA408572A08B0B11F /* SentryThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryThread.h; path = Sources/Sentry/Public/SentryThread.h; sourceTree = "<group>"; };
 		47C914B51890D14EDC2C7AC3438203BF /* SentryThreadInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryThreadInspector.m; path = Sources/Sentry/SentryThreadInspector.m; sourceTree = "<group>"; };
 		48378164CD61AE928E49647662686EFE /* SentryDebugMeta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryDebugMeta.m; path = Sources/Sentry/SentryDebugMeta.m; sourceTree = "<group>"; };
@@ -752,6 +773,7 @@
 		656D55D3C9430306CD60DCFEB83148A8 /* SentrySpanContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentrySpanContext.m; path = Sources/Sentry/SentrySpanContext.m; sourceTree = "<group>"; };
 		6604455FD3981ABEA0D02F705CF7C249 /* SentryANRTrackingIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryANRTrackingIntegration.m; path = Sources/Sentry/SentryANRTrackingIntegration.m; sourceTree = "<group>"; };
 		66C5DAFB419F140602D83F7519CFF9D4 /* SentryRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryRequestOperation.m; path = Sources/Sentry/SentryRequestOperation.m; sourceTree = "<group>"; };
+		66C77BF0F4BCD1BD9D8AB4FF4D67DAF5 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		66C8DEF057CF2C864B2630616FE89B6F /* SentrySdkInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySdkInfo.h; path = Sources/Sentry/include/SentrySdkInfo.h; sourceTree = "<group>"; };
 		66CE78A1CF9D17B374B6769210EB3CCB /* SentryCrashReportConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryCrashReportConverter.m; path = Sources/Sentry/SentryCrashReportConverter.m; sourceTree = "<group>"; };
 		66E0A67AA1EB14029278DD7EBC6A0FA6 /* SentryMachLogging.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = SentryMachLogging.hpp; path = Sources/Sentry/include/SentryMachLogging.hpp; sourceTree = "<group>"; };
@@ -759,6 +781,7 @@
 		6716816D2EE9F125BFEA979FDE147F35 /* SentryProfilingLogging.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = SentryProfilingLogging.hpp; path = Sources/Sentry/include/SentryProfilingLogging.hpp; sourceTree = "<group>"; };
 		6863A0BB554EF875FFBA9E33BA243E49 /* SentryLevelMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryLevelMapper.h; path = Sources/Sentry/include/SentryLevelMapper.h; sourceTree = "<group>"; };
 		6902E8398CC5246A9868D18AC7396446 /* SentryPrivate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SentryPrivate.debug.xcconfig; sourceTree = "<group>"; };
+		696993323FF2EB513AD89162632870AC /* Pods-TapppPanelLibrary-TapppPanelLibraryTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests"; path = Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0F4D0D0557164F0DC63FD230FA6D55 /* SentryMechanismMeta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryMechanismMeta.h; path = Sources/Sentry/Public/SentryMechanismMeta.h; sourceTree = "<group>"; };
 		6C0349454138F0F26BAA41E8EDECADEA /* SentryPredicateDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryPredicateDescriptor.m; path = Sources/Sentry/SentryPredicateDescriptor.m; sourceTree = "<group>"; };
 		6CE69005C757BDA14423C1B0223FEFDF /* SentryNSTimerWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryNSTimerWrapper.h; path = Sources/Sentry/include/SentryNSTimerWrapper.h; sourceTree = "<group>"; };
@@ -814,6 +837,7 @@
 		80718D93F41456664F23608E5EA24979 /* SentryPerformanceTrackingIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryPerformanceTrackingIntegration.m; path = Sources/Sentry/SentryPerformanceTrackingIntegration.m; sourceTree = "<group>"; };
 		810E14914B7568D16B34C7EC39F3323E /* PrivatesHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrivatesHeader.h; path = Sources/Sentry/include/HybridPublic/PrivatesHeader.h; sourceTree = "<group>"; };
 		81473B067F42DF7D3B37C27C5CE74C54 /* SentryCrashReportStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashReportStore.h; path = Sources/SentryCrash/Recording/SentryCrashReportStore.h; sourceTree = "<group>"; };
+		8182A0322FEBF5D45447CB6DB38F76D3 /* Pods-TapppPanelLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapppPanelLibrary-Info.plist"; sourceTree = "<group>"; };
 		81D0FF82E80E4AE4BDD034B59A82A579 /* SentryWatchdogTerminationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryWatchdogTerminationTracker.h; path = Sources/Sentry/include/SentryWatchdogTerminationTracker.h; sourceTree = "<group>"; };
 		821C0B28B428ABCF7879450886590C7B /* SentryFramesTrackingIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryFramesTrackingIntegration.h; path = Sources/Sentry/include/SentryFramesTrackingIntegration.h; sourceTree = "<group>"; };
 		82C6BC454E0A6544A54AE940CDAECCE9 /* SentryNoOpSpan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryNoOpSpan.m; path = Sources/Sentry/SentryNoOpSpan.m; sourceTree = "<group>"; };
@@ -826,7 +850,7 @@
 		8631CEB752CF54BEECB6213AD47B49C7 /* SentryBreadcrumbTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryBreadcrumbTracker.h; path = Sources/Sentry/include/SentryBreadcrumbTracker.h; sourceTree = "<group>"; };
 		865B8ED399B6E9626CE1CFC0D3E01888 /* SentryCrashDefaultBinaryImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashDefaultBinaryImageProvider.h; path = Sources/Sentry/include/SentryCrashDefaultBinaryImageProvider.h; sourceTree = "<group>"; };
 		87AA5EB9EE5A3622B19169A5F847DEE5 /* SentryMetricProfiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryMetricProfiler.h; path = Sources/Sentry/include/SentryMetricProfiler.h; sourceTree = "<group>"; };
-		87DBC5C5F7EE6DE469B64B581E7EA349 /* Pods-TapppPanelLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TapppPanelLibrary-umbrella.h"; sourceTree = "<group>"; };
+		87CCB290C9EFA069494BFB89308015D6 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks.sh"; sourceTree = "<group>"; };
 		8845B53ECE27CEA7D220CCBD3E29C7C3 /* SentryCrashFileUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashFileUtils.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashFileUtils.h; sourceTree = "<group>"; };
 		88CE5E0393876D674E80D1E0CB75F05D /* SentryCrashReportVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashReportVersion.h; path = Sources/SentryCrash/Recording/SentryCrashReportVersion.h; sourceTree = "<group>"; };
 		8955ACA578C21CC0A03C9F5AB62922AC /* SentryUserFeedback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryUserFeedback.m; path = Sources/Sentry/SentryUserFeedback.m; sourceTree = "<group>"; };
@@ -841,6 +865,7 @@
 		8EBB8CEFDB871B342FA12694CC436767 /* SentryAppStartTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryAppStartTracker.m; path = Sources/Sentry/SentryAppStartTracker.m; sourceTree = "<group>"; };
 		8F875C7A0DD7D3D3A2ED11D4669E2D9C /* SentryMachLogging.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = SentryMachLogging.cpp; path = Sources/Sentry/SentryMachLogging.cpp; sourceTree = "<group>"; };
 		8F89429216C4E7C23313E5DE41880E52 /* Sentry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sentry-dummy.m"; sourceTree = "<group>"; };
+		8FB4C450976B8E8B06E5AE125958FC63 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FE720D1E2A9205ECFD325A00875F034 /* SentryTransactionContext+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SentryTransactionContext+Private.h"; path = "Sources/Sentry/include/SentryTransactionContext+Private.h"; sourceTree = "<group>"; };
 		9028D3387225775D5D75896476BA625F /* SentrySystemEventBreadcrumbs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySystemEventBreadcrumbs.h; path = Sources/Sentry/include/SentrySystemEventBreadcrumbs.h; sourceTree = "<group>"; };
 		90BA768B3E57F11FC92DF6CDD671212A /* SentryCrashMachineContext.c */ = {isa = PBXFileReference; includeInIndex = 1; name = SentryCrashMachineContext.c; path = Sources/SentryCrash/Recording/Tools/SentryCrashMachineContext.c; sourceTree = "<group>"; };
@@ -894,12 +919,14 @@
 		A9549481938CB5829F1BE17DA710D8E0 /* SentryStacktrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryStacktrace.m; path = Sources/Sentry/SentryStacktrace.m; sourceTree = "<group>"; };
 		A9802606253509C043EA7B284EE65D88 /* SentryDefaultCurrentDateProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryDefaultCurrentDateProvider.h; path = Sources/Sentry/include/SentryDefaultCurrentDateProvider.h; sourceTree = "<group>"; };
 		A9EDD9F7830C2A364B8ABD01998EB3F4 /* SentryCrashScopeObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryCrashScopeObserver.m; path = Sources/Sentry/SentryCrashScopeObserver.m; sourceTree = "<group>"; };
+		AB1667B1953317F3E3A46C946303FBAD /* Pods-TapppPanelLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapppPanelLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		AB710360021B637DBD92FE1CDC8C7F28 /* SentryUIEventTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryUIEventTracker.m; path = Sources/Sentry/SentryUIEventTracker.m; sourceTree = "<group>"; };
 		AC0F2BE1B7EFD526C543731D128BA31E /* SentryUIEventTrackingIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryUIEventTrackingIntegration.h; path = Sources/Sentry/include/SentryUIEventTrackingIntegration.h; sourceTree = "<group>"; };
 		ADCA4903A7BE50BF35566C3C67883358 /* SentryWatchdogTerminationScopeObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryWatchdogTerminationScopeObserver.h; path = Sources/Sentry/include/SentryWatchdogTerminationScopeObserver.h; sourceTree = "<group>"; };
 		ADD6A90D240B3F94DF90F71961BDEED0 /* SentryGlobalEventProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryGlobalEventProcessor.m; path = Sources/Sentry/SentryGlobalEventProcessor.m; sourceTree = "<group>"; };
 		ADF081CE754CA5FFACBC69ECCB1F3C0D /* SentryIntegrationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryIntegrationProtocol.h; path = Sources/Sentry/Public/SentryIntegrationProtocol.h; sourceTree = "<group>"; };
 		AEE195B02150EDBBD445557B5D88D52D /* SentrySubClassFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySubClassFinder.h; path = Sources/Sentry/SentrySubClassFinder.h; sourceTree = "<group>"; };
+		AFEE1B9129CED8FCDB24681DA20AB910 /* Pods-TapppPanelLibrary-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapppPanelLibrary-acknowledgements.plist"; sourceTree = "<group>"; };
 		AFF953B89D10BE599DB12362C17F7943 /* SentryDebugImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryDebugImageProvider.m; path = Sources/Sentry/SentryDebugImageProvider.m; sourceTree = "<group>"; };
 		B022119A56D7A2F27DB019ADB114F7FD /* SentryCoreDataSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryCoreDataSwizzling.m; path = Sources/Sentry/SentryCoreDataSwizzling.m; sourceTree = "<group>"; };
 		B07B180E31946233CB1C4C547CB9B105 /* SentryStackBounds.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = SentryStackBounds.hpp; path = Sources/Sentry/include/SentryStackBounds.hpp; sourceTree = "<group>"; };
@@ -915,6 +942,7 @@
 		B43EF502355B233536E5F63346D9DD04 /* SentryMeta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryMeta.m; path = Sources/Sentry/SentryMeta.m; sourceTree = "<group>"; };
 		B467DD492938EF656F5C454AC944394E /* SentryPrivate */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SentryPrivate; path = SentryPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48476E1A5A74555E53748C2E31A085E /* SentryCrashBinaryImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashBinaryImageProvider.h; path = Sources/Sentry/include/SentryCrashBinaryImageProvider.h; sourceTree = "<group>"; };
+		B4F6343580B86E603313F5646E97B40C /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests-umbrella.h"; sourceTree = "<group>"; };
 		B5DFBF845BF1966CF1A6910FD625BE6A /* SentryRateLimits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryRateLimits.h; path = Sources/Sentry/include/SentryRateLimits.h; sourceTree = "<group>"; };
 		B66F05D7E435B3045A390CFCE4C6A09B /* SentryCrashDynamicLinker.c */ = {isa = PBXFileReference; includeInIndex = 1; name = SentryCrashDynamicLinker.c; path = Sources/SentryCrash/Recording/Tools/SentryCrashDynamicLinker.c; sourceTree = "<group>"; };
 		B68DD1323F25E2B1FD9033354A0CD8DD /* NSArray+SentrySanitize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SentrySanitize.m"; path = "Sources/Sentry/NSArray+SentrySanitize.m"; sourceTree = "<group>"; };
@@ -931,7 +959,6 @@
 		BED91BE36A044A1A07FE82D70E5778AD /* SentryMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryMessage.h; path = Sources/Sentry/Public/SentryMessage.h; sourceTree = "<group>"; };
 		BF3E412E656843A81FBB4A7FE2D212A2 /* SentryANRTrackingIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryANRTrackingIntegration.h; path = Sources/Sentry/include/SentryANRTrackingIntegration.h; sourceTree = "<group>"; };
 		BF4C4474F71AF23A55EC467F48EE3DBB /* SentryCrashReportFixer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = SentryCrashReportFixer.c; path = Sources/SentryCrash/Recording/SentryCrashReportFixer.c; sourceTree = "<group>"; };
-		BF786C279CDCDF21F7F44B3A254843CE /* Pods-TapppPanelLibrary-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapppPanelLibrary-acknowledgements.plist"; sourceTree = "<group>"; };
 		BFDF19174D47CBAACA3DA1513F3D98DA /* SentryPrivate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SentryPrivate-prefix.pch"; sourceTree = "<group>"; };
 		C0427EF0F181DC5452378FC7B832BF0E /* SentryId.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryId.m; path = Sources/Sentry/SentryId.m; sourceTree = "<group>"; };
 		C05A1BA03A445E338616A3274BCF4A11 /* SentryProfilingLogging.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = SentryProfilingLogging.mm; path = Sources/Sentry/SentryProfilingLogging.mm; sourceTree = "<group>"; };
@@ -953,7 +980,6 @@
 		C746EF5668F1E4544D3B41642C5187D7 /* SentryInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryInstallation.h; path = Sources/Sentry/include/SentryInstallation.h; sourceTree = "<group>"; };
 		C79A6653C5C80187CA0BD733C4CBC217 /* SentrySession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySession.h; path = Sources/Sentry/include/SentrySession.h; sourceTree = "<group>"; };
 		C7ABEDB1391E9042535633FC3C698D59 /* SentryInAppLogic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryInAppLogic.h; path = Sources/Sentry/include/SentryInAppLogic.h; sourceTree = "<group>"; };
-		C7ADB0C9C223848B3EC9B21BBB203283 /* Pods-TapppPanelLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TapppPanelLibrary.modulemap"; sourceTree = "<group>"; };
 		C819E6D47B528150640A30ECAABA0C28 /* SentryNSDataTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryNSDataTracker.m; path = Sources/Sentry/SentryNSDataTracker.m; sourceTree = "<group>"; };
 		C86956C0548E9E8D9D24B402175356DD /* SentryEnvelope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryEnvelope.m; path = Sources/Sentry/SentryEnvelope.m; sourceTree = "<group>"; };
 		C8A1AF4F9399233C4FC762BE312BCE20 /* SentryMechanism.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryMechanism.h; path = Sources/Sentry/Public/SentryMechanism.h; sourceTree = "<group>"; };
@@ -970,7 +996,6 @@
 		D0E194FE1D273FED4A90D8B1FA83DBB4 /* SentryCurrentDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCurrentDate.h; path = Sources/Sentry/include/SentryCurrentDate.h; sourceTree = "<group>"; };
 		D185C0135017B36BDAB37C2BA55FE9D6 /* SentryBreadcrumb.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryBreadcrumb.m; path = Sources/Sentry/SentryBreadcrumb.m; sourceTree = "<group>"; };
 		D1BFF11E5A338D7619C974F41BD00C9C /* SentryCrashStackEntryMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryCrashStackEntryMapper.m; path = Sources/Sentry/SentryCrashStackEntryMapper.m; sourceTree = "<group>"; };
-		D22764DAD6E4AA014B3541537E97E80D /* Pods-TapppPanelLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapppPanelLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		D23FEE1E1607EF6B370DB8F573D4D209 /* SentryTraceContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryTraceContext.h; path = Sources/Sentry/include/SentryTraceContext.h; sourceTree = "<group>"; };
 		D320B587E2F7F5CD9463D1CA5ACB3E84 /* SentryCrashMachineContextWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashMachineContextWrapper.h; path = Sources/Sentry/include/SentryCrashMachineContextWrapper.h; sourceTree = "<group>"; };
 		D328AC8F4759EB16110E49EA90F1A779 /* SentryCrashUUIDConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashUUIDConversion.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashUUIDConversion.h; sourceTree = "<group>"; };
@@ -1007,6 +1032,7 @@
 		DFE5236EF7337FFCAA647C7EAF567080 /* SentryDefaultCurrentDateProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryDefaultCurrentDateProvider.m; path = Sources/Sentry/SentryDefaultCurrentDateProvider.m; sourceTree = "<group>"; };
 		E00261B105ADC6699F0A50F685DFDB11 /* Sentry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sentry-umbrella.h"; sourceTree = "<group>"; };
 		E01D1BCEFA2C64AD29311D343BD7CEE1 /* SentryCrashDoctor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashDoctor.h; path = Sources/SentryCrash/Recording/SentryCrashDoctor.h; sourceTree = "<group>"; };
+		E0A91A443F2397D8420E38BDB0912C5C /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests-dummy.m"; sourceTree = "<group>"; };
 		E0BE3B0CF403144838554F86915E8CF0 /* SentryBaggage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryBaggage.m; path = Sources/Sentry/SentryBaggage.m; sourceTree = "<group>"; };
 		E0D2B7C57F01203A78B11E25AF7D2016 /* SentryProfiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryProfiler.h; path = Sources/Sentry/include/SentryProfiler.h; sourceTree = "<group>"; };
 		E0D2F247B05452750809155D6E52A13E /* SentryLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryLog.m; path = Sources/Sentry/SentryLog.m; sourceTree = "<group>"; };
@@ -1038,7 +1064,6 @@
 		EA88EF5343538E285E9863A499AE85F1 /* SentryCrashStackCursor_MachineContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashStackCursor_MachineContext.h; path = Sources/SentryCrash/Recording/Tools/SentryCrashStackCursor_MachineContext.h; sourceTree = "<group>"; };
 		EB3D836FB817BF5C7D657E67700F9134 /* SentryCrashMonitor_AppState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashMonitor_AppState.h; path = Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_AppState.h; sourceTree = "<group>"; };
 		EB4E6E5E9680CEFB2DCC52AF2D95AAFC /* SentryNetworkTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryNetworkTracker.h; path = Sources/Sentry/include/SentryNetworkTracker.h; sourceTree = "<group>"; };
-		EB600EBF1CD20F659086E78247C3F266 /* Pods-TapppPanelLibrary-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TapppPanelLibrary-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EBA1112E2E3E9DB54351128F4FA2CFD0 /* SentryCompiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCompiler.h; path = Sources/Sentry/include/SentryCompiler.h; sourceTree = "<group>"; };
 		ECEEC66537B84C604C608B90B8D824C7 /* SentryNSTimerWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryNSTimerWrapper.m; path = Sources/Sentry/SentryNSTimerWrapper.m; sourceTree = "<group>"; };
 		ED3BD98B35502B19A181E935B332607D /* SentryCrashC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryCrashC.h; path = Sources/SentryCrash/Recording/SentryCrashC.h; sourceTree = "<group>"; };
@@ -1059,10 +1084,12 @@
 		F44CD25747F1907698E3FD5498B6B78B /* SentryThreadMetadataCache.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = SentryThreadMetadataCache.hpp; path = Sources/Sentry/include/SentryThreadMetadataCache.hpp; sourceTree = "<group>"; };
 		F576B30D8A8288F22EEFC7FB1ABD5432 /* SentryCrashDefaultBinaryImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryCrashDefaultBinaryImageProvider.m; path = Sources/Sentry/SentryCrashDefaultBinaryImageProvider.m; sourceTree = "<group>"; };
 		F6398BFD5B5466D0F7D7AD51C658C50E /* SentryRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryRequest.m; path = Sources/Sentry/SentryRequest.m; sourceTree = "<group>"; };
+		F6DC782DED2B64F161DA6A8DF3474F5A /* Pods-TapppPanelLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TapppPanelLibrary.modulemap"; sourceTree = "<group>"; };
 		F70AE25F61519871066C819B1CEFD24B /* SentryCrashString.c */ = {isa = PBXFileReference; includeInIndex = 1; name = SentryCrashString.c; path = Sources/SentryCrash/Recording/Tools/SentryCrashString.c; sourceTree = "<group>"; };
 		F74F59ADC8FA767C637B17E09586A4F6 /* SentryOptions+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SentryOptions+Private.h"; path = "Sources/Sentry/include/SentryOptions+Private.h"; sourceTree = "<group>"; };
 		F798F461FC0E0CBB65747DDB8E0FBFB5 /* SentrySamplingProfiler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = SentrySamplingProfiler.cpp; path = Sources/Sentry/SentrySamplingProfiler.cpp; sourceTree = "<group>"; };
 		F7A5E8B1ADAB430C97E6AC1C304954F8 /* SentryRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentryRequestOperation.h; path = Sources/Sentry/include/SentryRequestOperation.h; sourceTree = "<group>"; };
+		F7A60C3AC4DF2262D480E3BC63B0CAC4 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		F7AF151460C77C1FC4CE1C64D13831C8 /* SentryCrashMemory.c */ = {isa = PBXFileReference; includeInIndex = 1; name = SentryCrashMemory.c; path = Sources/SentryCrash/Recording/Tools/SentryCrashMemory.c; sourceTree = "<group>"; };
 		F7B4C97994BC59C142BA3260B13BDC1F /* SentrySysctl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SentrySysctl.h; path = Sources/Sentry/include/SentrySysctl.h; sourceTree = "<group>"; };
 		F86D1A95F708F40D5C52C951CB1091F0 /* SentryWatchdogTerminationLogic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SentryWatchdogTerminationLogic.m; path = Sources/Sentry/SentryWatchdogTerminationLogic.m; sourceTree = "<group>"; };
@@ -1091,6 +1118,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B24BB2401DA7B7610A7D3C70EDC8859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1475199222697BD52EFE336F9C0883A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		859ABE7F99B7CD3E64054AA53434AD46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1110,28 +1145,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2793201DBB54C61C5838B46E357ECD4B /* Targets Support Files */ = {
+		015656C9D44B2989DC5757C9B4B75FD0 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
-				48EFA6C65D59C791C64CAE5BD359F8AF /* Pods-TapppPanelLibrary */,
+				0592E3915D7581EB1BA49A81A5832D39 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.modulemap */,
+				08560A87699C700D22BF7BC5D0F2E083 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-acknowledgements.markdown */,
+				66C77BF0F4BCD1BD9D8AB4FF4D67DAF5 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-acknowledgements.plist */,
+				E0A91A443F2397D8420E38BDB0912C5C /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-dummy.m */,
+				87CCB290C9EFA069494BFB89308015D6 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks.sh */,
+				3464505F0FA4EB218F27BB48A24F6393 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-Info.plist */,
+				B4F6343580B86E603313F5646E97B40C /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-umbrella.h */,
+				8FB4C450976B8E8B06E5AE125958FC63 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */,
+				F7A60C3AC4DF2262D480E3BC63B0CAC4 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		48EFA6C65D59C791C64CAE5BD359F8AF /* Pods-TapppPanelLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				C7ADB0C9C223848B3EC9B21BBB203283 /* Pods-TapppPanelLibrary.modulemap */,
-				EB600EBF1CD20F659086E78247C3F266 /* Pods-TapppPanelLibrary-acknowledgements.markdown */,
-				BF786C279CDCDF21F7F44B3A254843CE /* Pods-TapppPanelLibrary-acknowledgements.plist */,
-				46D1954FCEA592518BB261FFB71BF09F /* Pods-TapppPanelLibrary-dummy.m */,
-				30ADF3939868F5BA32DF4FA21A458C4D /* Pods-TapppPanelLibrary-Info.plist */,
-				87DBC5C5F7EE6DE469B64B581E7EA349 /* Pods-TapppPanelLibrary-umbrella.h */,
-				D22764DAD6E4AA014B3541537E97E80D /* Pods-TapppPanelLibrary.debug.xcconfig */,
-				1A76A2D815B8845F066F32E3A53E38A0 /* Pods-TapppPanelLibrary.release.xcconfig */,
-			);
-			name = "Pods-TapppPanelLibrary";
-			path = "Target Support Files/Pods-TapppPanelLibrary";
+			name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests";
+			path = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests";
 			sourceTree = "<group>";
 		};
 		4E87C31189220434D006829F5884C96E /* Pods */ = {
@@ -1149,6 +1177,15 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5C9630014DD42AA838FA68AE1DD13BB9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE45AE4C9BCA9D8507FFE06FC64B293 /* Pods-TapppPanelLibrary */,
+				015656C9D44B2989DC5757C9B4B75FD0 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		721D5CC4257D7FC3120C526C1C5C266D /* Support Files */ = {
@@ -1187,16 +1224,6 @@
 			);
 			name = SentryPrivate;
 			path = SentryPrivate;
-			sourceTree = "<group>";
-		};
-		BD54AD5BF407456949905B2EEDC0E062 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9FEE9D2D49799EB53EE6AE126B040AF /* Pods-TapppPanelLibrary */,
-				0115C3C00C175D77422084DD0542CE6F /* Sentry */,
-				B467DD492938EF656F5C454AC944394E /* SentryPrivate */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C2B8FF6047EE569B44CC6FB9519A418B /* Core */ = {
@@ -1707,14 +1734,41 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		C3A1D14A27596708C1C2402A48755F03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9FEE9D2D49799EB53EE6AE126B040AF /* Pods-TapppPanelLibrary */,
+				696993323FF2EB513AD89162632870AC /* Pods-TapppPanelLibrary-TapppPanelLibraryTests */,
+				0115C3C00C175D77422084DD0542CE6F /* Sentry */,
+				B467DD492938EF656F5C454AC944394E /* SentryPrivate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE45AE4C9BCA9D8507FFE06FC64B293 /* Pods-TapppPanelLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC782DED2B64F161DA6A8DF3474F5A /* Pods-TapppPanelLibrary.modulemap */,
+				2EB4CB5FDBC76EFB54EB11A0E95C9ED2 /* Pods-TapppPanelLibrary-acknowledgements.markdown */,
+				AFEE1B9129CED8FCDB24681DA20AB910 /* Pods-TapppPanelLibrary-acknowledgements.plist */,
+				03C0BBFF4667249EFA91984EB10DA9E7 /* Pods-TapppPanelLibrary-dummy.m */,
+				8182A0322FEBF5D45447CB6DB38F76D3 /* Pods-TapppPanelLibrary-Info.plist */,
+				3EB5559EA7423F777C9E9A58CB20D7CC /* Pods-TapppPanelLibrary-umbrella.h */,
+				3CBE5858380B6FD3D95D2816FB826ABA /* Pods-TapppPanelLibrary.debug.xcconfig */,
+				AB1667B1953317F3E3A46C946303FBAD /* Pods-TapppPanelLibrary.release.xcconfig */,
+			);
+			name = "Pods-TapppPanelLibrary";
+			path = "Target Support Files/Pods-TapppPanelLibrary";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				4E87C31189220434D006829F5884C96E /* Pods */,
-				BD54AD5BF407456949905B2EEDC0E062 /* Products */,
-				2793201DBB54C61C5838B46E357ECD4B /* Targets Support Files */,
+				C3A1D14A27596708C1C2402A48755F03 /* Products */,
+				5C9630014DD42AA838FA68AE1DD13BB9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1744,6 +1798,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		41033581909820D3C35F2272E5389FDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC181580D8C2EFFBAC1E82A8B262000 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A71C83B7A89C7F50185840EC4DBC81C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2104,6 +2166,26 @@
 			productReference = C9FEE9D2D49799EB53EE6AE126B040AF /* Pods-TapppPanelLibrary */;
 			productType = "com.apple.product-type.framework";
 		};
+		C4BD397EFF426FCBE7DFB91F6CE1C834 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E71B2FF41E38F19C54D967DE2F0EB55 /* Build configuration list for PBXNativeTarget "Pods-TapppPanelLibrary-TapppPanelLibraryTests" */;
+			buildPhases = (
+				41033581909820D3C35F2272E5389FDD /* Headers */,
+				B38727EE570F1F5C9C856BF5CCA4A0A8 /* Sources */,
+				7B24BB2401DA7B7610A7D3C70EDC8859 /* Frameworks */,
+				A2E7249EB94E3F5060BFA3B1A62E0BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1916C680BE391920506D15CCB5465B26 /* PBXTargetDependency */,
+				B90960D3231233EEE6189911EB5E8816 /* PBXTargetDependency */,
+			);
+			name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests";
+			productName = Pods_TapppPanelLibrary_TapppPanelLibraryTests;
+			productReference = 696993323FF2EB513AD89162632870AC /* Pods-TapppPanelLibrary-TapppPanelLibraryTests */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2122,11 +2204,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BD54AD5BF407456949905B2EEDC0E062 /* Products */;
+			productRefGroup = C3A1D14A27596708C1C2402A48755F03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9A31E3F6291BC61D2F819A0FF466C7D1 /* Pods-TapppPanelLibrary */,
+				C4BD397EFF426FCBE7DFB91F6CE1C834 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests */,
 				94BDCD90B52278D1FB244A66E8B95A4A /* Sentry */,
 				6CC5482777061A697DD907B622A6CE15 /* SentryPrivate */,
 			);
@@ -2142,6 +2225,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		41AE8D8F335260DCD626AF9547482176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E7249EB94E3F5060BFA3B1A62E0BB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2411,9 +2501,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B38727EE570F1F5C9C856BF5CCA4A0A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8FD2B2BD614E7616DABCA7A30F5F8D /* Pods-TapppPanelLibrary-TapppPanelLibraryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1916C680BE391920506D15CCB5465B26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sentry;
+			target = 94BDCD90B52278D1FB244A66E8B95A4A /* Sentry */;
+			targetProxy = F197CF29C12FB7A601BF138F0D4C5302 /* PBXContainerItemProxy */;
+		};
 		31DD84CA1EFACF3B6ECC2C124299946E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SentryPrivate;
@@ -2426,6 +2530,12 @@
 			target = 6CC5482777061A697DD907B622A6CE15 /* SentryPrivate */;
 			targetProxy = 72152B5487441FD889694D5BD706C006 /* PBXContainerItemProxy */;
 		};
+		B90960D3231233EEE6189911EB5E8816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SentryPrivate;
+			target = 6CC5482777061A697DD907B622A6CE15 /* SentryPrivate */;
+			targetProxy = 218158D00B27FCB499F5D39E4003B629 /* PBXContainerItemProxy */;
+		};
 		F763D910E1B2D5A5F59A37956F10FA66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sentry;
@@ -2437,7 +2547,7 @@
 /* Begin XCBuildConfiguration section */
 		14B66C1D8333541F457B9E7F0950C1AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A76A2D815B8845F066F32E3A53E38A0 /* Pods-TapppPanelLibrary.release.xcconfig */;
+			baseConfigurationReference = AB1667B1953317F3E3A46C946303FBAD /* Pods-TapppPanelLibrary.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2459,6 +2569,44 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		15F55FF9432D97EDA4EBE80A8238F4AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A60C3AC4DF2262D480E3BC63B0CAC4 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2613,7 +2761,7 @@
 		};
 		6317C1536FC007B39518F17567AB6768 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D22764DAD6E4AA014B3541537E97E80D /* Pods-TapppPanelLibrary.debug.xcconfig */;
+			baseConfigurationReference = 3CBE5858380B6FD3D95D2816FB826ABA /* Pods-TapppPanelLibrary.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2745,6 +2893,43 @@
 			};
 			name = Debug;
 		};
+		C3D7A0211357F4889698CF7232E04132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB4C450976B8E8B06E5AE125958FC63 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D4CC77E8618B7A2F900F4DD2D90A502B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C7F8F818F334ABC0A51E6DE418CDD22 /* Sentry.debug.xcconfig */;
@@ -2815,6 +3000,15 @@
 			buildConfigurations = (
 				9D83214F26EEA420AE48A9EAD58ECF92 /* Debug */,
 				521B91C59FC935756831063F5F88C067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E71B2FF41E38F19C54D967DE2F0EB55 /* Build configuration list for PBXNativeTarget "Pods-TapppPanelLibrary-TapppPanelLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D7A0211357F4889698CF7232E04132 /* Debug */,
+				15F55FF9432D97EDA4EBE80A8238F4AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,7 +19,46 @@
 		26667E03298AA8AB0082C5A7 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */; };
 		26667E94298CF0AB0082C5A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
 		26667E95298CF0BF0082C5A7 /* Constants.swift in Headers */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
-		3EBB36064214ED1592DBB033 /* Pods_TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786F6411A0B32CFD85954CB5 /* Pods_TapppPanelLibrary.framework */; };
+		26F82B82299F5006000DD61D /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B51299F5006000DD61D /* favicon.ico */; };
+		26F82B83299F5006000DD61D /* index_web.html in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B52299F5006000DD61D /* index_web.html */; };
+		26F82B84299F5006000DD61D /* serve.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B53299F5006000DD61D /* serve.json */; };
+		26F82B85299F5006000DD61D /* favicon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B54299F5006000DD61D /* favicon-16.png */; };
+		26F82B86299F5006000DD61D /* asset-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B55299F5006000DD61D /* asset-manifest.json */; };
+		26F82B87299F5006000DD61D /* runtime~app.c09eef9e.js in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B5A299F5006000DD61D /* runtime~app.c09eef9e.js */; };
+		26F82B88299F5006000DD61D /* app.3bf69ae9.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B5B299F5006000DD61D /* app.3bf69ae9.chunk.js */; };
+		26F82B89299F5006000DD61D /* 2.b7366c9a.chunk.js in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B5D299F5006000DD61D /* 2.b7366c9a.chunk.js */; };
+		26F82B8A299F5006000DD61D /* pic.9b2d52f3.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B5F299F5006000DD61D /* pic.9b2d52f3.png */; };
+		26F82B8B299F5006000DD61D /* nflBall.38e9cc40.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B60299F5006000DD61D /* nflBall.38e9cc40.png */; };
+		26F82B8C299F5006000DD61D /* apple-touch-icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B63299F5006000DD61D /* apple-touch-icon-180.png */; };
+		26F82B8D299F5006000DD61D /* chrome-icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B65299F5006000DD61D /* chrome-icon-512.png */; };
+		26F82B8E299F5006000DD61D /* chrome-icon-192.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B66299F5006000DD61D /* chrome-icon-192.png */; };
+		26F82B8F299F5006000DD61D /* chrome-icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B67299F5006000DD61D /* chrome-icon-144.png */; };
+		26F82B90299F5006000DD61D /* apple-touch-startup-image-1125x2436.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B69299F5006000DD61D /* apple-touch-startup-image-1125x2436.png */; };
+		26F82B91299F5006000DD61D /* apple-touch-startup-image-1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B6A299F5006000DD61D /* apple-touch-startup-image-1242x2688.png */; };
+		26F82B92299F5006000DD61D /* apple-touch-startup-image-640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B6B299F5006000DD61D /* apple-touch-startup-image-640x1136.png */; };
+		26F82B93299F5006000DD61D /* apple-touch-startup-image-1668x2388.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B6C299F5006000DD61D /* apple-touch-startup-image-1668x2388.png */; };
+		26F82B94299F5006000DD61D /* apple-touch-startup-image-828x1792.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B6D299F5006000DD61D /* apple-touch-startup-image-828x1792.png */; };
+		26F82B95299F5006000DD61D /* apple-touch-startup-image-1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B6E299F5006000DD61D /* apple-touch-startup-image-1242x2208.png */; };
+		26F82B96299F5006000DD61D /* apple-touch-startup-image-750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B6F299F5006000DD61D /* apple-touch-startup-image-750x1334.png */; };
+		26F82B97299F5006000DD61D /* apple-touch-startup-image-1668x2224.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B70299F5006000DD61D /* apple-touch-startup-image-1668x2224.png */; };
+		26F82B98299F5006000DD61D /* apple-touch-startup-image-1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B71299F5006000DD61D /* apple-touch-startup-image-1536x2048.png */; };
+		26F82B99299F5006000DD61D /* apple-touch-startup-image-2048x2732.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B72299F5006000DD61D /* apple-touch-startup-image-2048x2732.png */; };
+		26F82B9A299F5006000DD61D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B73299F5006000DD61D /* manifest.json */; };
+		26F82B9B299F5006000DD61D /* favicon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B74299F5006000DD61D /* favicon-32.png */; };
+		26F82B9C299F5006000DD61D /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B76299F5006000DD61D /* Fontisto.ttf */; };
+		26F82B9D299F5006000DD61D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B77299F5006000DD61D /* Feather.ttf */; };
+		26F82B9E299F5006000DD61D /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B78299F5006000DD61D /* Entypo.ttf */; };
+		26F82B9F299F5006000DD61D /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B79299F5006000DD61D /* FontAwesome5_Brands.ttf */; };
+		26F82BA0299F5006000DD61D /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B7A299F5006000DD61D /* MaterialCommunityIcons.ttf */; };
+		26F82BA1299F5006000DD61D /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B7B299F5006000DD61D /* AntDesign.ttf */; };
+		26F82BA2299F5006000DD61D /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B7C299F5006000DD61D /* Foundation.ttf */; };
+		26F82BA3299F5006000DD61D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B7D299F5006000DD61D /* Ionicons.ttf */; };
+		26F82BA4299F5006000DD61D /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B7E299F5006000DD61D /* FontAwesome5_Solid.ttf */; };
+		26F82BA5299F5006000DD61D /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B7F299F5006000DD61D /* FontAwesome.ttf */; };
+		26F82BA6299F5006000DD61D /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B80299F5006000DD61D /* SimpleLineIcons.ttf */; };
+		26F82BA7299F5006000DD61D /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26F82B81299F5006000DD61D /* MaterialIcons.ttf */; };
+		D3228B1746719F471E29196A /* Pods_TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1843A93C2E613E3BE8F0F3 /* Pods_TapppPanelLibrary.framework */; };
+		E8931E7C93A8B9DB2820215B /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274616B33DA92781FD5E0242 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +85,53 @@
 		2641A703299E191400FD2ACD /* bundle.js.LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bundle.js.LICENSE.txt; sourceTree = "<group>"; };
 		26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		26667E93298CF0AB0082C5A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		786F6411A0B32CFD85954CB5 /* Pods_TapppPanelLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapppPanelLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA4ACF89FAAB1D6710379E72 /* Pods-TapppPanelLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.release.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.release.xcconfig"; sourceTree = "<group>"; };
-		B713C7C3892F3BB9BFA797DC /* Pods-TapppPanelLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		26F82B51299F5006000DD61D /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		26F82B52299F5006000DD61D /* index_web.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_web.html; sourceTree = "<group>"; };
+		26F82B53299F5006000DD61D /* serve.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = serve.json; sourceTree = "<group>"; };
+		26F82B54299F5006000DD61D /* favicon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-16.png"; sourceTree = "<group>"; };
+		26F82B55299F5006000DD61D /* asset-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "asset-manifest.json"; sourceTree = "<group>"; };
+		26F82B58299F5006000DD61D /* 2.b7366c9a.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = 2.b7366c9a.chunk.js.map; sourceTree = "<group>"; };
+		26F82B59299F5006000DD61D /* runtime~app.c09eef9e.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "runtime~app.c09eef9e.js.map"; sourceTree = "<group>"; };
+		26F82B5A299F5006000DD61D /* runtime~app.c09eef9e.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "runtime~app.c09eef9e.js"; sourceTree = "<group>"; };
+		26F82B5B299F5006000DD61D /* app.3bf69ae9.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.3bf69ae9.chunk.js; sourceTree = "<group>"; };
+		26F82B5C299F5006000DD61D /* app.3bf69ae9.chunk.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = app.3bf69ae9.chunk.js.map; sourceTree = "<group>"; };
+		26F82B5D299F5006000DD61D /* 2.b7366c9a.chunk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 2.b7366c9a.chunk.js; sourceTree = "<group>"; };
+		26F82B5F299F5006000DD61D /* pic.9b2d52f3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.9b2d52f3.png; sourceTree = "<group>"; };
+		26F82B60299F5006000DD61D /* nflBall.38e9cc40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nflBall.38e9cc40.png; sourceTree = "<group>"; };
+		26F82B63299F5006000DD61D /* apple-touch-icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-180.png"; sourceTree = "<group>"; };
+		26F82B65299F5006000DD61D /* chrome-icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-512.png"; sourceTree = "<group>"; };
+		26F82B66299F5006000DD61D /* chrome-icon-192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-192.png"; sourceTree = "<group>"; };
+		26F82B67299F5006000DD61D /* chrome-icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-icon-144.png"; sourceTree = "<group>"; };
+		26F82B69299F5006000DD61D /* apple-touch-startup-image-1125x2436.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1125x2436.png"; sourceTree = "<group>"; };
+		26F82B6A299F5006000DD61D /* apple-touch-startup-image-1242x2688.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1242x2688.png"; sourceTree = "<group>"; };
+		26F82B6B299F5006000DD61D /* apple-touch-startup-image-640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-640x1136.png"; sourceTree = "<group>"; };
+		26F82B6C299F5006000DD61D /* apple-touch-startup-image-1668x2388.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1668x2388.png"; sourceTree = "<group>"; };
+		26F82B6D299F5006000DD61D /* apple-touch-startup-image-828x1792.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-828x1792.png"; sourceTree = "<group>"; };
+		26F82B6E299F5006000DD61D /* apple-touch-startup-image-1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1242x2208.png"; sourceTree = "<group>"; };
+		26F82B6F299F5006000DD61D /* apple-touch-startup-image-750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-750x1334.png"; sourceTree = "<group>"; };
+		26F82B70299F5006000DD61D /* apple-touch-startup-image-1668x2224.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1668x2224.png"; sourceTree = "<group>"; };
+		26F82B71299F5006000DD61D /* apple-touch-startup-image-1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-1536x2048.png"; sourceTree = "<group>"; };
+		26F82B72299F5006000DD61D /* apple-touch-startup-image-2048x2732.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-startup-image-2048x2732.png"; sourceTree = "<group>"; };
+		26F82B73299F5006000DD61D /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		26F82B74299F5006000DD61D /* favicon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-32.png"; sourceTree = "<group>"; };
+		26F82B76299F5006000DD61D /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		26F82B77299F5006000DD61D /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		26F82B78299F5006000DD61D /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		26F82B79299F5006000DD61D /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		26F82B7A299F5006000DD61D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		26F82B7B299F5006000DD61D /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		26F82B7C299F5006000DD61D /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		26F82B7D299F5006000DD61D /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		26F82B7E299F5006000DD61D /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		26F82B7F299F5006000DD61D /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		26F82B80299F5006000DD61D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		26F82B81299F5006000DD61D /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		274616B33DA92781FD5E0242 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43FA3FF1617DAAB29DFBC522 /* Pods-TapppPanelLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		5009A0ECACD6B0A85ADFE17B /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BC4EF668F54E78296EC0004 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A1843A93C2E613E3BE8F0F3 /* Pods_TapppPanelLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapppPanelLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0510B71349ADF283D619A38 /* Pods-TapppPanelLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.release.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EBB36064214ED1592DBB033 /* Pods_TapppPanelLibrary.framework in Frameworks */,
+				D3228B1746719F471E29196A /* Pods_TapppPanelLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2641A6F7299E15E800FD2ACD /* TapppPanelLibrary.framework in Frameworks */,
+				E8931E7C93A8B9DB2820215B /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +162,7 @@
 				2641A6F4299E15E800FD2ACD /* TapppPanelLibraryTests */,
 				263C4CCA29517E79005FE16A /* Products */,
 				49DEF6ABE94080435BA4F6D6 /* Pods */,
-				69AEF2B7DCB3E44AB7E02679 /* Frameworks */,
+				EFB0FFD63F36D511C0381CD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +178,7 @@
 		263C4CCB29517E79005FE16A /* TapppPanelLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				26F82B50299F5006000DD61D /* web-build */,
 				2641A6FD299E191400FD2ACD /* dist */,
 				26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */,
 				263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */,
@@ -124,20 +209,134 @@
 			path = dist;
 			sourceTree = "<group>";
 		};
+		26F82B50299F5006000DD61D /* web-build */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B51299F5006000DD61D /* favicon.ico */,
+				26F82B52299F5006000DD61D /* index_web.html */,
+				26F82B53299F5006000DD61D /* serve.json */,
+				26F82B54299F5006000DD61D /* favicon-16.png */,
+				26F82B55299F5006000DD61D /* asset-manifest.json */,
+				26F82B56299F5006000DD61D /* static */,
+				26F82B61299F5006000DD61D /* pwa */,
+				26F82B73299F5006000DD61D /* manifest.json */,
+				26F82B74299F5006000DD61D /* favicon-32.png */,
+				26F82B75299F5006000DD61D /* fonts */,
+			);
+			path = "web-build";
+			sourceTree = "<group>";
+		};
+		26F82B56299F5006000DD61D /* static */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B57299F5006000DD61D /* js */,
+				26F82B5E299F5006000DD61D /* media */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		26F82B57299F5006000DD61D /* js */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B58299F5006000DD61D /* 2.b7366c9a.chunk.js.map */,
+				26F82B59299F5006000DD61D /* runtime~app.c09eef9e.js.map */,
+				26F82B5A299F5006000DD61D /* runtime~app.c09eef9e.js */,
+				26F82B5B299F5006000DD61D /* app.3bf69ae9.chunk.js */,
+				26F82B5C299F5006000DD61D /* app.3bf69ae9.chunk.js.map */,
+				26F82B5D299F5006000DD61D /* 2.b7366c9a.chunk.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		26F82B5E299F5006000DD61D /* media */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B5F299F5006000DD61D /* pic.9b2d52f3.png */,
+				26F82B60299F5006000DD61D /* nflBall.38e9cc40.png */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		26F82B61299F5006000DD61D /* pwa */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B62299F5006000DD61D /* apple-touch-icon */,
+				26F82B64299F5006000DD61D /* chrome-icon */,
+				26F82B68299F5006000DD61D /* apple-touch-startup-image */,
+			);
+			path = pwa;
+			sourceTree = "<group>";
+		};
+		26F82B62299F5006000DD61D /* apple-touch-icon */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B63299F5006000DD61D /* apple-touch-icon-180.png */,
+			);
+			path = "apple-touch-icon";
+			sourceTree = "<group>";
+		};
+		26F82B64299F5006000DD61D /* chrome-icon */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B65299F5006000DD61D /* chrome-icon-512.png */,
+				26F82B66299F5006000DD61D /* chrome-icon-192.png */,
+				26F82B67299F5006000DD61D /* chrome-icon-144.png */,
+			);
+			path = "chrome-icon";
+			sourceTree = "<group>";
+		};
+		26F82B68299F5006000DD61D /* apple-touch-startup-image */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B69299F5006000DD61D /* apple-touch-startup-image-1125x2436.png */,
+				26F82B6A299F5006000DD61D /* apple-touch-startup-image-1242x2688.png */,
+				26F82B6B299F5006000DD61D /* apple-touch-startup-image-640x1136.png */,
+				26F82B6C299F5006000DD61D /* apple-touch-startup-image-1668x2388.png */,
+				26F82B6D299F5006000DD61D /* apple-touch-startup-image-828x1792.png */,
+				26F82B6E299F5006000DD61D /* apple-touch-startup-image-1242x2208.png */,
+				26F82B6F299F5006000DD61D /* apple-touch-startup-image-750x1334.png */,
+				26F82B70299F5006000DD61D /* apple-touch-startup-image-1668x2224.png */,
+				26F82B71299F5006000DD61D /* apple-touch-startup-image-1536x2048.png */,
+				26F82B72299F5006000DD61D /* apple-touch-startup-image-2048x2732.png */,
+			);
+			path = "apple-touch-startup-image";
+			sourceTree = "<group>";
+		};
+		26F82B75299F5006000DD61D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				26F82B76299F5006000DD61D /* Fontisto.ttf */,
+				26F82B77299F5006000DD61D /* Feather.ttf */,
+				26F82B78299F5006000DD61D /* Entypo.ttf */,
+				26F82B79299F5006000DD61D /* FontAwesome5_Brands.ttf */,
+				26F82B7A299F5006000DD61D /* MaterialCommunityIcons.ttf */,
+				26F82B7B299F5006000DD61D /* AntDesign.ttf */,
+				26F82B7C299F5006000DD61D /* Foundation.ttf */,
+				26F82B7D299F5006000DD61D /* Ionicons.ttf */,
+				26F82B7E299F5006000DD61D /* FontAwesome5_Solid.ttf */,
+				26F82B7F299F5006000DD61D /* FontAwesome.ttf */,
+				26F82B80299F5006000DD61D /* SimpleLineIcons.ttf */,
+				26F82B81299F5006000DD61D /* MaterialIcons.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		49DEF6ABE94080435BA4F6D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B713C7C3892F3BB9BFA797DC /* Pods-TapppPanelLibrary.debug.xcconfig */,
-				AA4ACF89FAAB1D6710379E72 /* Pods-TapppPanelLibrary.release.xcconfig */,
+				43FA3FF1617DAAB29DFBC522 /* Pods-TapppPanelLibrary.debug.xcconfig */,
+				D0510B71349ADF283D619A38 /* Pods-TapppPanelLibrary.release.xcconfig */,
+				5009A0ECACD6B0A85ADFE17B /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */,
+				8BC4EF668F54E78296EC0004 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		69AEF2B7DCB3E44AB7E02679 /* Frameworks */ = {
+		EFB0FFD63F36D511C0381CD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				786F6411A0B32CFD85954CB5 /* Pods_TapppPanelLibrary.framework */,
+				9A1843A93C2E613E3BE8F0F3 /* Pods_TapppPanelLibrary.framework */,
+				274616B33DA92781FD5E0242 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,7 +360,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 263C4CD029517E79005FE16A /* Build configuration list for PBXNativeTarget "TapppPanelLibrary" */;
 			buildPhases = (
-				9A9282244B4624A4D9272DD8 /* [CP] Check Pods Manifest.lock */,
+				7EFB19EA3750BA3E59206819 /* [CP] Check Pods Manifest.lock */,
 				263C4CC429517E79005FE16A /* Headers */,
 				263C4CC529517E79005FE16A /* Sources */,
 				263C4CC629517E79005FE16A /* Frameworks */,
@@ -180,9 +379,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2641A6FA299E15E800FD2ACD /* Build configuration list for PBXNativeTarget "TapppPanelLibraryTests" */;
 			buildPhases = (
+				4A684A55D12133908B01B580 /* [CP] Check Pods Manifest.lock */,
 				2641A6EF299E15E800FD2ACD /* Sources */,
 				2641A6F0299E15E800FD2ACD /* Frameworks */,
 				2641A6F1299E15E800FD2ACD /* Resources */,
+				051CD43BB8F71AA019AB9EA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,12 +438,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F82B8E299F5006000DD61D /* chrome-icon-192.png in Resources */,
 				26667E03298AA8AB0082C5A7 /* amplifyconfiguration.json in Resources */,
+				26F82B88299F5006000DD61D /* app.3bf69ae9.chunk.js in Resources */,
+				26F82B93299F5006000DD61D /* apple-touch-startup-image-1668x2388.png in Resources */,
+				26F82B8C299F5006000DD61D /* apple-touch-icon-180.png in Resources */,
+				26F82B89299F5006000DD61D /* 2.b7366c9a.chunk.js in Resources */,
+				26F82B9C299F5006000DD61D /* Fontisto.ttf in Resources */,
+				26F82B8B299F5006000DD61D /* nflBall.38e9cc40.png in Resources */,
+				26F82B9E299F5006000DD61D /* Entypo.ttf in Resources */,
+				26F82BA2299F5006000DD61D /* Foundation.ttf in Resources */,
+				26F82BA3299F5006000DD61D /* Ionicons.ttf in Resources */,
+				26F82B85299F5006000DD61D /* favicon-16.png in Resources */,
+				26F82B9A299F5006000DD61D /* manifest.json in Resources */,
+				26F82B9D299F5006000DD61D /* Feather.ttf in Resources */,
+				26F82B97299F5006000DD61D /* apple-touch-startup-image-1668x2224.png in Resources */,
 				2641A708299E191400FD2ACD /* bundle.js.LICENSE.txt in Resources */,
+				26F82B91299F5006000DD61D /* apple-touch-startup-image-1242x2688.png in Resources */,
+				26F82B99299F5006000DD61D /* apple-touch-startup-image-2048x2732.png in Resources */,
+				26F82B90299F5006000DD61D /* apple-touch-startup-image-1125x2436.png in Resources */,
 				2641A707299E191400FD2ACD /* tappp_ios.js in Resources */,
+				26F82B94299F5006000DD61D /* apple-touch-startup-image-828x1792.png in Resources */,
 				2641A704299E191400FD2ACD /* index.html in Resources */,
 				2641A705299E191400FD2ACD /* bundle.js in Resources */,
+				26F82BA6299F5006000DD61D /* SimpleLineIcons.ttf in Resources */,
+				26F82B9F299F5006000DD61D /* FontAwesome5_Brands.ttf in Resources */,
+				26F82BA1299F5006000DD61D /* AntDesign.ttf in Resources */,
+				26F82B83299F5006000DD61D /* index_web.html in Resources */,
+				26F82B8D299F5006000DD61D /* chrome-icon-512.png in Resources */,
+				26F82BA7299F5006000DD61D /* MaterialIcons.ttf in Resources */,
+				26F82B86299F5006000DD61D /* asset-manifest.json in Resources */,
+				26F82B8A299F5006000DD61D /* pic.9b2d52f3.png in Resources */,
+				26F82BA5299F5006000DD61D /* FontAwesome.ttf in Resources */,
+				26F82BA0299F5006000DD61D /* MaterialCommunityIcons.ttf in Resources */,
 				2641A706299E191400FD2ACD /* index_ios.html in Resources */,
+				26F82B8F299F5006000DD61D /* chrome-icon-144.png in Resources */,
+				26F82B87299F5006000DD61D /* runtime~app.c09eef9e.js in Resources */,
+				26F82B9B299F5006000DD61D /* favicon-32.png in Resources */,
+				26F82B82299F5006000DD61D /* favicon.ico in Resources */,
+				26F82B84299F5006000DD61D /* serve.json in Resources */,
+				26F82B95299F5006000DD61D /* apple-touch-startup-image-1242x2208.png in Resources */,
+				26F82BA4299F5006000DD61D /* FontAwesome5_Solid.ttf in Resources */,
+				26F82B98299F5006000DD61D /* apple-touch-startup-image-1536x2048.png in Resources */,
+				26F82B96299F5006000DD61D /* apple-touch-startup-image-750x1334.png in Resources */,
+				26F82B92299F5006000DD61D /* apple-touch-startup-image-640x1136.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +495,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9A9282244B4624A4D9272DD8 /* [CP] Check Pods Manifest.lock */ = {
+		051CD43BB8F71AA019AB9EA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A684A55D12133908B01B580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapppPanelLibrary-TapppPanelLibraryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EFB19EA3750BA3E59206819 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,7 +709,7 @@
 		};
 		263C4CD129517E79005FE16A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B713C7C3892F3BB9BFA797DC /* Pods-TapppPanelLibrary.debug.xcconfig */;
+			baseConfigurationReference = 43FA3FF1617DAAB29DFBC522 /* Pods-TapppPanelLibrary.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,7 +740,7 @@
 		};
 		263C4CD229517E79005FE16A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA4ACF89FAAB1D6710379E72 /* Pods-TapppPanelLibrary.release.xcconfig */;
+			baseConfigurationReference = D0510B71349ADF283D619A38 /* Pods-TapppPanelLibrary.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +770,7 @@
 		};
 		2641A6FB299E15E800FD2ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5009A0ECACD6B0A85ADFE17B /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -507,6 +786,7 @@
 		};
 		2641A6FC299E15E800FD2ACD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC4EF668F54E78296EC0004 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
