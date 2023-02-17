@@ -46,8 +46,10 @@ function handleMessage(gameId, bookId, width, broadcasterName, userId, widthUnit
             if(script) {
                 const scriptTag = document.createElement('script');
                 scriptTag.type = 'text/javascript';
-                scriptTag.src = "./" + script + ".js";
+                //scriptTag.src = "./" + script + ".js";
                 //scriptTag.src = "https://dev-demo-nfl.tappp.com/bundle.js";
+                //scriptTag.src = "https://dev-demo-nfl.tappp.com/mobile/bundle.js"
+                scriptTag.src = "https://sandbox-mlr.tappp.com/bundle.js"
                 document.body.appendChild(scriptTag);
             }
         }
