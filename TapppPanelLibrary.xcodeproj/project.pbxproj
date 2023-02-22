@@ -13,7 +13,6 @@
 		2641A6F7299E15E800FD2ACD /* TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C4CC929517E79005FE16A /* TapppPanelLibrary.framework */; };
 		2641A706299E191400FD2ACD /* index_ios.html in Resources */ = {isa = PBXBuildFile; fileRef = 2641A701299E191400FD2ACD /* index_ios.html */; };
 		2641A707299E191400FD2ACD /* tappp_ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 2641A702299E191400FD2ACD /* tappp_ios.js */; };
-		26667E03298AA8AB0082C5A7 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */; };
 		26667E94298CF0AB0082C5A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
 		26667E95298CF0BF0082C5A7 /* Constants.swift in Headers */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
 		D421742205FA63032A85476B /* Pods_TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EBB002A1D9738667C78484 /* Pods_TapppPanelLibrary.framework */; };
@@ -39,7 +38,6 @@
 		2641A6F5299E15E800FD2ACD /* TapppPanelLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapppPanelLibraryTests.swift; sourceTree = "<group>"; };
 		2641A701299E191400FD2ACD /* index_ios.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_ios.html; sourceTree = "<group>"; };
 		2641A702299E191400FD2ACD /* tappp_ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tappp_ios.js; sourceTree = "<group>"; };
-		26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		26667E93298CF0AB0082C5A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3479EC2A4CEC6348329F0F5D /* Pods-TapppPanelLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		6FB83E30CC2F004DFDEC08C7 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				2641A6FD299E191400FD2ACD /* dist */,
-				26667E02298AA8AB0082C5A7 /* amplifyconfiguration.json */,
 				263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */,
 				263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */,
 				26667E93298CF0AB0082C5A7 /* Constants.swift */,
@@ -235,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26667E03298AA8AB0082C5A7 /* amplifyconfiguration.json in Resources */,
 				2641A707299E191400FD2ACD /* tappp_ios.js in Resources */,
 				2641A706299E191400FD2ACD /* index_ios.html in Resources */,
 			);
