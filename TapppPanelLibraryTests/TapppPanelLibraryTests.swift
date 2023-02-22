@@ -13,7 +13,8 @@ import WebKit
 final class TapppPanelLibraryTests: XCTestCase{
     let objPanel = WebkitClass()
     private var subscriberArr = [String]()
-    
+    var webViewExpectation: XCTestExpectation!
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -392,5 +393,12 @@ final class TapppPanelLibraryTests: XCTestCase{
         }
         return ""
     }
+
+}
+extension TapppPanelLibraryTests: WKNavigationDelegate{
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+      webViewExpectation.fulfill()
+  }
 
 }

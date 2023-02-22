@@ -10,10 +10,14 @@ import WebKit
 //import Amplify
 //import AWSPluginsCore
 //import AmplifyPlugins
-//import Sentry
+import Sentry
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
+}
+
+public protocol hidePanelView{
+    func hidePanelfromLibrary()
 }
 
 enum ValidationState {
@@ -25,18 +29,20 @@ public class WebkitClass: NSObject {
     
     public lazy var webView = WKWebView()
     public var delegate: alertDelegate?
+    public var delegateHide: hidePanelView?
     private var sportsbook = ""
     private var subscriberArr = [String]()
     var view = UIView()
     var jsonString = String()
     var objectPanelData = [String: Any]()
+    var isPanelAvailable = false
     
     
     override public init() {}
     
     public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
         //        configureAmplify()
-//                configureSentry()
+                configureSentry()
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
         //webView.contentMode = .scaleToFill
@@ -59,12 +65,12 @@ public class WebkitClass: NSObject {
             case .invalid(let err):
                 self.exceptionHandleHTML(errMsg: err)
                 
-//                let error = NSError(domain: "MethodName: init : \(err) \(panelData.description)" , code: 0, userInfo: nil)
-//                SentrySDK.capture(error: error)
+                let error = NSError(domain: "MethodName: init : \(err) \(panelData.description)" , code: 0, userInfo: nil)
+                SentrySDK.capture(error: error)
             }
         } else {
-//            let error = NSError(domain: "Nil Input parameter in init." , code: 0, userInfo: nil)
-//            SentrySDK.capture(error: error)
+            let error = NSError(domain: "Nil Input parameter in init." , code: 0, userInfo: nil)
+            SentrySDK.capture(error: error)
         }
     }
     
@@ -77,7 +83,7 @@ public class WebkitClass: NSObject {
             print("Failed to configure Amplify", error)
         }
     }*/
-    /*public func configureSentry(){
+    public func configureSentry(){
         SentrySDK.start { options in
             options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
             options.debug = true // Enabled debug when first installing is always helpful
@@ -93,7 +99,7 @@ public class WebkitClass: NSObject {
             }
             //options.enableMetricKit = true //'enableMetricKit' is only available in iOS 15.0 or newer
         }
-    }*/
+    }
     
     public func checkNilInputParam(panelData: [String: Any]?, panelSetting: [String: Any]?, currView: UIView?) -> Bool {
         if currView == nil {
@@ -183,7 +189,7 @@ public class WebkitClass: NSObject {
         // if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
         //         webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         //     }
-        
+        isPanelAvailable = true
         webView.configuration.preferences.javaScriptEnabled = true
     }
     
@@ -249,7 +255,13 @@ public class WebkitClass: NSObject {
         self.start()
     }
     public func hidePanel(){
-        self.stop()
+        if isPanelAvailable {
+            isPanelAvailable = false
+            delegateHide?.hidePanelfromLibrary()
+        } else {
+            let error = NSError(domain: "Error in hide panel. Trying to hide invisible panel." , code: 0, userInfo: nil)
+            SentrySDK.capture(error: error)
+        }
     }
     
     /*public func displayMsg(str : String){
@@ -287,6 +299,8 @@ extension WebkitClass: WKNavigationDelegate{
     
     public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print(error.localizedDescription)
+        let error = NSError(domain: "Error in load webview. \(error.localizedDescription)" , code: 0, userInfo: nil)
+        SentrySDK.capture(error: error)
     }
 }
 
