@@ -134,28 +134,31 @@ public class WebkitClass: NSObject {
         
         if let bId = internalPaneldata[Constants.request.BOOK_ID] as? String{
             if bId.count > 0 {
-                if let widthInfo = panelData?[Constants.request.WIDTH] as? [String: Any]{
-                    if let val = widthInfo[Constants.request.VALUE] as? Double, val > 0 {
-                        print("From reference app val", val)
-                    } else {
-                        var widthInfoUD = [String : Any]()
-                        widthInfoUD[Constants.request.UNIT] = "px"
-                        widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
-                        internalPaneldata[Constants.request.WIDTH] = widthInfoUD
-                    }
-                } else {
-                    var widthInfoUD = [String : Any]()
-                    widthInfoUD[Constants.request.UNIT] = "px"
-                    widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
-                    internalPaneldata[Constants.request.WIDTH] = widthInfoUD
-                }
             } else {
                 self.exceptionHandleHTML(errMsg: Constants.errorMessage.BOOKID_NULL_EMPTY)
+                internalPaneldata[Constants.request.BOOK_ID] = "1000009"
             }
         } else {
             self.exceptionHandleHTML(errMsg: Constants.errorMessage.BOOKID_NOT_FOUND)
+            internalPaneldata[Constants.request.BOOK_ID] = "1000009"
         }
         
+        if let widthInfo = internalPaneldata[Constants.request.WIDTH] as? [String: Any]{
+            if let val = widthInfo[Constants.request.VALUE] as? String, val.count > 0 {
+                print("From reference app val", val)
+            } else {
+                var widthInfoUD = [String : Any]()
+                widthInfoUD[Constants.request.UNIT] = "px"
+                widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
+                internalPaneldata[Constants.request.WIDTH] = widthInfoUD
+            }
+        } else {
+            var widthInfoUD = [String : Any]()
+            widthInfoUD[Constants.request.UNIT] = "px"
+            widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
+            internalPaneldata[Constants.request.WIDTH] = widthInfoUD
+        }
+
         objectPanelData[Constants.request.GAME_INFO] = internalPaneldata
         return .valid
     }
@@ -206,7 +209,6 @@ public class WebkitClass: NSObject {
         print("^^^^widthVal=", widthVal)
         let gameId = dict[Constants.request.GAME_ID] as! String
         let bookId = dict[Constants.request.BOOK_ID] as! String
-        let width = "200"
         let broadcasterName = "NFL"
         let userId = "USR1234"
         let widthUnit = "px"
@@ -214,7 +216,6 @@ public class WebkitClass: NSObject {
         print("...^^^^bookId=", bookId)
         print("...^^^^widthVal=", widthVal)
         print("...^^^^broadcasterName=", broadcasterName)
-        print("...^^^^width=", width)
         
         self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)','\(userId)', '\(widthUnit)');", completionHandler: { result, error in
             if let val = result as? String {
