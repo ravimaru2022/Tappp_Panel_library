@@ -15,20 +15,6 @@
 		2641A707299E191400FD2ACD /* tappp_ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 2641A702299E191400FD2ACD /* tappp_ios.js */; };
 		26667E94298CF0AB0082C5A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
 		26667E95298CF0BF0082C5A7 /* Constants.swift in Headers */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
-		2694BA8029A786A70099C890 /* 75371f53f06181df75f16f2a140533e5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7129A786A60099C890 /* 75371f53f06181df75f16f2a140533e5.ttf */; };
-		2694BA8129A786A70099C890 /* 77e50ab1eee2eea0a44238ef8502950a.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7229A786A60099C890 /* 77e50ab1eee2eea0a44238ef8502950a.ttf */; };
-		2694BA8229A786A70099C890 /* 8be2d1487420548b3b8ddba68270b26b.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7329A786A60099C890 /* 8be2d1487420548b3b8ddba68270b26b.ttf */; };
-		2694BA8329A786A70099C890 /* 56a82359ebe22eaae14ef4a2e1edbbf6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7429A786A60099C890 /* 56a82359ebe22eaae14ef4a2e1edbbf6.ttf */; };
-		2694BA8429A786A70099C890 /* 1711b41f3ae4cb322eeacae23f124122.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7529A786A70099C890 /* 1711b41f3ae4cb322eeacae23f124122.ttf */; };
-		2694BA8529A786A70099C890 /* bundle.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7729A786A70099C890 /* bundle.js.LICENSE.txt */; };
-		2694BA8629A786A70099C890 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7829A786A70099C890 /* bundle.js */; };
-		2694BA8729A786A70099C890 /* beb7fe13e61b9e683c3778a5e2dc4e01.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7929A786A70099C890 /* beb7fe13e61b9e683c3778a5e2dc4e01.ttf */; };
-		2694BA8829A786A70099C890 /* 2a4285847db4a9acb97fef9905c0ad44.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7A29A786A70099C890 /* 2a4285847db4a9acb97fef9905c0ad44.ttf */; };
-		2694BA8929A786A70099C890 /* 60c1f67b002e61ad0fe4702d82476941.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7B29A786A70099C890 /* 60c1f67b002e61ad0fe4702d82476941.ttf */; };
-		2694BA8A29A786A70099C890 /* 026cbce13cda4ab885bf1350b873086f.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7C29A786A70099C890 /* 026cbce13cda4ab885bf1350b873086f.ttf */; };
-		2694BA8B29A786A70099C890 /* 7429a63c09f79a1760b0233e3e46f776.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7D29A786A70099C890 /* 7429a63c09f79a1760b0233e3e46f776.ttf */; };
-		2694BA8C29A786A70099C890 /* a8d6ac03c7b96b7acb6228ff2676139d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7E29A786A70099C890 /* a8d6ac03c7b96b7acb6228ff2676139d.ttf */; };
-		2694BA8D29A786A70099C890 /* 43cbee784f9194c54b2c65a223f89c5d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2694BA7F29A786A70099C890 /* 43cbee784f9194c54b2c65a223f89c5d.ttf */; };
 		B826C26C7CBDD4EAC324F364 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B591ECF533429833CFD9345C /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */; };
 		DD9493AF302F624B9CC3CB00 /* Pods_TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1F7C4136F3D14E02544816 /* Pods_TapppPanelLibrary.framework */; };
 /* End PBXBuildFile section */
@@ -54,21 +40,6 @@
 		2641A701299E191400FD2ACD /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		2641A702299E191400FD2ACD /* tappp_ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tappp_ios.js; sourceTree = "<group>"; };
 		26667E93298CF0AB0082C5A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		2694BA7129A786A60099C890 /* 75371f53f06181df75f16f2a140533e5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 75371f53f06181df75f16f2a140533e5.ttf; sourceTree = "<group>"; };
-		2694BA7229A786A60099C890 /* 77e50ab1eee2eea0a44238ef8502950a.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 77e50ab1eee2eea0a44238ef8502950a.ttf; sourceTree = "<group>"; };
-		2694BA7329A786A60099C890 /* 8be2d1487420548b3b8ddba68270b26b.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8be2d1487420548b3b8ddba68270b26b.ttf; sourceTree = "<group>"; };
-		2694BA7429A786A60099C890 /* 56a82359ebe22eaae14ef4a2e1edbbf6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 56a82359ebe22eaae14ef4a2e1edbbf6.ttf; sourceTree = "<group>"; };
-		2694BA7529A786A70099C890 /* 1711b41f3ae4cb322eeacae23f124122.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1711b41f3ae4cb322eeacae23f124122.ttf; sourceTree = "<group>"; };
-		2694BA7629A786A70099C890 /* bundle.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = bundle.js.map; sourceTree = "<group>"; };
-		2694BA7729A786A70099C890 /* bundle.js.LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bundle.js.LICENSE.txt; sourceTree = "<group>"; };
-		2694BA7829A786A70099C890 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
-		2694BA7929A786A70099C890 /* beb7fe13e61b9e683c3778a5e2dc4e01.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beb7fe13e61b9e683c3778a5e2dc4e01.ttf; sourceTree = "<group>"; };
-		2694BA7A29A786A70099C890 /* 2a4285847db4a9acb97fef9905c0ad44.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2a4285847db4a9acb97fef9905c0ad44.ttf; sourceTree = "<group>"; };
-		2694BA7B29A786A70099C890 /* 60c1f67b002e61ad0fe4702d82476941.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 60c1f67b002e61ad0fe4702d82476941.ttf; sourceTree = "<group>"; };
-		2694BA7C29A786A70099C890 /* 026cbce13cda4ab885bf1350b873086f.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 026cbce13cda4ab885bf1350b873086f.ttf; sourceTree = "<group>"; };
-		2694BA7D29A786A70099C890 /* 7429a63c09f79a1760b0233e3e46f776.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7429a63c09f79a1760b0233e3e46f776.ttf; sourceTree = "<group>"; };
-		2694BA7E29A786A70099C890 /* a8d6ac03c7b96b7acb6228ff2676139d.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = a8d6ac03c7b96b7acb6228ff2676139d.ttf; sourceTree = "<group>"; };
-		2694BA7F29A786A70099C890 /* 43cbee784f9194c54b2c65a223f89c5d.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 43cbee784f9194c54b2c65a223f89c5d.ttf; sourceTree = "<group>"; };
 		B591ECF533429833CFD9345C /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B997E3FB1D0C8D5A2EA8E0C4 /* Pods-TapppPanelLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		ED71BEDBA4D3E69E4A8DBB0C /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,21 +109,6 @@
 		2641A6FD299E191400FD2ACD /* dist */ = {
 			isa = PBXGroup;
 			children = (
-				2694BA7A29A786A70099C890 /* 2a4285847db4a9acb97fef9905c0ad44.ttf */,
-				2694BA7329A786A60099C890 /* 8be2d1487420548b3b8ddba68270b26b.ttf */,
-				2694BA7C29A786A70099C890 /* 026cbce13cda4ab885bf1350b873086f.ttf */,
-				2694BA7F29A786A70099C890 /* 43cbee784f9194c54b2c65a223f89c5d.ttf */,
-				2694BA7429A786A60099C890 /* 56a82359ebe22eaae14ef4a2e1edbbf6.ttf */,
-				2694BA7B29A786A70099C890 /* 60c1f67b002e61ad0fe4702d82476941.ttf */,
-				2694BA7229A786A60099C890 /* 77e50ab1eee2eea0a44238ef8502950a.ttf */,
-				2694BA7529A786A70099C890 /* 1711b41f3ae4cb322eeacae23f124122.ttf */,
-				2694BA7D29A786A70099C890 /* 7429a63c09f79a1760b0233e3e46f776.ttf */,
-				2694BA7129A786A60099C890 /* 75371f53f06181df75f16f2a140533e5.ttf */,
-				2694BA7E29A786A70099C890 /* a8d6ac03c7b96b7acb6228ff2676139d.ttf */,
-				2694BA7929A786A70099C890 /* beb7fe13e61b9e683c3778a5e2dc4e01.ttf */,
-				2694BA7829A786A70099C890 /* bundle.js */,
-				2694BA7729A786A70099C890 /* bundle.js.LICENSE.txt */,
-				2694BA7629A786A70099C890 /* bundle.js.map */,
 				2641A701299E191400FD2ACD /* index.html */,
 				2641A702299E191400FD2ACD /* tappp_ios.js */,
 			);
@@ -276,22 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2694BA8729A786A70099C890 /* beb7fe13e61b9e683c3778a5e2dc4e01.ttf in Resources */,
 				2641A707299E191400FD2ACD /* tappp_ios.js in Resources */,
-				2694BA8529A786A70099C890 /* bundle.js.LICENSE.txt in Resources */,
-				2694BA8929A786A70099C890 /* 60c1f67b002e61ad0fe4702d82476941.ttf in Resources */,
-				2694BA8629A786A70099C890 /* bundle.js in Resources */,
-				2694BA8229A786A70099C890 /* 8be2d1487420548b3b8ddba68270b26b.ttf in Resources */,
-				2694BA8C29A786A70099C890 /* a8d6ac03c7b96b7acb6228ff2676139d.ttf in Resources */,
-				2694BA8029A786A70099C890 /* 75371f53f06181df75f16f2a140533e5.ttf in Resources */,
 				2641A706299E191400FD2ACD /* index.html in Resources */,
-				2694BA8A29A786A70099C890 /* 026cbce13cda4ab885bf1350b873086f.ttf in Resources */,
-				2694BA8129A786A70099C890 /* 77e50ab1eee2eea0a44238ef8502950a.ttf in Resources */,
-				2694BA8429A786A70099C890 /* 1711b41f3ae4cb322eeacae23f124122.ttf in Resources */,
-				2694BA8829A786A70099C890 /* 2a4285847db4a9acb97fef9905c0ad44.ttf in Resources */,
-				2694BA8B29A786A70099C890 /* 7429a63c09f79a1760b0233e3e46f776.ttf in Resources */,
-				2694BA8329A786A70099C890 /* 56a82359ebe22eaae14ef4a2e1edbbf6.ttf in Resources */,
-				2694BA8D29A786A70099C890 /* 43cbee784f9194c54b2c65a223f89c5d.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

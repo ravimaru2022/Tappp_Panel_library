@@ -97,6 +97,9 @@ public class WebkitClass: NSObject {
             } else {
                 // Fallback on earlier versions
             }
+            options.enableAutoBreadcrumbTracking = false
+            options.enableNetworkTracking = false
+            options.enableNetworkBreadcrumbs = false
             //options.enableMetricKit = true //'enableMetricKit' is only available in iOS 15.0 or newer
         }
     }
