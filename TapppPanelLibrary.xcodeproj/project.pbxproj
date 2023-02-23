@@ -11,12 +11,10 @@
 		263C4CD429517F9B005FE16A /* TapppPanelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */; };
 		2641A6F6299E15E800FD2ACD /* TapppPanelLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641A6F5299E15E800FD2ACD /* TapppPanelLibraryTests.swift */; };
 		2641A6F7299E15E800FD2ACD /* TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C4CC929517E79005FE16A /* TapppPanelLibrary.framework */; };
-		2641A706299E191400FD2ACD /* index_ios.html in Resources */ = {isa = PBXBuildFile; fileRef = 2641A701299E191400FD2ACD /* index_ios.html */; };
+		2641A706299E191400FD2ACD /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2641A701299E191400FD2ACD /* index.html */; };
 		2641A707299E191400FD2ACD /* tappp_ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 2641A702299E191400FD2ACD /* tappp_ios.js */; };
 		26667E94298CF0AB0082C5A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
 		26667E95298CF0BF0082C5A7 /* Constants.swift in Headers */ = {isa = PBXBuildFile; fileRef = 26667E93298CF0AB0082C5A7 /* Constants.swift */; };
-		D421742205FA63032A85476B /* Pods_TapppPanelLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EBB002A1D9738667C78484 /* Pods_TapppPanelLibrary.framework */; };
-		F67229C76D2D6545798616A2 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB83E30CC2F004DFDEC08C7 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19EBB002A1D9738667C78484 /* Pods_TapppPanelLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapppPanelLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		263C4CC929517E79005FE16A /* TapppPanelLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TapppPanelLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapppPanelLibrary.h; sourceTree = "<group>"; };
 		263C4CD329517F9B005FE16A /* TapppPanelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapppPanelLibrary.swift; sourceTree = "<group>"; };
 		2641A6F3299E15E800FD2ACD /* TapppPanelLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapppPanelLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2641A6F5299E15E800FD2ACD /* TapppPanelLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapppPanelLibraryTests.swift; sourceTree = "<group>"; };
-		2641A701299E191400FD2ACD /* index_ios.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_ios.html; sourceTree = "<group>"; };
+		2641A701299E191400FD2ACD /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		2641A702299E191400FD2ACD /* tappp_ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tappp_ios.js; sourceTree = "<group>"; };
 		26667E93298CF0AB0082C5A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		3479EC2A4CEC6348329F0F5D /* Pods-TapppPanelLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.debug.xcconfig"; sourceTree = "<group>"; };
-		6FB83E30CC2F004DFDEC08C7 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70FDD5496E4D0C4FD033461F /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9992F3DD70BA11E0357297B3 /* Pods-TapppPanelLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary.release.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary/Pods-TapppPanelLibrary.release.xcconfig"; sourceTree = "<group>"; };
-		D3CEAFD6BFCCA0895CC82A56 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig"; path = "Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D421742205FA63032A85476B /* Pods_TapppPanelLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +51,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2641A6F7299E15E800FD2ACD /* TapppPanelLibrary.framework in Frameworks */,
-				F67229C76D2D6545798616A2 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +64,6 @@
 				2641A6F4299E15E800FD2ACD /* TapppPanelLibraryTests */,
 				263C4CCA29517E79005FE16A /* Products */,
 				49DEF6ABE94080435BA4F6D6 /* Pods */,
-				47F265D30CF500E2383A9D8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,28 +98,15 @@
 		2641A6FD299E191400FD2ACD /* dist */ = {
 			isa = PBXGroup;
 			children = (
-				2641A701299E191400FD2ACD /* index_ios.html */,
+				2641A701299E191400FD2ACD /* index.html */,
 				2641A702299E191400FD2ACD /* tappp_ios.js */,
 			);
 			path = dist;
 			sourceTree = "<group>";
 		};
-		47F265D30CF500E2383A9D8B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				19EBB002A1D9738667C78484 /* Pods_TapppPanelLibrary.framework */,
-				6FB83E30CC2F004DFDEC08C7 /* Pods_TapppPanelLibrary_TapppPanelLibraryTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		49DEF6ABE94080435BA4F6D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3479EC2A4CEC6348329F0F5D /* Pods-TapppPanelLibrary.debug.xcconfig */,
-				9992F3DD70BA11E0357297B3 /* Pods-TapppPanelLibrary.release.xcconfig */,
-				70FDD5496E4D0C4FD033461F /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */,
-				D3CEAFD6BFCCA0895CC82A56 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,7 +130,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 263C4CD029517E79005FE16A /* Build configuration list for PBXNativeTarget "TapppPanelLibrary" */;
 			buildPhases = (
-				4664A82CB7A0B1C151B10C18 /* [CP] Check Pods Manifest.lock */,
 				263C4CC429517E79005FE16A /* Headers */,
 				263C4CC529517E79005FE16A /* Sources */,
 				263C4CC629517E79005FE16A /* Frameworks */,
@@ -173,11 +148,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2641A6FA299E15E800FD2ACD /* Build configuration list for PBXNativeTarget "TapppPanelLibraryTests" */;
 			buildPhases = (
-				6FB7F60A26739947A9678A7C /* [CP] Check Pods Manifest.lock */,
 				2641A6EF299E15E800FD2ACD /* Sources */,
 				2641A6F0299E15E800FD2ACD /* Frameworks */,
 				2641A6F1299E15E800FD2ACD /* Resources */,
-				43B539257DA405B825B9212B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2641A707299E191400FD2ACD /* tappp_ios.js in Resources */,
-				2641A706299E191400FD2ACD /* index_ios.html in Resources */,
+				2641A706299E191400FD2ACD /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,70 +218,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		43B539257DA405B825B9212B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TapppPanelLibrary-TapppPanelLibraryTests/Pods-TapppPanelLibrary-TapppPanelLibraryTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4664A82CB7A0B1C151B10C18 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TapppPanelLibrary-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FB7F60A26739947A9678A7C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TapppPanelLibrary-TapppPanelLibraryTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		263C4CC529517E79005FE16A /* Sources */ = {
@@ -461,7 +370,6 @@
 		};
 		263C4CD129517E79005FE16A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3479EC2A4CEC6348329F0F5D /* Pods-TapppPanelLibrary.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,7 +400,6 @@
 		};
 		263C4CD229517E79005FE16A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9992F3DD70BA11E0357297B3 /* Pods-TapppPanelLibrary.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,7 +429,6 @@
 		};
 		2641A6FB299E15E800FD2ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70FDD5496E4D0C4FD033461F /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -538,7 +444,6 @@
 		};
 		2641A6FC299E15E800FD2ACD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3CEAFD6BFCCA0895CC82A56 /* Pods-TapppPanelLibrary-TapppPanelLibraryTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
