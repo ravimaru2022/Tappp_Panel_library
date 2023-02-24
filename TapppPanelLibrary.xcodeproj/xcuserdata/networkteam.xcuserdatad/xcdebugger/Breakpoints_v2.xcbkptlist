@@ -14,58 +14,10 @@
             filePath = "TapppPanelLibrary/TapppPanelLibrary.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "start()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "29CFADB0-AE73-48C4-9D39-1BA317A1A648"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TapppPanelLibrary/TapppPanelLibrary.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "checkPanelDataParam(panelData:currView:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "29CFADB0-AE73-48C4-9D39-1BA317A1A648 - 11bcec24eab050de"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TapppPanelLibrary.WebkitClass.checkPanelDataParam(panelData: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, currView: Swift.Optional&lt;__C.UIView&gt;) -&gt; TapppPanelLibrary.ValidationState"
-                  moduleName = "TapppPanelLibrary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/TapppPanelLibrary.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "1436">
-               </Location>
-               <Location
-                  uuid = "29CFADB0-AE73-48C4-9D39-1BA317A1A648 - 11bcec24eab050de"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TapppPanelLibrary.WebkitClass.checkPanelDataParam(panelData: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, currView: Swift.Optional&lt;__C.UIView&gt;) -&gt; TapppPanelLibrary.ValidationState"
-                  moduleName = "TapppPanelLibrary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/TapppPanelLibrary.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "1704">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
