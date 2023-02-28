@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  TapppContext.swift
 //  TapppPanelLibrary
 //
 //  Created by MA-15 on 03/02/23.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class Constants { //Costant
+public class TapppContext {
     
     public static let CURRENT_DEVICE                             =      UIDevice.current.name
     public static let CURRENTDEVICE_SIZE                         =      UIScreen.main.bounds.size

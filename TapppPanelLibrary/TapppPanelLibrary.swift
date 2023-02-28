@@ -1,21 +1,13 @@
-//
-//  TapppPanelLibrary.swift
-//  TapppPanelLibrary
-//
-//  Created by MA-15 on 20/12/22.
-//
-
 import Foundation
 import WebKit
 //import Amplify
 //import AWSPluginsCore
 //import AmplifyPlugins
-import Sentry
+// import Sentry
 
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
 }
-
 public protocol hidePanelView{
     func hidePanelfromLibrary()
 }
@@ -30,26 +22,27 @@ public class WebkitClass: NSObject {
     public lazy var webView = WKWebView()
     public var delegate: alertDelegate?
     public var delegateHide: hidePanelView?
+
     private var sportsbook = ""
     private var subscriberArr = [String]()
     var view = UIView()
     var jsonString = String()
     var objectPanelData = [String: Any]()
     var isPanelAvailable = false
-    
+
     
     override public init() {}
     
-    public func initPanel(panelData: [String: Any], panelSetting: [String: Any], currView: UIView) {
+    public func initPanel(panelData: [String: Any], currView: UIView) {
         //        configureAmplify()
-                configureSentry()
+                // configureSentry()
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
         //webView.contentMode = .scaleToFill
         print(panelData)
         // var internalPaneldata = [String : Any]()
         
-        if checkNilInputParam(panelData: panelData, panelSetting: panelSetting, currView: currView) {
+        if checkNilInputParam(panelData: panelData, currView: currView) {
             switch checkPanelDataParam(panelData: panelData, currView: currView){
             case .valid:
                 print("valid input")
@@ -66,11 +59,11 @@ public class WebkitClass: NSObject {
                 self.exceptionHandleHTML(errMsg: err)
                 
                 let error = NSError(domain: "MethodName: init : \(err) \(panelData.description)" , code: 0, userInfo: nil)
-                SentrySDK.capture(error: error)
+                // SentrySDK.capture(error: error)
             }
         } else {
             let error = NSError(domain: "Nil Input parameter in init." , code: 0, userInfo: nil)
-            SentrySDK.capture(error: error)
+            // SentrySDK.capture(error: error)
         }
     }
     
@@ -83,86 +76,84 @@ public class WebkitClass: NSObject {
             print("Failed to configure Amplify", error)
         }
     }*/
-    public func configureSentry(){
-        SentrySDK.start { options in
-            options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
-            options.debug = true // Enabled debug when first installing is always helpful
+    // public func configureSentry(){
+    //     SentrySDK.start { options in
+    //         options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
+    //         options.debug = true // Enabled debug when first installing is always helpful
 
-            // Enable all experimental features
-            options.enablePreWarmedAppStartTracing = true
-            options.attachScreenshot = true
-            options.attachViewHierarchy = true
-            if #available(iOS 15.0, *) {
-                options.enableMetricKit = true
-            } else {
-                // Fallback on earlier versions
-            }
-            options.enableAutoBreadcrumbTracking = false
-            options.enableNetworkTracking = false
-            options.enableNetworkBreadcrumbs = false
-            //options.enableMetricKit = true //'enableMetricKit' is only available in iOS 15.0 or newer
-        }
-    }
+    //         // Enable all experimental features
+    //         options.enablePreWarmedAppStartTracing = true
+    //         options.attachScreenshot = true
+    //         options.attachViewHierarchy = true
+    //         if #available(iOS 15.0, *) {
+    //             options.enableMetricKit = true
+    //         } else {
+    //             // Fallback on earlier versions
+    //         }
+    //         options.enableAutoBreadcrumbTracking = false
+    //         options.enableNetworkTracking = false
+    //         options.enableNetworkBreadcrumbs = false
+    //     }
+    // }
     
-    public func checkNilInputParam(panelData: [String: Any]?, panelSetting: [String: Any]?, currView: UIView?) -> Bool {
+    public func checkNilInputParam(panelData: [String: Any]?, currView: UIView?) -> Bool {
         if currView == nil {
             return false
         }
         if panelData == nil {
             return false
         }
-        if panelSetting == nil {
-            return false
-        }
+        // if panelSetting == nil {
+        //     return false
+        // }
         return true
     }
     
     func checkPanelDataParam(panelData: [String: Any]?, currView: UIView?)-> ValidationState {
         var internalPaneldata = [String : Any]()
         
-        if let pData = panelData?[Constants.request.GAME_INFO] as? [String: Any] {
+        if let pData = panelData?[TapppContext.request.GAME_INFO] as? [String: Any] {
             internalPaneldata = pData
         } else {
-            return .invalid(Constants.errorMessage.GAMEINFO_OBJECT_NOT_FOUND)
+            return .invalid(TapppContext.errorMessage.GAMEINFO_OBJECT_NOT_FOUND)
         }
         
-        if let gId = internalPaneldata[Constants.request.GAME_ID] as? String{
+        if let gId = internalPaneldata[TapppContext.request.GAME_ID] as? String{
             if gId.count > 0 {
             } else {
-                return .invalid(Constants.errorMessage.GAMEID_NULL_EMPTY)
+                return .invalid(TapppContext.errorMessage.GAMEID_NULL_EMPTY)
             }
         } else {
-            return .invalid(Constants.errorMessage.GAMEID_NOT_FOUND)
+            return .invalid(TapppContext.errorMessage.GAMEID_NOT_FOUND)
         }
-        
-        if let bId = internalPaneldata[Constants.request.BOOK_ID] as? String{
+        if let bId = internalPaneldata[TapppContext.request.BOOK_ID] as? String{
             if bId.count > 0 {
             } else {
-                self.exceptionHandleHTML(errMsg: Constants.errorMessage.BOOKID_NULL_EMPTY)
-                internalPaneldata[Constants.request.BOOK_ID] = "1000009"
+                self.exceptionHandleHTML(errMsg: TapppContext.errorMessage.BOOKID_NULL_EMPTY)
+                internalPaneldata[TapppContext.request.BOOK_ID] = "1000009"
             }
         } else {
-            self.exceptionHandleHTML(errMsg: Constants.errorMessage.BOOKID_NOT_FOUND)
-            internalPaneldata[Constants.request.BOOK_ID] = "1000009"
+            self.exceptionHandleHTML(errMsg: TapppContext.errorMessage.BOOKID_NOT_FOUND)
+            internalPaneldata[TapppContext.request.BOOK_ID] = "1000009"
         }
         
-        if let widthInfo = internalPaneldata[Constants.request.WIDTH] as? [String: Any]{
-            if let val = widthInfo[Constants.request.VALUE] as? String, val.count > 0 {
+        if let widthInfo = internalPaneldata[TapppContext.request.WIDTH] as? [String: Any]{
+            if let val = widthInfo[TapppContext.request.VALUE] as? String, val.count > 0 {
                 print("From reference app val", val)
             } else {
                 var widthInfoUD = [String : Any]()
-                widthInfoUD[Constants.request.UNIT] = "px"
-                widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
-                internalPaneldata[Constants.request.WIDTH] = widthInfoUD
+                widthInfoUD[TapppContext.request.UNIT] = "px"
+                widthInfoUD[TapppContext.request.VALUE] = "\(currView?.frame.width ?? 0)"
+                internalPaneldata[TapppContext.request.WIDTH] = widthInfoUD
             }
         } else {
             var widthInfoUD = [String : Any]()
-            widthInfoUD[Constants.request.UNIT] = "px"
-            widthInfoUD[Constants.request.VALUE] = "\(currView?.frame.width ?? 0)"
-            internalPaneldata[Constants.request.WIDTH] = widthInfoUD
+            widthInfoUD[TapppContext.request.UNIT] = "px"
+            widthInfoUD[TapppContext.request.VALUE] = "\(currView?.frame.width ?? 0)"
+            internalPaneldata[TapppContext.request.WIDTH] = widthInfoUD
         }
-
-        objectPanelData[Constants.request.GAME_INFO] = internalPaneldata
+        
+        objectPanelData[TapppContext.request.GAME_INFO] = internalPaneldata
         return .valid
     }
     
@@ -201,26 +192,28 @@ public class WebkitClass: NSObject {
     
     public func loadDataJS (objPanelData : [String: Any]){
         // print("...~~~~objectPanelData at loadDataJS=", objPanelData)
-        guard let dict = objPanelData[Constants.request.GAME_INFO] as? [String:Any] else {
+        guard let dict = objPanelData[TapppContext.request.GAME_INFO] as? [String:Any] else {
             return
         }
         
-        guard let widthDict = dict[Constants.request.WIDTH] as? [String:Any] else {
+        guard let widthDict = dict[TapppContext.request.WIDTH] as? [String:Any] else {
             return
         }
-        let widthVal = widthDict[Constants.request.VALUE] as! String
-        print("^^^^widthVal=", widthVal)
-        let gameId = dict[Constants.request.GAME_ID] as! String
-        let bookId = dict[Constants.request.BOOK_ID] as! String
-        let broadcasterName = "NFL"
-        let userId = "USR1234"
+        guard let broadcasterName = dict[TapppContext.request.BROADCASTER_NAME] as? String  else {
+            return
+        }
+        let widthVal = widthDict[TapppContext.request.VALUE] as! String
+        let gameId = dict[TapppContext.request.GAME_ID] as! String
+        let bookId = dict[TapppContext.request.BOOK_ID] as! String
+//        let broadcasterName = dict[Constants.request.BROADCASTER_NAME] as! String
+        let userId = dict[TapppContext.request.USER_ID] as! String
         let widthUnit = "px"
         print("...^^^^gameId=", gameId)
         print("...^^^^bookId=", bookId)
         print("...^^^^widthVal=", widthVal)
         print("...^^^^broadcasterName=", broadcasterName)
         
-        self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)','\(userId)', '\(widthUnit)');", completionHandler: { result, error in
+        self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)', '\(userId)', '\(widthUnit)');", completionHandler: { result, error in
             if let val = result as? String {
                 print(val)
             }
@@ -264,10 +257,10 @@ public class WebkitClass: NSObject {
             delegateHide?.hidePanelfromLibrary()
         } else {
             let error = NSError(domain: "Error in hide panel. Trying to hide invisible panel." , code: 0, userInfo: nil)
-            SentrySDK.capture(error: error)
+            // SentrySDK.capture(error: error)
         }
     }
-    
+
     /*public func displayMsg(str : String){
      //        self.loadDataJS(str: str)
      }*/
@@ -303,8 +296,8 @@ extension WebkitClass: WKNavigationDelegate{
     
     public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print(error.localizedDescription)
-        let error = NSError(domain: "Error in load webview. \(error.localizedDescription)" , code: 0, userInfo: nil)
-        SentrySDK.capture(error: error)
+        let error = NSError(domain: "Webview failed loading \(error.localizedDescription)" , code: 0, userInfo: nil)
+        // SentrySDK.capture(error: error)
     }
 }
 

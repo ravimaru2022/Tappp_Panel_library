@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TapppPanelLibrary"
-  spec.version      = "1.4.4"
+  spec.version      = "1.4.5"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = "This will be test description for inmplememting pod file."
@@ -17,15 +17,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "TapppPanelLibrary/**/*.{h,m,swift}"
   spec.resources     = "TapppPanelLibrary/**/*.{png, json, html, ico, map, ttf, js}"
   spec.resource_bundles = {
-   'web-build' => ['TapppPanelLibrary/amplifyconfiguration.json',
-                   'TapppPanelLibrary/*.html',
-                   'TapppPanelLibrary/web-build/*.png',
-                   'TapppPanelLibrary/web-build/*.json',
-                   'TapppPanelLibrary/web-build/*.ico',
-                   'TapppPanelLibrary/web-build/*.html',
-                   'TapppPanelLibrary/web-build/fonts/*.ttf',
-                   'TapppPanelLibrary/web-build/static/js/*.js',
-                   'TapppPanelLibrary/web-build/static/js/*.map'],
     'dist' => ['TapppPanelLibrary/dist/*.js',
                'TapppPanelLibrary/dist/*.txt',
                'TapppPanelLibrary/dist/*.map',
@@ -36,7 +27,7 @@ Pod::Spec.new do |spec|
   #spec.ios.dependency 'AmplifyPlugins/AWSCognitoAuthPlugin'
   #spec.ios.dependency 'AmplifyPlugins/AWSAPIPlugin'
   #spec.ios.dependency 'AmplifyPlugins/AWSDataStorePlugin'
-  spec.ios.dependency 'Sentry'
+  #spec.ios.dependency 'Sentry'
 
   #spec.ios.dependency   ':spm => https://github.com/aws-amplify/amplify-swift.git'
   #spec.ios.dependency 'AWSAPIPlugin'
