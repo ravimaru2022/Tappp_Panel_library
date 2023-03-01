@@ -1,10 +1,3 @@
-//
-//  TapppContext.swift
-//  TapppPanelLibrary
-//
-//  Created by MA-15 on 03/02/23.
-//
-
 import Foundation
 import UIKit
 
@@ -36,6 +29,9 @@ public class TapppContext {
         public static let POSITION = "position"
         public static let UNIT = "unit"
         public static let PANELMULTIPLIER = "panelSizeMultiplier"
+        public static let TRN = "TRN"
+        public static let NFL = "NFL"
+        public static let UNIT_VAL = "px"
     }
     
     public struct errorMessage {

@@ -1,6 +1,7 @@
 import XCTest
 import TapppPanelLibrary
 import WebKit
+import Sentry
 //@testable import TapppPanelLibrary
 
 final class TapppPanelLibraryTests: XCTestCase{
@@ -35,7 +36,7 @@ final class TapppPanelLibraryTests: XCTestCase{
         
         
         let objView = UIView()
-        objPanel.initPanel(panelData: gameInfo, currView: objView)
+        objPanel.initPanel(gameInfo: gameInfo, currView: objView)
         
         XCTAssertNotNil(objPanelData)
         //XCTAssertEqual(person.first, "Bart")
@@ -165,9 +166,9 @@ final class TapppPanelLibraryTests: XCTestCase{
         TapppContext.init()
     }
     
-    // func testSentry(){
-    //     objPanel.configureSentry()
-    // }
+     func testSentry(){
+         objPanel.configureSentry()
+     }
     func gameIdNotFound() {
        // This is an example of a performance test case.
        self.measure {
