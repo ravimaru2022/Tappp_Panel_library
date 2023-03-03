@@ -13,11 +13,15 @@ import Sentry
 //import AmplifyPlugins
 
 
+public protocol updateOverlayViewFrame{
+    func updateOverlayFrame(value : String)
+}
 
 public class BaseClass: NSObject {
     
     var frameUnit = ""
     var objectPanelData = [String: Any]()
+    public var delegateFrame: updateOverlayViewFrame?
 
     public func testFunction(){
         
@@ -92,6 +96,7 @@ public class BaseClass: NSObject {
             internalPaneldata[TapppContext.Request.BOOK_ID] = "1000009"
         }
         
+        //let val = "200"
         if let widthInfo = internalPaneldata[TapppContext.Request.WIDTH] as? [String: Any]{
             if let unit = widthInfo[TapppContext.Request.UNIT] as? String, unit.count > 0{
                 frameUnit = unit
@@ -99,6 +104,9 @@ public class BaseClass: NSObject {
                 frameUnit = TapppContext.Request.UNIT_VAL
             }
             if let val = widthInfo[TapppContext.Request.VALUE] as? String, val.count > 0 {
+                if "\(currView?.frame.width ?? 0)" != val {
+                    delegateFrame?.updateOverlayFrame(value: val)
+                }
                 print("From reference app val", val)
             } else {
                 var widthInfoUD = [String : Any]()
@@ -113,6 +121,11 @@ public class BaseClass: NSObject {
             internalPaneldata[TapppContext.Request.WIDTH] = widthInfoUD
         }
         
+        //        if "\(currView?.frame.width ?? 0)" != val {
+        //            delegateFrame?.updateOverlayFrame(value: val)
+        //        }
+
+
         objectPanelData[TapppContext.Request.GAME_INFO] = internalPaneldata
         return .valid
     }
