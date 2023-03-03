@@ -3,4 +3,147 @@
    uuid = "EEF30043-6454-4B1B-8292-1CD14D9BA16B"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DF460A1-0041-45F2-A40D-FB5F94186A81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapppPanelLibrary/BaseClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "getGameInfoAPI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10652D8E-1B58-4755-B3F1-DD4FEBB592C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapppPanelLibrary/BaseClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "getGameInfoAPI()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "10652D8E-1B58-4755-B3F1-DD4FEBB592C9 - c9c7eff0cb60c6fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getGameInfoAPI() -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "10652D8E-1B58-4755-B3F1-DD4FEBB592C9 - c9c7eff0cb60c6fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getGameInfoAPI() -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "10652D8E-1B58-4755-B3F1-DD4FEBB592C9 - b2fc46137c025d20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getGameInfoAPI() -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "10652D8E-1B58-4755-B3F1-DD4FEBB592C9 - b88ac0724a0204e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getGameInfoAPI() -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "10652D8E-1B58-4755-B3F1-DD4FEBB592C9 - 67ef503c8a94bbe7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getGameInfoAPI() -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18F0C79E-AA5C-4A17-AC05-C55979AADDA0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapppPanelLibrary/TapppPanelLibrary.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "initPanel(gameInfo:currView:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13F670A4-651D-482F-8A17-B2A700CE6A4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapppPanelLibrary/BaseClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "configureAmplify()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

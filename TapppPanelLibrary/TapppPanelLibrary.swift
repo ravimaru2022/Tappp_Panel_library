@@ -30,7 +30,7 @@ public class WebkitClass: BaseClass {
     
     public func initPanel(gameInfo: [String: Any], currView: UIView) {
         
-        //        configureAmplify()
+        configureAmplify()
         configureSentry()
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false

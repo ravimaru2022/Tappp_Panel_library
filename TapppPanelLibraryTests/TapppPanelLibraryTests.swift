@@ -332,7 +332,24 @@ final class TapppPanelLibraryTests: XCTestCase{
         }
         return "failure"
     }
+    func testGameInfoAPI(){
+        self.testInitialization()
+        /*var objPanelData = [String: Any]()
+        var gameInfo = [String : Any]()
+        
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+        objPanelData[TapppContext.Request.BOOK_ID] = "234"
+        objPanelData[TapppContext.Request.POSITION] = "topRight"
+        var frameWidth = [String : Any]()
+        frameWidth[TapppContext.Request.UNIT] = "px"
+        frameWidth[TapppContext.Request.VALUE] = "300"
+        objPanelData[TapppContext.Request.WIDTH] = frameWidth
+        gameInfo[TapppContext.Request.GAME_INFO] = objPanelData
+        let objView = UIView()
+        objPanel.initPanel(gameInfo: gameInfo, currView: objView)*/
 
+        objPanel.getGameInfoAPI()
+    }
     func testWidthNotFound(){
         var objPanelData = [String: Any]()
         var frameWidth = [String : Any]()
