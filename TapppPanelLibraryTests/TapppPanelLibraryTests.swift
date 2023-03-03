@@ -20,14 +20,14 @@ final class TapppPanelLibraryTests: XCTestCase{
         var objPanelData = [String: Any]()
         var gameInfo = [String : Any]()
         
-        objPanelData[TapppContext.request.GAME_ID] = "123"
-        objPanelData[TapppContext.request.BOOK_ID] = "234"
-        objPanelData[TapppContext.request.POSITION] = "topRight"
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+        objPanelData[TapppContext.Request.BOOK_ID] = "234"
+        objPanelData[TapppContext.Request.POSITION] = "topRight"
         var frameWidth = [String : Any]()
-        frameWidth[TapppContext.request.UNIT] = "px"
-        frameWidth[TapppContext.request.VALUE] = "300"
-        objPanelData[TapppContext.request.WIDTH] = frameWidth
-        gameInfo[TapppContext.request.GAME_INFO] = objPanelData
+        frameWidth[TapppContext.Request.UNIT] = "px"
+        frameWidth[TapppContext.Request.VALUE] = "300"
+        objPanelData[TapppContext.Request.WIDTH] = frameWidth
+        gameInfo[TapppContext.Request.GAME_INFO] = objPanelData
         
 //        var objPanelSetting = [String: Any]()
 //        objPanelSetting[TapppContext.request.LANGUAGE] = "123"
@@ -86,14 +86,14 @@ final class TapppPanelLibraryTests: XCTestCase{
         var objPanelData = [String: Any]()
         var gameInfo = [String : Any]()
         
-        objPanelData[TapppContext.request.GAME_ID] = "123"
-        objPanelData[TapppContext.request.BOOK_ID] = "234"
-        objPanelData[TapppContext.request.POSITION] = "topRight"
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+        objPanelData[TapppContext.Request.BOOK_ID] = "234"
+        objPanelData[TapppContext.Request.POSITION] = "topRight"
         var frameWidth = [String : Any]()
-        frameWidth[TapppContext.request.UNIT] = "px"
-        frameWidth[TapppContext.request.VALUE] = "300"
-        objPanelData[TapppContext.request.WIDTH] = frameWidth
-        gameInfo[TapppContext.request.GAME_INFO] = objPanelData
+        frameWidth[TapppContext.Request.UNIT] = "px"
+        frameWidth[TapppContext.Request.VALUE] = "300"
+        objPanelData[TapppContext.Request.WIDTH] = frameWidth
+        gameInfo[TapppContext.Request.GAME_INFO] = objPanelData
         
         let error_inst = self.validatePanelData(panelData: gameInfo)
         if (!error_inst.isEmpty) {
@@ -107,6 +107,27 @@ final class TapppPanelLibraryTests: XCTestCase{
         }
     }
     
+    func testValidationParameters () throws {
+        var objPanelData = [String: Any]()
+        var gameInfo = [String : Any]()
+
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+        objPanelData[TapppContext.Request.BOOK_ID] = "234"
+        objPanelData[TapppContext.Request.POSITION] = "topRight"
+        gameInfo[TapppContext.Request.GAME_INFO] = objPanelData
+
+        let objView = UIView()
+        objPanel.checkPanelDataParam(panelData: gameInfo, currView: objView)
+    }
+    
+    func testInvalidParameters() throws{
+        var objPanelData = [String: Any]()
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+
+        let objView = UIView()
+        objPanel.checkPanelDataParam(panelData: objPanelData, currView: objView)
+
+    }
     func testStartMethod() throws {
         objPanel.start()
     }
@@ -151,15 +172,17 @@ final class TapppPanelLibraryTests: XCTestCase{
         var objPanelData = [String: Any]()
         var gameInfo = [String : Any]()
         
-        objPanelData[TapppContext.request.GAME_ID] = "123"
-        objPanelData[TapppContext.request.BOOK_ID] = "234"
-        objPanelData[TapppContext.request.POSITION] = "topRight"
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+        objPanelData[TapppContext.Request.BOOK_ID] = "234"
+        objPanelData[TapppContext.User.USER_ID] = "USR1234"
+        objPanelData[TapppContext.Request.POSITION] = "topRight"
         var frameWidth = [String : Any]()
-        frameWidth[TapppContext.request.UNIT] = "px"
-        frameWidth[TapppContext.request.VALUE] = "300"
-        objPanelData[TapppContext.request.WIDTH] = frameWidth
-        gameInfo[TapppContext.request.GAME_INFO] = objPanelData
-        
+        frameWidth[TapppContext.Request.UNIT] = "px"
+        frameWidth[TapppContext.Request.VALUE] = "300"
+        objPanelData[TapppContext.Request.WIDTH] = frameWidth
+        objPanelData[TapppContext.Sports.BROADCASTER_NAME] = "NFL"
+        gameInfo[TapppContext.Request.GAME_INFO] = objPanelData
+
         objPanel.loadDataJS(objPanelData: gameInfo)
     }
     func testConst(){
@@ -194,28 +217,28 @@ final class TapppPanelLibraryTests: XCTestCase{
     
     func validatePanelData(panelData: [String: Any]) -> String {
         var gameInfo = [String : Any]()
-        gameInfo = panelData[TapppContext.request.GAME_INFO] as! [String : Any]
+        gameInfo = panelData[TapppContext.Request.GAME_INFO] as! [String : Any]
         
         var gameWidth = [String : Any]()
-        if gameInfo.keys.contains(TapppContext.request.WIDTH) {
-            gameWidth = gameInfo[TapppContext.request.WIDTH] as! [String : Any]
+        if gameInfo.keys.contains(TapppContext.Request.WIDTH) {
+            gameWidth = gameInfo[TapppContext.Request.WIDTH] as! [String : Any]
         }
         
         if panelData == nil  || panelData.count == 0 {
             return  "empty dictionary"
-        } else if !panelData.keys.contains(TapppContext.request.GAME_INFO) {
+        } else if !panelData.keys.contains(TapppContext.Request.GAME_INFO) {
             return  "nil dictionary"
-        } else if !gameInfo.keys.contains(TapppContext.request.GAME_ID) {
+        } else if !gameInfo.keys.contains(TapppContext.Sports.GAME_ID) {
             return  "nil gameId"
-        } else if !gameInfo.keys.contains(TapppContext.request.BOOK_ID) {
+        } else if !gameInfo.keys.contains(TapppContext.Request.BOOK_ID) {
             return  "nil boookId"
-        } else if !gameInfo.keys.contains(TapppContext.request.POSITION) {
+        } else if !gameInfo.keys.contains(TapppContext.Request.POSITION) {
             return  "nil position"
-        } else if !gameInfo.keys.contains(TapppContext.request.WIDTH) {
+        } else if !gameInfo.keys.contains(TapppContext.Request.WIDTH) {
             return "nil width dictionary"
-        } else if !gameWidth.keys.contains(TapppContext.request.VALUE) {
+        } else if !gameWidth.keys.contains(TapppContext.Request.VALUE) {
             return "nil value"
-        } else if !gameWidth.keys.contains(TapppContext.request.UNIT) {
+        } else if !gameWidth.keys.contains(TapppContext.Request.UNIT) {
             return "nil unit"
         }
         return ""
@@ -242,8 +265,8 @@ final class TapppPanelLibraryTests: XCTestCase{
     func testGameIdNotFound(){
         //var gameInfo = [String : Any]()
         var objPanelData = [String: Any]()
-        objPanelData[TapppContext.request.GAME_ID] = "123"
-        let error_inst = validateGameIdNil(gameId: objPanelData[TapppContext.request.GAME_ID] as! String)
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+        let error_inst = validateGameIdNil(gameId: objPanelData[TapppContext.Sports.GAME_ID] as! String)
         if (!error_inst.isEmpty) {
             XCTAssertTrue(false, error_inst)
         } else {
@@ -253,8 +276,8 @@ final class TapppPanelLibraryTests: XCTestCase{
     }
     func testGameIdEmpty(){
         var objPanelData = [String: Any]()
-        objPanelData[TapppContext.request.GAME_ID] = "123"
-        let error_inst = validateGameIdEmpty(gameId: objPanelData[TapppContext.request.GAME_ID] as! String)
+        objPanelData[TapppContext.Sports.GAME_ID] = "123"
+        let error_inst = validateGameIdEmpty(gameId: objPanelData[TapppContext.Sports.GAME_ID] as! String)
         if (!error_inst.isEmpty) {
             XCTAssertTrue(false, error_inst)
         } else {
@@ -278,8 +301,8 @@ final class TapppPanelLibraryTests: XCTestCase{
     func testBookIdNotFound(){
         //var gameInfo = [String : Any]()
         var objPanelData = [String: Any]()
-        objPanelData[TapppContext.request.BOOK_ID] = "123"
-        let error_inst = validateBookIdNil(bookId: objPanelData[TapppContext.request.BOOK_ID] as! String)
+        objPanelData[TapppContext.Request.BOOK_ID] = "123"
+        let error_inst = validateBookIdNil(bookId: objPanelData[TapppContext.Request.BOOK_ID] as! String)
         if (!error_inst.isEmpty) {
             XCTAssertTrue(false, error_inst)
         } else {
@@ -289,8 +312,8 @@ final class TapppPanelLibraryTests: XCTestCase{
     }
     func testBookIdEmpty(){
         var objPanelData = [String: Any]()
-        objPanelData[TapppContext.request.BOOK_ID] = "123"
-        let error_inst = validateBookIdEmpty(bookId: objPanelData[TapppContext.request.BOOK_ID] as! String)
+        objPanelData[TapppContext.Request.BOOK_ID] = "123"
+        let error_inst = validateBookIdEmpty(bookId: objPanelData[TapppContext.Request.BOOK_ID] as! String)
         if (!error_inst.isEmpty) {
             XCTAssertTrue(false, error_inst)
         } else {
@@ -313,9 +336,9 @@ final class TapppPanelLibraryTests: XCTestCase{
     func testWidthNotFound(){
         var objPanelData = [String: Any]()
         var frameWidth = [String : Any]()
-        frameWidth[TapppContext.request.UNIT] = "px"
-        frameWidth[TapppContext.request.VALUE] = "300"
-        objPanelData[TapppContext.request.WIDTH] = frameWidth
+        frameWidth[TapppContext.Request.UNIT] = "px"
+        frameWidth[TapppContext.Request.VALUE] = "300"
+        objPanelData[TapppContext.Request.WIDTH] = frameWidth
 
         let error_inst = ""//validateWidthNil(width: objPanelData[Constants.request.width] as! String)
         if (!error_inst.isEmpty) {
@@ -328,9 +351,9 @@ final class TapppPanelLibraryTests: XCTestCase{
     func testWidthIsEmpty(){
         var objPanelData = [String: Any]()
         var frameWidth = [String : Any]()
-        frameWidth[TapppContext.request.UNIT] = "px"
-        frameWidth[TapppContext.request.VALUE] = "300"
-        objPanelData[TapppContext.request.WIDTH] = frameWidth
+        frameWidth[TapppContext.Request.UNIT] = "px"
+        frameWidth[TapppContext.Request.VALUE] = "300"
+        objPanelData[TapppContext.Request.WIDTH] = frameWidth
         let error_inst = ""//validateWidthEmpty(width: objPanelData[Constants.request.width] as! String)
         if (!error_inst.isEmpty) {
             XCTAssertTrue(false, error_inst)

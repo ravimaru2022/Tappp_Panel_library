@@ -12,25 +12,40 @@ public class TapppContext {
     
     public init() {}
     
-    public struct  request {
+    public struct Environment {
+        public static let PROD = "prod"
+        public static let STAGE = "stage"
+        public static let TEST = "test"
+        public static let DEV = "dev"
+        public static let ENVIRONMENT = "evr"
+    }
+    
+    public struct Sports {
+        public static let GAME_ID = "gameId"
+        public static let BROADCASTER_NAME = "broadcasterName"
+        public static let TRN = "TRN"
+        public static let NFL = "NFL"
+    }
+    
+    public struct  User {
+        public static let USER_ID = "user_id"
+    }
+    
+    public struct  Request {
         public static let GAME_INFO = "gameInfo"
         public static let WIDTH = "width"
         public static let VALUE = "value"
         public static let BOOK_ID = "bookId"
-        public static let GAME_ID = "gameId"
-        public static let BROADCASTER_NAME = "broadcasterName"
         public static let LANGUAGE = "lang"
 
         public static let CONTEST_ID = "contest_id"
         public static let OFFER_ID = "offer_id"
         public static let OUTCOME_ID = "outcome_id"
-        public static let USER_ID = "user_id"
+        
 
         public static let POSITION = "position"
         public static let UNIT = "unit"
         public static let PANELMULTIPLIER = "panelSizeMultiplier"
-        public static let TRN = "TRN"
-        public static let NFL = "NFL"
         public static let UNIT_VAL = "px"
     }
     

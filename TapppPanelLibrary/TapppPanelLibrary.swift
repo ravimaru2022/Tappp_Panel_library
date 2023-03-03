@@ -8,7 +8,7 @@ public protocol hidePanelView{
     func hidePanelfromLibrary()
 }
 
-enum ValidationState {
+public enum ValidationState {
     case valid
     case invalid(String)
 }
@@ -92,20 +92,20 @@ public class WebkitClass: BaseClass {
     
     public func loadDataJS (objPanelData : [String: Any]){
         // print("...~~~~objectPanelData at loadDataJS=", objPanelData)
-        guard let dict = objPanelData[TapppContext.request.GAME_INFO] as? [String:Any] else {
+        guard let dict = objPanelData[TapppContext.Request.GAME_INFO] as? [String:Any] else {
             return
         }
         
-        guard let widthDict = dict[TapppContext.request.WIDTH] as? [String:Any] else {
+        guard let widthDict = dict[TapppContext.Request.WIDTH] as? [String:Any] else {
             return
         }
-        guard let broadcasterName = dict[TapppContext.request.BROADCASTER_NAME] as? String  else {
+        guard let broadcasterName = dict[TapppContext.Sports.BROADCASTER_NAME] as? String  else {
             return
         }
-        let widthVal = widthDict[TapppContext.request.VALUE] as! String
-        let gameId = dict[TapppContext.request.GAME_ID] as! String
-        let bookId = dict[TapppContext.request.BOOK_ID] as! String
-        let userId = dict[TapppContext.request.USER_ID] as! String
+        let widthVal = widthDict[TapppContext.Request.VALUE] as! String
+        let gameId = dict[TapppContext.Sports.GAME_ID] as! String
+        let bookId = dict[TapppContext.Request.BOOK_ID] as! String
+        let userId = dict[TapppContext.User.USER_ID] as! String
         
         self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)', '\(userId)', '\(frameUnit)');", completionHandler: { result, error in
             if let val = result as? String {

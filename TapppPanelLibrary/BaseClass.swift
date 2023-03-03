@@ -64,16 +64,16 @@ public class BaseClass: NSObject {
         return true
     }
     
-    func checkPanelDataParam(panelData: [String: Any]?, currView: UIView?)-> ValidationState {
+    public func checkPanelDataParam(panelData: [String: Any]?, currView: UIView?)-> ValidationState {
         var internalPaneldata = [String : Any]()
         
-        if let pData = panelData?[TapppContext.request.GAME_INFO] as? [String: Any] {
+        if let pData = panelData?[TapppContext.Request.GAME_INFO] as? [String: Any] {
             internalPaneldata = pData
         } else {
             return .invalid(TapppContext.errorMessage.GAMEINFO_OBJECT_NOT_FOUND)
         }
         
-        if let gId = internalPaneldata[TapppContext.request.GAME_ID] as? String{
+        if let gId = internalPaneldata[TapppContext.Sports.GAME_ID] as? String{
             if gId.count > 0 {
             } else {
                 return .invalid(TapppContext.errorMessage.GAMEID_NULL_EMPTY)
@@ -81,39 +81,39 @@ public class BaseClass: NSObject {
         } else {
             return .invalid(TapppContext.errorMessage.GAMEID_NOT_FOUND)
         }
-        if let bId = internalPaneldata[TapppContext.request.BOOK_ID] as? String{
+        if let bId = internalPaneldata[TapppContext.Request.BOOK_ID] as? String{
             if bId.count > 0 {
             } else {
                 self.exceptionHandleHTML(errMsg: TapppContext.errorMessage.BOOKID_NULL_EMPTY)
-                internalPaneldata[TapppContext.request.BOOK_ID] = "1000009"
+                internalPaneldata[TapppContext.Request.BOOK_ID] = "1000009"
             }
         } else {
             self.exceptionHandleHTML(errMsg: TapppContext.errorMessage.BOOKID_NOT_FOUND)
-            internalPaneldata[TapppContext.request.BOOK_ID] = "1000009"
+            internalPaneldata[TapppContext.Request.BOOK_ID] = "1000009"
         }
         
-        if let widthInfo = internalPaneldata[TapppContext.request.WIDTH] as? [String: Any]{
-            if let unit = widthInfo[TapppContext.request.UNIT] as? String, unit.count > 0{
+        if let widthInfo = internalPaneldata[TapppContext.Request.WIDTH] as? [String: Any]{
+            if let unit = widthInfo[TapppContext.Request.UNIT] as? String, unit.count > 0{
                 frameUnit = unit
             } else {
-                frameUnit = TapppContext.request.UNIT_VAL
+                frameUnit = TapppContext.Request.UNIT_VAL
             }
-            if let val = widthInfo[TapppContext.request.VALUE] as? String, val.count > 0 {
+            if let val = widthInfo[TapppContext.Request.VALUE] as? String, val.count > 0 {
                 print("From reference app val", val)
             } else {
                 var widthInfoUD = [String : Any]()
-                widthInfoUD[TapppContext.request.UNIT] = "px"
-                widthInfoUD[TapppContext.request.VALUE] = "\(currView?.frame.width ?? 0)"
-                internalPaneldata[TapppContext.request.WIDTH] = widthInfoUD
+                widthInfoUD[TapppContext.Request.UNIT] = "px"
+                widthInfoUD[TapppContext.Request.VALUE] = "\(currView?.frame.width ?? 0)"
+                internalPaneldata[TapppContext.Request.WIDTH] = widthInfoUD
             }
         } else {
             var widthInfoUD = [String : Any]()
-            widthInfoUD[TapppContext.request.UNIT] = "px"
-            widthInfoUD[TapppContext.request.VALUE] = "\(currView?.frame.width ?? 0)"
-            internalPaneldata[TapppContext.request.WIDTH] = widthInfoUD
+            widthInfoUD[TapppContext.Request.UNIT] = "px"
+            widthInfoUD[TapppContext.Request.VALUE] = "\(currView?.frame.width ?? 0)"
+            internalPaneldata[TapppContext.Request.WIDTH] = widthInfoUD
         }
         
-        objectPanelData[TapppContext.request.GAME_INFO] = internalPaneldata
+        objectPanelData[TapppContext.Request.GAME_INFO] = internalPaneldata
         return .valid
     }
     
