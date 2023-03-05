@@ -8,9 +8,9 @@ import Foundation
 import UIKit
 
 import Sentry
-import Amplify
-import AWSPluginsCore
-import AmplifyPlugins
+//import Amplify
+//import AWSPluginsCore
+//import AmplifyPlugins
 
 
 public protocol updateOverlayViewFrame{
@@ -27,15 +27,15 @@ public class BaseClass: NSObject {
         
     }
     
-    func configureAmplify() {
-        do {
-            try Amplify.add(plugin: AWSAPIPlugin())
-            try Amplify.configure()
-            print("Amplify configured 🥳")
-        } catch {
-            print("Failed to configure Amplify", error)
-        }
-    }
+//    func configureAmplify() {
+//        do {
+//            try Amplify.add(plugin: AWSAPIPlugin())
+//            try Amplify.configure()
+//            print("Amplify configured 🥳")
+//        } catch {
+//            print("Failed to configure Amplify", error)
+//        }
+//    }
 
      public func configureSentry(){
          SentrySDK.start { options in
@@ -138,7 +138,32 @@ public class BaseClass: NSObject {
 
 // MARK - GraphQL APIs.
 extension BaseClass {
-    public func getGameInfoAPI () {
+    public func getGameAwards(inputURL: String){
+        let url = URL(string:inputURL)
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    if let status = json?["code"] as? Int, status == 200 {
+                        if let urlDict = json?["data"] as? [[String: Any]], let urlAddr = urlDict.first{                            print(urlAddr)
+                            //self.playVideo()
+                        }
+                    }
+                } catch {
+                    print(error)
+                }
+                //let image = UIImage(data: data)
+            } else if let error = error {
+                print("HTTP Request Failed \(error)")
+            }
+        }
+        task.resume()
+    }
+   /* public func getGameInfoAPI () {
         do {
             if #available(iOS 13.0, *) {
                 Task {
@@ -151,7 +176,7 @@ extension BaseClass {
         } catch {
             print("Fetching images failed with error \(error)")
         }
-    }
+    }*/
 }
     /*
     /*
@@ -202,7 +227,7 @@ extension BaseClass {
     }*/
 
 }*/
-extension GraphQLRequest {
+/*extension GraphQLRequest {
     
     static func getGameInfo(bookId: String, broadcastName: String, gameId: String) -> GraphQLRequest<String> {
         
@@ -231,7 +256,7 @@ extension GraphQLRequest {
             decodePath: operationName
         )
     }
-}
+}*/
     /*
     static func commandSubscribe(bookId: String, gameId: String) -> GraphQLRequest<String> {
         
