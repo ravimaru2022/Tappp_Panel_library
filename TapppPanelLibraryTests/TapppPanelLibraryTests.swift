@@ -347,6 +347,7 @@ final class TapppPanelLibraryTests: XCTestCase{
         gameInfo[TapppContext.Request.GAME_INFO] = objPanelData
         let objView = UIView()
         objPanel.initPanel(gameInfo: gameInfo, currView: objView)*/
+        objPanel.configureAmplify()
         objPanel.getGameAwards(inputURL: "https://dev-betapi.tappp.com/gameplay-engine/awards")
 //        objPanel.getGameInfoAPI()
     }

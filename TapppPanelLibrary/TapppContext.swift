@@ -30,7 +30,8 @@ public class TapppContext {
     public struct  User {
         public static let USER_ID = "user_id"
     }
-    
+
+
     public struct  Request {
         public static let GAME_INFO = "gameInfo"
         public static let WIDTH = "width"
@@ -65,3 +66,4 @@ public class TapppContext {
 }
 
 
+//Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/TapppContext.swift Missing required modules: 'AwsCAuth', 'AwsCCal', 'AwsCCommon', 'AwsCHttp', 'AwsCIo', 'AwsCMqtt', 'AwsCSdkUtils'

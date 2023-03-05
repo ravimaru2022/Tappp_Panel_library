@@ -7,69 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "147BAC7E-1984-4241-ADC7-3D55E32195CF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TapppPanelLibrary/BaseClass.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "getGameAwards(inputURL:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "147BAC7E-1984-4241-ADC7-3D55E32195CF - 6714aa6cb19a5cf9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TapppPanelLibrary.BaseClass.getGameAwards(inputURL: Swift.String) -&gt; ()"
-                  moduleName = "TapppPanelLibrary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "152"
-                  endingLineNumber = "152"
-                  offsetFromSymbolStart = "1016">
-               </Location>
-               <Location
-                  uuid = "147BAC7E-1984-4241-ADC7-3D55E32195CF - 6714aa6cb19a5cf9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TapppPanelLibrary.BaseClass.getGameAwards(inputURL: Swift.String) -&gt; ()"
-                  moduleName = "TapppPanelLibrary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "152"
-                  endingLineNumber = "152"
-                  offsetFromSymbolStart = "1324">
-               </Location>
-               <Location
-                  uuid = "147BAC7E-1984-4241-ADC7-3D55E32195CF - 6714aa6cb19a5cf9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TapppPanelLibrary.BaseClass.getGameAwards(inputURL: Swift.String) -&gt; ()"
-                  moduleName = "TapppPanelLibrary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "152"
-                  endingLineNumber = "152"
-                  offsetFromSymbolStart = "1424">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1CCB7F14-13D9-4E92-B3F2-78A7FA0DA5C6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -77,8 +14,8 @@
             filePath = "TapppPanelLibraryTests/TapppPanelLibraryTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "350"
-            endingLineNumber = "350"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "testGameInfoAPI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -86,64 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4F5BCEDF-C403-4653-8105-1103034A4775"
+            uuid = "0183FB81-0C49-450F-A966-635FCA4FE8AE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapppPanelLibrary/BaseClass.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "getGameAwards(inputURL:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4F5BCEDF-C403-4653-8105-1103034A4775 - 381dab563ca0e1d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TapppPanelLibrary.BaseClass.getGameAwards(inputURL: Swift.String) -&gt; ()"
-                  moduleName = "TapppPanelLibrary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
-                  offsetFromSymbolStart = "680">
-               </Location>
-               <Location
-                  uuid = "4F5BCEDF-C403-4653-8105-1103034A4775 - 6714aa6cb19a5f1c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TapppPanelLibrary.BaseClass.getGameAwards(inputURL: Swift.String) -&gt; ()"
-                  moduleName = "TapppPanelLibrary"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
-                  offsetFromSymbolStart = "132">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1813FCE9-6767-4CD4-A11D-047DA4996EE1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TapppPanelLibrary/BaseClass.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "getGameAwards(inputURL:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "configureAmplify()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

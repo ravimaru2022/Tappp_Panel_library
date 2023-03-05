@@ -8,9 +8,8 @@ import Foundation
 import UIKit
 
 import Sentry
-//import Amplify
-//import AWSPluginsCore
-//import AmplifyPlugins
+import Amplify
+import AmplifyPlugins
 
 
 public protocol updateOverlayViewFrame{
@@ -27,16 +26,16 @@ public class BaseClass: NSObject {
         
     }
     
-//    func configureAmplify() {
-//        do {
-//            try Amplify.add(plugin: AWSAPIPlugin())
-//            try Amplify.configure()
-//            print("Amplify configured 🥳")
-//        } catch {
-//            print("Failed to configure Amplify", error)
-//        }
-//    }
-
+    public func configureAmplify() {
+        do {
+            try Amplify.add(plugin: AWSAPIPlugin())
+            try Amplify.configure()
+            print("Amplify configured 🥳")
+        } catch {
+            print("Failed to configure Amplify", error)
+        }
+    }
+    
      public func configureSentry(){
          SentrySDK.start { options in
              options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
@@ -149,7 +148,8 @@ extension BaseClass {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
                     if let status = json?["code"] as? Int, status == 200 {
-                        if let urlDict = json?["data"] as? [[String: Any]], let urlAddr = urlDict.first{                            print(urlAddr)
+                        if let urlDict = json?["data"] as? [[String: Any]], let urlAddr = urlDict.first{
+                            print(urlAddr)
                             //self.playVideo()
                         }
                     }
