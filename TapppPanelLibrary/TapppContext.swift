@@ -31,7 +31,6 @@ public class TapppContext {
         public static let USER_ID = "user_id"
     }
 
-
     public struct  Request {
         public static let GAME_INFO = "gameInfo"
         public static let WIDTH = "width"
@@ -42,7 +41,6 @@ public class TapppContext {
         public static let CONTEST_ID = "contest_id"
         public static let OFFER_ID = "offer_id"
         public static let OUTCOME_ID = "outcome_id"
-        
 
         public static let POSITION = "position"
         public static let UNIT = "unit"
@@ -61,9 +59,4 @@ public class TapppContext {
         public static let WIDTH_OBJECT_NOT_FOUND = "Width object not found"
         public static let WIDTH_IS_ZERO = "Width value is zero(0)"
     }
-    
-    
 }
-
-
-//Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/TapppContext.swift Missing required modules: 'AwsCAuth', 'AwsCCal', 'AwsCCommon', 'AwsCHttp', 'AwsCIo', 'AwsCMqtt', 'AwsCSdkUtils'
