@@ -349,7 +349,7 @@ final class TapppPanelLibraryTests: XCTestCase{
         objPanel.initPanel(gameInfo: gameInfo, currView: objView)*/
         objPanel.configureAmplify()
         objPanel.getGameAwards(inputURL: "https://dev-betapi.tappp.com/gameplay-engine/awards")
-//        objPanel.getGameInfoAPI()
+        objPanel.getAppInfoAPI(bName: "TRN")
     }
     func testWidthNotFound(){
         var objPanelData = [String: Any]()

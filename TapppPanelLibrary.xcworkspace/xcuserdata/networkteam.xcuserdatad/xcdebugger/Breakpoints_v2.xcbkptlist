@@ -36,5 +36,115 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1E94E9A-64BA-4230-85E2-E018A11586BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapppPanelLibrary/BaseClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "getAppInfoAPI(bName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F1E94E9A-64BA-4230-85E2-E018A11586BE - b6021433d908353a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getAppInfoAPI(bName: Swift.String) -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "170"
+                  endingLineNumber = "170"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "F1E94E9A-64BA-4230-85E2-E018A11586BE - de1457f5f4b8ba0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getAppInfoAPI(bName: Swift.String) -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "170"
+                  endingLineNumber = "170"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "F1E94E9A-64BA-4230-85E2-E018A11586BE - f8506d26bf517134"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getAppInfoAPI(bName: Swift.String) -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "170"
+                  endingLineNumber = "170"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "F1E94E9A-64BA-4230-85E2-E018A11586BE - 4588b19cce421f35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TapppPanelLibrary.BaseClass.getAppInfoAPI(bName: Swift.String) -&gt; ()"
+                  moduleName = "TapppPanelLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/networkteam/Desktop/GITHUB/Tappp_Panel_library/TapppPanelLibrary/BaseClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "170"
+                  endingLineNumber = "170"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86F6589E-76D1-462F-A7C0-EACD58ABBBD1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapppPanelLibrary/BaseClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "getAppInfoAPI(bName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1846C55-485C-40BC-A411-E2177F1A360C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapppPanelLibrary/BaseClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "getAppInfo(broadcastName:deviceType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

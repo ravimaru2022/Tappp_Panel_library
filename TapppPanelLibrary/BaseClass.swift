@@ -9,7 +9,7 @@ import UIKit
 
 import Sentry
 import Amplify
-import AmplifyPlugins
+import AWSAPIPlugin
 
 
 public protocol updateOverlayViewFrame{
@@ -163,6 +163,21 @@ extension BaseClass {
         }
         task.resume()
     }
+    public func getAppInfoAPI (bName: String){
+        do {
+            if #available(iOS 13.0, *) {
+                Task {
+                    let data = try await Amplify.API.query(request:.getAppInfo(broadcastName: bName, deviceType: "web"))
+                    print("getAppInfo \(data) .")
+                }
+            } else {
+                // Fallback on earlier versions
+            }
+        } catch {
+            print("Fetching images failed with error \(error)")
+        }
+    }
+
    /* public func getGameInfoAPI () {
         do {
             if #available(iOS 13.0, *) {
@@ -177,6 +192,31 @@ extension BaseClass {
             print("Fetching images failed with error \(error)")
         }
     }*/
+}
+extension GraphQLRequest {
+    
+    static func getAppInfo(broadcastName: String, deviceType: String) -> GraphQLRequest<String> {
+        
+        let operationName = "getAppInfo"
+        let query =
+            """
+            {
+              getAppInfo(broadcasterName: "\(broadcastName)", deviceType: "\(deviceType)", lang: "en") {
+                status
+                code
+                message
+                requestURI
+                data
+              }
+            }
+            """
+        return GraphQLRequest<String>(
+            document: query,
+            variables: ["": ""],
+            responseType: String.self,
+            decodePath: operationName
+        )
+    }
 }
     /*
     /*

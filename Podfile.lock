@@ -1,72 +1,17 @@
 PODS:
-  - Amplify (1.29.0):
-    - Amplify/Default (= 1.29.0)
-  - Amplify/Default (1.29.0)
-  - AmplifyPlugins/AWSAPIPlugin (1.29.0):
-    - AppSyncRealTimeClient (~> 3.0)
-    - AWSCore (~> 2.30.1)
-    - AWSPluginsCore (= 1.29.0)
-  - AmplifyPlugins/AWSCognitoAuthPlugin (1.29.0):
-    - AWSAuthCore (~> 2.30.1)
-    - AWSCognitoIdentityProvider (~> 2.30.1)
-    - AWSCognitoIdentityProviderASF (~> 2.30.1)
-    - AWSCore (~> 2.30.1)
-    - AWSMobileClient (~> 2.30.1)
-    - AWSPluginsCore (= 1.29.0)
-  - AmplifyPlugins/AWSDataStorePlugin (1.29.0):
-    - AWSCore (~> 2.30.1)
-    - AWSPluginsCore (= 1.29.0)
-    - SQLite.swift (= 0.13.2)
-  - AppSyncRealTimeClient (3.0.0):
-    - Starscream (~> 4.0.4)
-  - AWSAuthCore (2.30.4):
-    - AWSCore (= 2.30.4)
-  - AWSCognitoIdentityProvider (2.30.4):
-    - AWSCognitoIdentityProviderASF (= 2.30.4)
-    - AWSCore (= 2.30.4)
-  - AWSCognitoIdentityProviderASF (2.30.4):
-    - AWSCore (= 2.30.4)
-  - AWSCore (2.30.4)
-  - AWSMobileClient (2.30.4):
-    - AWSAuthCore (= 2.30.4)
-    - AWSCognitoIdentityProvider (= 2.30.4)
-    - AWSCognitoIdentityProviderASF (= 2.30.4)
-    - AWSCore (= 2.30.4)
-  - AWSPluginsCore (1.29.0):
-    - Amplify (= 1.29.0)
-    - AWSCore (~> 2.30.1)
   - Sentry (8.1.0):
     - Sentry/Core (= 8.1.0)
     - SentryPrivate (= 8.1.0)
   - Sentry/Core (8.1.0):
     - SentryPrivate (= 8.1.0)
   - SentryPrivate (8.1.0)
-  - SQLite.swift (0.13.2):
-    - SQLite.swift/standard (= 0.13.2)
-  - SQLite.swift/standard (0.13.2)
-  - Starscream (4.0.4)
 
 DEPENDENCIES:
-  - Amplify
-  - AmplifyPlugins/AWSAPIPlugin
-  - AmplifyPlugins/AWSCognitoAuthPlugin
-  - AmplifyPlugins/AWSDataStorePlugin
   - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `8.1.0`)
 
 SPEC REPOS:
   trunk:
-    - Amplify
-    - AmplifyPlugins
-    - AppSyncRealTimeClient
-    - AWSAuthCore
-    - AWSCognitoIdentityProvider
-    - AWSCognitoIdentityProviderASF
-    - AWSCore
-    - AWSMobileClient
-    - AWSPluginsCore
     - SentryPrivate
-    - SQLite.swift
-    - Starscream
 
 EXTERNAL SOURCES:
   Sentry:
@@ -79,20 +24,9 @@ CHECKOUT OPTIONS:
     :tag: 8.1.0
 
 SPEC CHECKSUMS:
-  Amplify: d0c5ec982b3448d158980577fe73a3aa6d27d984
-  AmplifyPlugins: 20fce06296f5946bdc2d3aab93f3b81f813abb03
-  AppSyncRealTimeClient: ec19a24f635611b193eb98a2da573abcf98b793b
-  AWSAuthCore: 42e2d4927d94e5e323b63b2ae885f287c51b5889
-  AWSCognitoIdentityProvider: 2331f5f4c8c1775c6a228bb2dae2d353198401e8
-  AWSCognitoIdentityProviderASF: d905c2acab3d2e7016b643d53ba553d5217fa929
-  AWSCore: 19b8233fe2d0ed3ccf5cff833a615814282cdc90
-  AWSMobileClient: 7d9c81e47ef27c6b5604858477006548eb1db342
-  AWSPluginsCore: a3033b4838dd83e62efc3c7eee660e897485441c
   Sentry: a73976b9f5a5141187b0c15432425a167c90d80f
   SentryPrivate: eb7ce6ea7ccf1bbeda1f3f37fa355668849426ae
-  SQLite.swift: 4fc2be46c36392e3b87afe6fe7f1801c1daa07ef
-  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
-PODFILE CHECKSUM: 01707b67c122875be5f4ba11fb9c55fc67d705d6
+PODFILE CHECKSUM: 5f50efa28db4ff6d02158b9aa217c253d5d1c0cf
 
 COCOAPODS: 1.12.0
