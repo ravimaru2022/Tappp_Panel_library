@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TapppPanelLibrary"
-  spec.version      = "1.5.7"
+  spec.version      = "1.5.8"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = "This will be test description for inmplememting pod file."

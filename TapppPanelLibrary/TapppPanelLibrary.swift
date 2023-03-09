@@ -1,6 +1,7 @@
 import Foundation
 import WebKit
-import Sentry
+//import Sentry
+
 public protocol alertDelegate: class {
     func myVCDidFinish( text: String)
 }
@@ -31,7 +32,7 @@ public class WebkitClass: BaseClass {
     public func initPanel(gameInfo: [String: Any], currView: UIView) {
         
         //configureAmplify()
-        configureSentry()
+        //configureSentry()
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -52,11 +53,11 @@ public class WebkitClass: BaseClass {
                 self.exceptionHandleHTML(errMsg: err)
                 
                 let error = NSError(domain: "MethodName: init : \(err) \(gameInfo.description)" , code: 0, userInfo: nil)
-                SentrySDK.capture(error: error)
+                //SentrySDK.capture(error: error)
             }
         } else {
             let error = NSError(domain: "Nil Input parameter in init." , code: 0, userInfo: nil)
-            SentrySDK.capture(error: error)
+            //SentrySDK.capture(error: error)
         }
     }
     
@@ -82,17 +83,13 @@ public class WebkitClass: BaseClass {
         guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
         
         webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
-        
-        // if let url = Bundle(for: WebkitClass.self).url(forResource: "index", withExtension: ".html") {
-        //         webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
-        //     }
+
         isPanelAvailable = true
         webView.configuration.preferences.javaScriptEnabled = true
     }
     
     public func loadDataJS (objPanelData : [String: Any]){
-        // print("...~~~~objectPanelData at loadDataJS=", objPanelData)
-        guard let dict = objPanelData[TapppContext.Request.GAME_INFO] as? [String:Any] else {
+        guard let dict = objPanelData[TapppContext.Sports.Context] as? [String:Any] else {
             return
         }
         
@@ -104,15 +101,15 @@ public class WebkitClass: BaseClass {
         }
         let widthVal = widthDict[TapppContext.Request.VALUE] as! String
         let gameId = dict[TapppContext.Sports.GAME_ID] as! String
-        let bookId = dict[TapppContext.Request.BOOK_ID] as! String
+        let bookId = dict[TapppContext.Sports.BOOK_ID] as! String
         let userId = dict[TapppContext.User.USER_ID] as! String
         
         self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)', '\(userId)', '\(frameUnit)');", completionHandler: { result, error in
             if let val = result as? String {
-                print(val)
+                //                print(val)
             }
             else {
-                print("result is NIL")
+                //                print("result is NIL")
             }
         });
     }
@@ -151,7 +148,7 @@ public class WebkitClass: BaseClass {
             delegateHide?.hidePanelfromLibrary()
         } else {
             let error = NSError(domain: "Error in hide panel. Trying to hide invisible panel." , code: 0, userInfo: nil)
-            SentrySDK.capture(error: error)
+            //SentrySDK.capture(error: error)
         }
     }
 }
@@ -188,6 +185,6 @@ extension WebkitClass: WKNavigationDelegate{
     public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print(error.localizedDescription)
         let error = NSError(domain: "Webview failed loading \(error.localizedDescription)" , code: 0, userInfo: nil)
-        SentrySDK.capture(error: error)
+        //SentrySDK.capture(error: error)
     }
 }

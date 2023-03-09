@@ -7,56 +7,13 @@
 import Foundation
 import UIKit
 
-import Sentry
-//import Amplify
-//import AWSAPIPlugin
-
-
-public protocol updateOverlayViewFrame{
-    func updateOverlayFrame(value : String)
-}
-
 public class BaseClass: NSObject {
-    
     var frameUnit = ""
     var objectPanelData = [String: Any]()
-    public var delegateFrame: updateOverlayViewFrame?
+}
 
-    public func testFunction(){
-        
-    }
-    
-//    public func configureAmplify() {
-//        do {
-//            try Amplify.add(plugin: AWSAPIPlugin())
-//            try Amplify.configure()
-//            print("Amplify configured 🥳")
-//        } catch {
-//            print("Failed to configure Amplify", error)
-//        }
-//    }
-    
-     public func configureSentry(){
-         SentrySDK.start { options in
-             options.dsn = "https://a638edd3fe44489a86353e40ed587b66@o4504648544026624.ingest.sentry.io/4504653998981120"
-             options.debug = true // Enabled debug when first installing is always helpful
-
-             // Enable all experimental features
-             options.enablePreWarmedAppStartTracing = true
-             options.attachScreenshot = true
-             options.attachViewHierarchy = true
-             if #available(iOS 15.0, *) {
-                 options.enableMetricKit = true
-             } else {
-                 // Fallback on earlier versions
-             }
-             options.enableAutoBreadcrumbTracking = false
-             options.enableNetworkTracking = false
-             options.enableNetworkBreadcrumbs = false
-         }
-     }
-    
-    // Data validation.
+// MARK - Data Validations
+extension BaseClass {
     public func checkNilInputParam(panelData: [String: Any]?, currView: UIView?) -> Bool {
         if currView == nil {
             return false
@@ -70,7 +27,7 @@ public class BaseClass: NSObject {
     public func checkPanelDataParam(panelData: [String: Any]?, currView: UIView?)-> ValidationState {
         var internalPaneldata = [String : Any]()
         
-        if let pData = panelData?[TapppContext.Request.GAME_INFO] as? [String: Any] {
+        if let pData = panelData?[TapppContext.Sports.Context] as? [String: Any] {
             internalPaneldata = pData
         } else {
             return .invalid(TapppContext.errorMessage.GAMEINFO_OBJECT_NOT_FOUND)
@@ -84,18 +41,17 @@ public class BaseClass: NSObject {
         } else {
             return .invalid(TapppContext.errorMessage.GAMEID_NOT_FOUND)
         }
-        if let bId = internalPaneldata[TapppContext.Request.BOOK_ID] as? String{
+        if let bId = internalPaneldata[TapppContext.Sports.BOOK_ID] as? String{
             if bId.count > 0 {
             } else {
                 self.exceptionHandleHTML(errMsg: TapppContext.errorMessage.BOOKID_NULL_EMPTY)
-                internalPaneldata[TapppContext.Request.BOOK_ID] = "1000009"
+                internalPaneldata[TapppContext.Sports.BOOK_ID] = "1000009"
             }
         } else {
             self.exceptionHandleHTML(errMsg: TapppContext.errorMessage.BOOKID_NOT_FOUND)
-            internalPaneldata[TapppContext.Request.BOOK_ID] = "1000009"
+            internalPaneldata[TapppContext.Sports.BOOK_ID] = "1000009"
         }
         
-        //let val = "200"
         if let widthInfo = internalPaneldata[TapppContext.Request.WIDTH] as? [String: Any]{
             if let unit = widthInfo[TapppContext.Request.UNIT] as? String, unit.count > 0{
                 frameUnit = unit
@@ -103,9 +59,6 @@ public class BaseClass: NSObject {
                 frameUnit = TapppContext.Request.UNIT_VAL
             }
             if let val = widthInfo[TapppContext.Request.VALUE] as? String, val.count > 0 {
-                if "\(currView?.frame.width ?? 0)" != val {
-                    delegateFrame?.updateOverlayFrame(value: val)
-                }
                 print("From reference app val", val)
             } else {
                 var widthInfoUD = [String : Any]()
@@ -120,20 +73,15 @@ public class BaseClass: NSObject {
             internalPaneldata[TapppContext.Request.WIDTH] = widthInfoUD
         }
         
-        //        if "\(currView?.frame.width ?? 0)" != val {
-        //            delegateFrame?.updateOverlayFrame(value: val)
-        //        }
-
-
-        objectPanelData[TapppContext.Request.GAME_INFO] = internalPaneldata
+        objectPanelData[TapppContext.Sports.Context] = internalPaneldata
         return .valid
     }
     
     public func exceptionHandleHTML(errMsg: String){
         //FIXME: need to setup for duplicate width key.
     }
-
 }
+
 
 // MARK - GraphQL APIs.
 extension BaseClass {
