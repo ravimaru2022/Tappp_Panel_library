@@ -49,6 +49,11 @@ public class WebkitClass: BaseClass {
                 contentController.add(self, name: "showPanelData")
                 view = currView
                 //proceed further
+                //objectPanelData : API Call
+                self.geRegistryServiceDetail(inputURL: "https://dev-betapi.tappp.com/registry-service/registry?broadcasterName=TRN&device=web&environment=dev&appVersion=1.1") { responseURL in
+                    print("responseURL",responseURL!)
+                    self.appURL = responseURL!
+                }
             case .invalid(let err):
                 self.exceptionHandleHTML(errMsg: err)
                 
@@ -63,29 +68,36 @@ public class WebkitClass: BaseClass {
     
     
     public func start(){
-        
-        view.addSubview(webView)
-        NSLayoutConstraint.activate([
-            webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            webView.topAnchor.constraint(equalTo: view.topAnchor)
-        ])
-        
-        webView.navigationDelegate = self
-        
-        webView.backgroundColor = UIColor.clear
-        webView.isOpaque = false
-        
-        let customBundle = Bundle(for: WebkitClass.self)
-        guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("dist.bundle") else { return }
-        guard let resourceBundle = Bundle(url: resourceURL) else { return }
-        guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
-        
-        webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
+        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            print("timer executed...")
+            if self.appURL.count > 0 {
+                timer.invalidate()
+                self.view.addSubview(self.webView)
+                NSLayoutConstraint.activate([
+                    self.webView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                    self.webView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                    self.webView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+                    self.webView.topAnchor.constraint(equalTo: self.view.topAnchor)
+                ])
+                
+                self.webView.navigationDelegate = self
+                
+                self.webView.backgroundColor = UIColor.clear
+                self.webView.isOpaque = false
+                
+                let customBundle = Bundle(for: WebkitClass.self)
+                guard let resourceURL = customBundle.resourceURL?.appendingPathComponent("dist.bundle") else { return }
+                guard let resourceBundle = Bundle(url: resourceURL) else { return }
+                guard let jsFileURL = resourceBundle.url(forResource: "index", withExtension: "html" ) else { return }
+                
+                self.webView.loadFileURL(jsFileURL, allowingReadAccessTo: jsFileURL.deletingLastPathComponent())
 
-        isPanelAvailable = true
-        webView.configuration.preferences.javaScriptEnabled = true
+                self.isPanelAvailable = true
+                self.webView.configuration.preferences.javaScriptEnabled = true
+            }
+        }
+
+        
     }
     
     public func loadDataJS (objPanelData : [String: Any]){
@@ -103,8 +115,9 @@ public class WebkitClass: BaseClass {
         let gameId = dict[TapppContext.Sports.GAME_ID] as! String
         let bookId = dict[TapppContext.Sports.BOOK_ID] as! String
         let userId = dict[TapppContext.User.USER_ID] as! String
-        
-        self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)', '\(userId)', '\(frameUnit)');", completionHandler: { result, error in
+        //appURL = "https://sandbox-mlr.tappp.com/mobile/bundle.js"
+        //appURL = "https://sandbox-mlr.tappp.com/bundle.js"
+        self.webView.evaluateJavaScript("handleMessage('\(gameId)', '\(bookId)', '\(widthVal)', '\(broadcasterName)', '\(userId)', '\(frameUnit)', '\(appURL)');", completionHandler: { result, error in
             if let val = result as? String {
                 //                print(val)
             }

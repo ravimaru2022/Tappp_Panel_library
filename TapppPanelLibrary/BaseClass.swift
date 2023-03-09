@@ -10,6 +10,7 @@ import UIKit
 public class BaseClass: NSObject {
     var frameUnit = ""
     var objectPanelData = [String: Any]()
+    var appURL = ""
 }
 
 // MARK - Data Validations
@@ -110,6 +111,43 @@ extension BaseClass {
             }
         }
         task.resume()
+    }
+    
+    public func geRegistryServiceDetail(inputURL: String, completion: @escaping (String?)->Void) {
+        let url = URL(string:inputURL)
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    if let status = json?["code"] as? Int, status == 200 {
+                        if let urlDict = json?["data"] as? [[String: Any]], let urlAddr = urlDict.first{
+                            let appDict = urlAddr["appInfo"] as? [String: Any]
+                            let microAppList = appDict?["microAppList"]as? [[String:Any]]
+
+                            print(microAppList?.first?["chanelList"])
+                            
+                            let chanelList = microAppList?.first?["chanelList"] as? [[String:Any]]
+                            print(chanelList)
+
+                            if let appURL = chanelList?.first?["appURL"] as? String, appURL.count > 0 {
+                                completion(appURL)
+                            }
+                        }
+                    }
+                } catch {
+                    print(error)
+                }
+                //let image = UIImage(data: data)
+            } else if let error = error {
+                print("HTTP Request Failed \(error)")
+            }
+        }
+        task.resume()
+
     }
     
     /*public func getAppInfoAPI (bName: String){
