@@ -8,8 +8,8 @@ import Foundation
 import UIKit
 
 import Sentry
-import Amplify
-import AWSAPIPlugin
+//import Amplify
+//import AWSAPIPlugin
 
 
 public protocol updateOverlayViewFrame{
@@ -26,15 +26,15 @@ public class BaseClass: NSObject {
         
     }
     
-    public func configureAmplify() {
-        do {
-            try Amplify.add(plugin: AWSAPIPlugin())
-            try Amplify.configure()
-            print("Amplify configured 🥳")
-        } catch {
-            print("Failed to configure Amplify", error)
-        }
-    }
+//    public func configureAmplify() {
+//        do {
+//            try Amplify.add(plugin: AWSAPIPlugin())
+//            try Amplify.configure()
+//            print("Amplify configured 🥳")
+//        } catch {
+//            print("Failed to configure Amplify", error)
+//        }
+//    }
     
      public func configureSentry(){
          SentrySDK.start { options in
@@ -163,7 +163,8 @@ extension BaseClass {
         }
         task.resume()
     }
-    public func getAppInfoAPI (bName: String){
+    
+    /*public func getAppInfoAPI (bName: String){
         do {
             if #available(iOS 13.0, *) {
                 Task {
@@ -176,7 +177,7 @@ extension BaseClass {
         } catch {
             print("Fetching images failed with error \(error)")
         }
-    }
+    }*/
 
    /* public func getGameInfoAPI () {
         do {
@@ -193,7 +194,7 @@ extension BaseClass {
         }
     }*/
 }
-extension GraphQLRequest {
+/*extension GraphQLRequest {
     
     static func getAppInfo(broadcastName: String, deviceType: String) -> GraphQLRequest<String> {
         
@@ -217,7 +218,7 @@ extension GraphQLRequest {
             decodePath: operationName
         )
     }
-}
+}*/
     /*
     /*
     public func callcommandSubscriptionAPI () {

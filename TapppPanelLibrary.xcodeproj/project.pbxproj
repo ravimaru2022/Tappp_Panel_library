@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		261D0C3229B744510039520A /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3129B744510039520A /* AWSAPIPlugin */; };
-		261D0C3429B744510039520A /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3329B744510039520A /* AWSCognitoAuthPlugin */; };
-		261D0C3629B744510039520A /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3529B744510039520A /* AWSDataStorePlugin */; };
-		261D0C3829B744510039520A /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3729B744510039520A /* AWSLocationGeoPlugin */; };
-		261D0C3A29B744510039520A /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3929B744510039520A /* AWSPinpointAnalyticsPlugin */; };
-		261D0C3C29B744510039520A /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3B29B744510039520A /* AWSPluginsCore */; };
-		261D0C3E29B744510039520A /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3D29B744510039520A /* AWSS3StoragePlugin */; };
-		261D0C4029B744510039520A /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 261D0C3F29B744510039520A /* Amplify */; };
 		26250DD929B20DBA001BEFAC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2641A701299E191400FD2ACD /* index.html */; };
 		26250DDA29B20DBA001BEFAC /* tappp_ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 2641A702299E191400FD2ACD /* tappp_ios.js */; };
 		263C4CCD29517E79005FE16A /* TapppPanelLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 263C4CCC29517E79005FE16A /* TapppPanelLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,15 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261D0C4029B744510039520A /* Amplify in Frameworks */,
-				261D0C3229B744510039520A /* AWSAPIPlugin in Frameworks */,
-				261D0C3C29B744510039520A /* AWSPluginsCore in Frameworks */,
-				261D0C3A29B744510039520A /* AWSPinpointAnalyticsPlugin in Frameworks */,
-				261D0C3829B744510039520A /* AWSLocationGeoPlugin in Frameworks */,
 				DB8255827C3E83ED3C8A4A67 /* Pods_TapppPanelLibrary.framework in Frameworks */,
-				261D0C3429B744510039520A /* AWSCognitoAuthPlugin in Frameworks */,
-				261D0C3629B744510039520A /* AWSDataStorePlugin in Frameworks */,
-				261D0C3E29B744510039520A /* AWSS3StoragePlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,14 +175,6 @@
 			);
 			name = TapppPanelLibrary;
 			packageProductDependencies = (
-				261D0C3129B744510039520A /* AWSAPIPlugin */,
-				261D0C3329B744510039520A /* AWSCognitoAuthPlugin */,
-				261D0C3529B744510039520A /* AWSDataStorePlugin */,
-				261D0C3729B744510039520A /* AWSLocationGeoPlugin */,
-				261D0C3929B744510039520A /* AWSPinpointAnalyticsPlugin */,
-				261D0C3B29B744510039520A /* AWSPluginsCore */,
-				261D0C3D29B744510039520A /* AWSS3StoragePlugin */,
-				261D0C3F29B744510039520A /* Amplify */,
 			);
 			productName = TapppPanelLibrary;
 			productReference = 263C4CC929517E79005FE16A /* TapppPanelLibrary.framework */;
@@ -253,7 +229,6 @@
 			);
 			mainGroup = 263C4CBF29517E79005FE16A;
 			packageReferences = (
-				261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */,
 			);
 			productRefGroup = 263C4CCA29517E79005FE16A /* Products */;
 			projectDirPath = "";
@@ -632,60 +607,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		261D0C3129B744510039520A /* AWSAPIPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSAPIPlugin;
-		};
-		261D0C3329B744510039520A /* AWSCognitoAuthPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSCognitoAuthPlugin;
-		};
-		261D0C3529B744510039520A /* AWSDataStorePlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSDataStorePlugin;
-		};
-		261D0C3729B744510039520A /* AWSLocationGeoPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSLocationGeoPlugin;
-		};
-		261D0C3929B744510039520A /* AWSPinpointAnalyticsPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSPinpointAnalyticsPlugin;
-		};
-		261D0C3B29B744510039520A /* AWSPluginsCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSPluginsCore;
-		};
-		261D0C3D29B744510039520A /* AWSS3StoragePlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = AWSS3StoragePlugin;
-		};
-		261D0C3F29B744510039520A /* Amplify */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 261D0C3029B744510039520A /* XCRemoteSwiftPackageReference "amplify-swift" */;
-			productName = Amplify;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 263C4CC029517E79005FE16A /* Project object */;
 }
