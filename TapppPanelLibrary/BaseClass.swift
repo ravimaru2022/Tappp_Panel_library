@@ -130,11 +130,15 @@ extension BaseClass {
 
                             print(microAppList?.first?["chanelList"])
                             
-                            let chanelList = microAppList?.first?["chanelList"] as? [[String:Any]]
-                            print(chanelList)
-
-                            if let appURL = chanelList?.first?["appURL"] as? String, appURL.count > 0 {
-                                completion(appURL)
+                            if let chanelList = microAppList?.first?["chanelList"] as? [[String:Any]]
+                            {
+                                print(chanelList)
+                                for obj in chanelList{
+                                    if obj["chanelName"] as! String == "smartApp"{ // webApp , smartApp
+                                        print(obj["appURL"])
+                                        completion(obj["appURL"] as! String)
+                                    }
+                                }
                             }
                         }
                     }

@@ -1,6 +1,6 @@
 
-function handleMessage(gameId, bookId, width, broadcasterName, userId, widthUnit) {
-    console.log('handleMessage details hai=', gameId, bookId, width, broadcasterName, userId, widthUnit);
+function handleMessage(gameId, bookId, width, broadcasterName, userId, widthUnit, appURL) {
+    console.log('handleMessage details hai=', gameId, bookId, width, broadcasterName, userId, widthUnit, appURL);
     try {
         if(!bookId) {
             bookId = '1000009';
