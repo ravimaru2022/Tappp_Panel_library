@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TapppPanelLibrary"
-  spec.version      = "1.6.1"
+  spec.version      = "1.6.2"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = "This will be test description for inmplememting pod file."
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
                'TapppPanelLibrary/dist/*.map',
                'TapppPanelLibrary/dist/*.html']
   }
-  spec.ios.dependency 'Sentry'
+  #spec.ios.dependency 'Sentry'
   # dependencies : [
   #       .package(url: "https://github.com/aws-amplify/amplify-swift.git", .upToNextMajor(from: "2.0.0"))
   # ]

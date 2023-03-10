@@ -48,11 +48,20 @@ public class WebkitClass: BaseClass {
                 contentController.add(self, name: "toggleMessageHandler")
                 contentController.add(self, name: "showPanelData")
                 view = currView
-                //proceed further
-                //objectPanelData : API Call
-                //TapppContext.Sports.BROADCASTER_NAME
-                //TapppContext.Environment.ENVIRONMENT
-                let inputURL: String = String(format: "https://dev-betapi.tappp.com/registry-service/registry?broadcasterName=%@&device=web&environment=%@&appVersion=1.1", TapppContext.Sports.BROADCASTER_NAME, TapppContext.Environment.ENVIRONMENT)
+
+                guard let dict = objectPanelData[TapppContext.Sports.Context] as? [String:Any] else {
+                    return
+                }
+
+                guard let broadcasterName = dict[TapppContext.Sports.BROADCASTER_NAME] as? String  else {
+                    return
+                }
+                
+                guard let environment = dict[TapppContext.Environment.ENVIRONMENT] as? String  else {
+                    return
+                }
+
+                let inputURL: String = String(format: "https://dev-betapi.tappp.com/registry-service/registry?broadcasterName=%@&device=web&environment=%@&appVersion=1.1", broadcasterName, environment)
                 self.geRegistryServiceDetail(inputURL: inputURL) { responseURL in
                     print("responseURL",responseURL!)
                     self.appURL = responseURL!
