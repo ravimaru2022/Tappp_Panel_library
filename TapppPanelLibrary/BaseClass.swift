@@ -56,6 +56,8 @@ extension BaseClass {
             if env.count == 0 {
                 internalPaneldata[TapppContext.Environment.ENVIRONMENT] = TapppContext.Environment.DEV
             }
+        } else {
+            internalPaneldata[TapppContext.Environment.ENVIRONMENT] = TapppContext.Environment.DEV
         }
         //objPanelData[TapppContext.Environment.ENVIRONMENT] = TapppContext.Environment.DEV
         if let widthInfo = internalPaneldata[TapppContext.Request.WIDTH] as? [String: Any]{
