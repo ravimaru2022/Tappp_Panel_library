@@ -129,11 +129,11 @@ final class TapppPanelLibraryTests: XCTestCase{
 
     }
     func testStartMethod() throws {
-        objPanel.start()
+        objPanel.startPanel()
     }
     
     func testStopMethod() throws {
-        objPanel.stop()
+        objPanel.stopPanel()
     }
     
     func testShowPanel() throws {

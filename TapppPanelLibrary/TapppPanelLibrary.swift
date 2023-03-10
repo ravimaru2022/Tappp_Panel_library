@@ -50,10 +50,17 @@ public class WebkitClass: BaseClass {
                 view = currView
                 //proceed further
                 //objectPanelData : API Call
-                self.geRegistryServiceDetail(inputURL: "https://dev-betapi.tappp.com/registry-service/registry?broadcasterName=TRN&device=web&environment=dev&appVersion=1.1") { responseURL in
+                //TapppContext.Sports.BROADCASTER_NAME
+                //TapppContext.Environment.ENVIRONMENT
+                let inputURL: String = String(format: "https://dev-betapi.tappp.com/registry-service/registry?broadcasterName=%@&device=web&environment=%@&appVersion=1.1", TapppContext.Sports.BROADCASTER_NAME, TapppContext.Environment.ENVIRONMENT)
+                self.geRegistryServiceDetail(inputURL: inputURL) { responseURL in
                     print("responseURL",responseURL!)
                     self.appURL = responseURL!
                 }
+                /*self.geRegistryServiceDetail(inputURL: "https://dev-betapi.tappp.com/registry-service/registry?broadcasterName=TRN&device=web&environment=dev&appVersion=1.1") { responseURL in
+                    print("responseURL",responseURL!)
+                    self.appURL = responseURL!
+                }*/
             case .invalid(let err):
                 self.exceptionHandleHTML(errMsg: err)
                 
@@ -67,7 +74,7 @@ public class WebkitClass: BaseClass {
     }
     
     
-    public func start(){
+    public func startPanel(){
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             print("timer executed...")
             if self.appURL.count > 0 {
@@ -143,7 +150,7 @@ public class WebkitClass: BaseClass {
     }
     
     
-    public func stop(){
+    public func stopPanel(){
         if #available(iOS 14.0, *) {
             webView.configuration.userContentController.removeAllScriptMessageHandlers()
         } else {
@@ -153,7 +160,7 @@ public class WebkitClass: BaseClass {
     }
     // conditional code based on API.
     public func showPanel(){
-        self.start()
+        self.startPanel()
     }
     public func hidePanel(){
         if isPanelAvailable {

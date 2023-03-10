@@ -52,7 +52,12 @@ extension BaseClass {
             self.exceptionHandleHTML(errMsg: TapppContext.errorMessage.BOOKID_NOT_FOUND)
             internalPaneldata[TapppContext.Sports.BOOK_ID] = "1000009"
         }
-        
+        if let env = internalPaneldata[TapppContext.Environment.ENVIRONMENT] as? String{
+            if env.count == 0 {
+                internalPaneldata[TapppContext.Environment.ENVIRONMENT] = TapppContext.Environment.DEV
+            }
+        }
+        //objPanelData[TapppContext.Environment.ENVIRONMENT] = TapppContext.Environment.DEV
         if let widthInfo = internalPaneldata[TapppContext.Request.WIDTH] as? [String: Any]{
             if let unit = widthInfo[TapppContext.Request.UNIT] as? String, unit.count > 0{
                 frameUnit = unit
