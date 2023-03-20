@@ -13,7 +13,7 @@ public enum ValidationState {
     case valid
     case invalid(String)
 }
-
+@objc(WebkitClass)
 public class WebkitClass: BaseClass {
     
     public lazy var webView = WKWebView()
@@ -28,7 +28,7 @@ public class WebkitClass: BaseClass {
 
     
     override public init() {}
-    
+    @objc
     public func initPanel(gameInfo: [String: Any], currView: UIView) {
         
         //configureAmplify()
@@ -82,7 +82,7 @@ public class WebkitClass: BaseClass {
         }
     }
     
-    
+    @objc
     public func startPanel(){
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             print("timer executed...")
