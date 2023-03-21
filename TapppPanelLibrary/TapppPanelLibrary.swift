@@ -29,15 +29,15 @@ public class WebkitClass: BaseClass {
     
     override public init() {}
     @objc
-    public func initPanel(gameInfo: [String: Any], currView: UIView) {
+    public func initPanel(tapppContext: [String: Any], currView: UIView) {
         
         //configureAmplify()
         //configureSentry()
         webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
         
-        if checkNilInputParam(panelData: gameInfo, currView: currView) {
-            switch checkPanelDataParam(panelData: gameInfo, currView: currView){
+        if checkNilInputParam(panelData: tapppContext, currView: currView) {
+            switch checkPanelDataParam(panelData: tapppContext, currView: currView){
             case .valid:
                 print("valid input")
                 print("~~~~objectPanelData=", objectPanelData)
@@ -73,7 +73,7 @@ public class WebkitClass: BaseClass {
             case .invalid(let err):
                 self.exceptionHandleHTML(errMsg: err)
                 
-                let error = NSError(domain: "MethodName: init : \(err) \(gameInfo.description)" , code: 0, userInfo: nil)
+                let error = NSError(domain: "MethodName: init : \(err) \(tapppContext.description)" , code: 0, userInfo: nil)
                 //SentrySDK.capture(error: error)
             }
         } else {
